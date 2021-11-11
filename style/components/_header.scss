@@ -1,0 +1,101 @@
+.header {
+    width: 100%;
+    padding: 20px 0;
+
+    &__logo {
+        width: 100%;
+        height: 100%;
+
+        &--img {
+            width: 100%;
+        }
+    }
+
+    &__search-bar {
+        width: 100%;
+        max-width: 644px;
+        border: 1px solid #DEDEDE;
+        border-radius: 100px;
+
+        &--input {
+            width: 100%;
+            margin-left: 33px;
+            color: #707070;
+            font-size: 15px;
+            line-height: 17px;
+            border: none;
+            outline: none;
+        }
+
+        &--select {
+            color: #707070;
+            font-size: 15px;
+            border: none;
+            outline: none;
+        }
+
+        &--btn {
+            margin: 6px;
+            border: none;
+            background: transparent;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+    &__btns {
+        height: 100%;
+        
+        &--item {
+            list-style: none;
+            position: relative;
+
+            &--count {
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                right: -8px;
+                top: -7px;
+                background-color: #42D921;
+                border-radius: 50%;
+                color: #fff;
+                font-size: 13px;
+            }
+        }
+
+        &--link {
+            width: 40px;
+            height: 40px;
+            margin-left: 8px;
+            border-radius: 50%;
+            background-color: #F6F6F6;
+            box-shadow: $boxshadow;
+            text-decoration: none;
+
+            &--green {
+                background-color: #42BE29;
+            }
+        }
+    }
+
+    &__account {
+        width: 164px;
+        padding: 10px;
+        margin-left: 18px;
+        border: 1px solid #707070;
+        border-radius: 29px;
+        cursor: pointer;
+
+        &--avatar {
+            width: 29px;
+            height: 29px;
+            border-radius: 50%;
+            background-color: #F3F3F3;
+            box-shadow: $boxshadow;
+        }
+
+        &--text {
+            font-size: 12px;
+        }
+    }
+}

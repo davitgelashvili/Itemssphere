@@ -1,0 +1,19 @@
+.head-menu {
+    background-color: #F3F3F3;
+    border-radius: 100px;
+    padding: 10px 28px;
+
+    &__categories {
+
+        &--item {
+            margin: 0 12px;
+            list-style: none;
+        }
+
+        &--link {
+            color: #2B2B2B;
+            font-size: 15px;
+            text-decoration: none;
+        }
+    }
+}
