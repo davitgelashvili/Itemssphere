@@ -1,6 +1,29 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 $boxshadow: 0 3px 6px rgba(#000000, .16);
+
+.splide {
+    visibility: unset !important;
+
+    // unset style
+    &__arrow{
+        display: flex;
+        align-items: center;
+        background: transparent;
+        justify-content: center;
+        opacity: unset;
+        padding: unset;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        left: unset;
+        
+        &--next {
+            right: 0;
+        }
+    }
+}

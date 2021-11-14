@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/grid.css">
+    <link rel="stylesheet" href="style/splide.min.css">
     <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
+    <title>ItemsSphere</title>
 </head>
 <body>
     <header class="header">
@@ -74,6 +75,7 @@
         </div>
     </header>
 
+    <!-- head menu -->   
     <div class="container">
         <div class="head-menu d-flex justify-content-between align-items-center">
             <ul class="head-menu__categories d-flex">
@@ -103,5 +105,568 @@
             </ul>
         </div>
     </div>
+
+    <!-- categories, main slider, banner -->
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="categories">
+                    <h2 class="categories--title">Categories</h2>
+                    <ul class="categories__list">
+                        <li class="categories__list--item">
+                            <a href="" class="categories__list--link">Agriculture & Food</a>
+                        </li>
+                        <li class="categories__list--item">
+                            <a href="" class="categories__list--link">Auto & Transportation</a>
+                        </li>
+                        <li class="categories__list--item">
+                            <a href="" class="categories__list--link">Clothing, Shoes & Accessories</a>
+                        </li>
+                        <li class="categories__list--item">
+                            <a href="" class="categories__list--link">Packaging, Advertising & Office</a>
+                        </li>
+                        <li class="categories__list--item">
+                            <a href="" class="categories__list--link">Agriculture & Food</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <!-- main slider -->
+                    <div class="col-12">
+                        <div class="main-slider d-flex align-items-center">
+                            <div class="splide__arrows main-slider__navs d-flex">
+                                <button class="splide__arrow splide__arrow--prev main-slider__navs--btn main-slider__navs--prev">
+                                    <img src="img/svg/slider-prev.svg" alt="">
+                                </button>
+                                <button class="splide__arrow splide__arrow--next main-slider__navs--btn main-slider__navs--next">
+                                    <img src="img/svg/slider-next.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="splide__track">
+                                  <ul class="splide__list">
+                                      <div class="splide__slide">
+                                            <div class="main-slider__item">
+                                                <img src="img/slider-banner.png" alt="">
+                                            </div>
+                                      </div>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- banner -->
+                    <div class="col-4">
+                        <div class="banner__mini banner">
+                            <img src="img/mini-banner1.png" alt="">
+                        </div>
+                    </div>
+                    <!-- banner -->
+                    <div class="col-4">
+                        <div class="banner__mini banner">
+                            <img src="img/mini-banner2.png" alt="">
+                        </div>
+                    </div>
+                    <!-- banner -->
+                    <div class="col-4">
+                        <div class="banner__mini banner">
+                            <img src="img/mini-banner3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="banner__larg banner">
+                    <img src="img/larg-banner1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- products slider | top offer-->
+    <div class="container">
+        <div class="products-slider">
+            <div class="splide__arrows products-slider__navs d-flex">
+                <button class="splide__arrow splide__arrow--prev products-slider__navs--btn products-slider__navs--prev">
+                    <img src="img/svg/slider-prev.svg" alt="">
+                </button>
+                <button class="splide__arrow splide__arrow--next products-slider__navs--btn products-slider__navs--next">
+                    <img src="img/svg/slider-next.svg" alt="">
+                </button>
+            </div>
+            <div class="products__section d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <h2 class="products__section--text">Top offers</h2>
+                    <a href="" class="products__section--link">View all</a>
+                </div>
+            </div><!-- section head end -->
+            <!-- slider -->
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <div class="splide__slide">
+                        <div class="products-slider__item">
+                            <!-- item slider -->
+                            <div class="item-slider">
+                                <div class="splide__arrows item-slider__navs">
+                                    <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
+                                        <img src="img/svg/item-prev.svg" alt="">
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
+                                        <img src="img/svg/item-next.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/watch.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/headphone.png" alt="">
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div><!-- item slide end -->
+                            <div class="products-slider__item--footer d-flex flex-column align-items-start">
+                                <div class="products-slider__item--status">
+                                    NEW
+                                </div>
+                                <div class="products-slider__item--price">
+                                    ₾1,239.39
+                                </div>
+                                <a href="" class="products-slider__item--name">
+                                    TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                                </a>
+                                <div class="products-slider__item--stars">
+                                    review
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- item end -->
+                    <div class="splide__slide">
+                        <div class="products-slider__item">
+                            <!-- item slider -->
+                            <div class="item-slider">
+                                <div class="splide__arrows item-slider__navs">
+                                    <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
+                                        <img src="img/svg/item-prev.svg" alt="">
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
+                                        <img src="img/svg/item-next.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/watch.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/headphone.png" alt="">
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div><!-- item slide end -->
+                            <div class="products-slider__item--footer d-flex flex-column align-items-start">
+                                <div class="products-slider__item--status">
+                                    NEW
+                                </div>
+                                <div class="products-slider__item--price">
+                                    ₾1,239.39
+                                </div>
+                                <a href="" class="products-slider__item--name">
+                                    TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                                </a>
+                                <div class="products-slider__item--stars">
+                                    review
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- item end -->
+                    <div class="splide__slide">
+                        <div class="products-slider__item">
+                            <!-- item slider -->
+                            <div class="item-slider">
+                                <div class="splide__arrows item-slider__navs">
+                                    <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
+                                        <img src="img/svg/item-prev.svg" alt="">
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
+                                        <img src="img/svg/item-next.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/watch.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/headphone.png" alt="">
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div><!-- item slide end -->
+                            <div class="products-slider__item--footer d-flex flex-column align-items-start">
+                                <div class="products-slider__item--status">
+                                    NEW
+                                </div>
+                                <div class="products-slider__item--price">
+                                    ₾1,239.39
+                                </div>
+                                <a href="" class="products-slider__item--name">
+                                    TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                                </a>
+                                <div class="products-slider__item--stars">
+                                    review
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- item end -->
+                    <div class="splide__slide">
+                        <div class="products-slider__item">
+                            <!-- item slider -->
+                            <div class="item-slider">
+                                <div class="splide__arrows item-slider__navs">
+                                    <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
+                                        <img src="img/svg/item-prev.svg" alt="">
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
+                                        <img src="img/svg/item-next.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/watch.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/headphone.png" alt="">
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div><!-- item slide end -->
+                            <div class="products-slider__item--footer d-flex flex-column align-items-start">
+                                <div class="products-slider__item--status">
+                                    NEW
+                                </div>
+                                <div class="products-slider__item--price">
+                                    ₾1,239.39
+                                </div>
+                                <a href="" class="products-slider__item--name">
+                                    TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                                </a>
+                                <div class="products-slider__item--stars">
+                                    review
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- item end -->
+                    <div class="splide__slide">
+                        <div class="products-slider__item">
+                            <!-- item slider -->
+                            <div class="item-slider">
+                                <div class="splide__arrows item-slider__navs">
+                                    <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
+                                        <img src="img/svg/item-prev.svg" alt="">
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
+                                        <img src="img/svg/item-next.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/watch.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/headphone.png" alt="">
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div><!-- item slide end -->
+                            <div class="products-slider__item--footer d-flex flex-column align-items-start">
+                                <div class="products-slider__item--status">
+                                    NEW
+                                </div>
+                                <div class="products-slider__item--price">
+                                    ₾1,239.39
+                                </div>
+                                <a href="" class="products-slider__item--name">
+                                    TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                                </a>
+                                <div class="products-slider__item--stars">
+                                    review
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- item end -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- products slider | top offer-->
+    <div class="container">
+        <div class="products-slider">
+            <div class="splide__arrows products-slider__navs d-flex">
+                <button class="splide__arrow splide__arrow--prev products-slider__navs--btn products-slider__navs--prev">
+                    <img src="img/svg/slider-prev.svg" alt="">
+                </button>
+                <button class="splide__arrow splide__arrow--next products-slider__navs--btn products-slider__navs--next">
+                    <img src="img/svg/slider-next.svg" alt="">
+                </button>
+            </div>
+            <div class="products__section d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <h2 class="products__section--text">Sales</h2>
+                    <a href="" class="products__section--link">View all</a>
+                </div>
+            </div><!-- section head end -->
+            <!-- slider -->
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <div class="splide__slide">
+                        <div class="products-slider__item">
+                            <!-- item slider -->
+                            <div class="item-slider">
+                                <div class="splide__arrows item-slider__navs">
+                                    <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
+                                        <img src="img/svg/item-prev.svg" alt="">
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
+                                        <img src="img/svg/item-next.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/watch.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/headphone.png" alt="">
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div><!-- item slide end -->
+                            <div class="products-slider__item--footer d-flex flex-column align-items-start">
+                                <div class="products-slider__item--status">
+                                    NEW
+                                </div>
+                                <div class="products-slider__item--price">
+                                    ₾1,239.39
+                                </div>
+                                <a href="" class="products-slider__item--name">
+                                    TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                                </a>
+                                <div class="products-slider__item--stars">
+                                    review
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- item end -->
+                    <div class="splide__slide">
+                        <div class="products-slider__item">
+                            <!-- item slider -->
+                            <div class="item-slider">
+                                <div class="splide__arrows item-slider__navs">
+                                    <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
+                                        <img src="img/svg/item-prev.svg" alt="">
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
+                                        <img src="img/svg/item-next.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/watch.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/headphone.png" alt="">
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div><!-- item slide end -->
+                            <div class="products-slider__item--footer d-flex flex-column align-items-start">
+                                <div class="products-slider__item--status">
+                                    NEW
+                                </div>
+                                <div class="products-slider__item--price">
+                                    ₾1,239.39
+                                </div>
+                                <a href="" class="products-slider__item--name">
+                                    TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                                </a>
+                                <div class="products-slider__item--stars">
+                                    review
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- item end -->
+                    <div class="splide__slide">
+                        <div class="products-slider__item">
+                            <!-- item slider -->
+                            <div class="item-slider">
+                                <div class="splide__arrows item-slider__navs">
+                                    <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
+                                        <img src="img/svg/item-prev.svg" alt="">
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
+                                        <img src="img/svg/item-next.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/watch.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/headphone.png" alt="">
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div><!-- item slide end -->
+                            <div class="products-slider__item--footer d-flex flex-column align-items-start">
+                                <div class="products-slider__item--status">
+                                    NEW
+                                </div>
+                                <div class="products-slider__item--price">
+                                    ₾1,239.39
+                                </div>
+                                <a href="" class="products-slider__item--name">
+                                    TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                                </a>
+                                <div class="products-slider__item--stars">
+                                    review
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- item end -->
+                    <div class="splide__slide">
+                        <div class="products-slider__item">
+                            <!-- item slider -->
+                            <div class="item-slider">
+                                <div class="splide__arrows item-slider__navs">
+                                    <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
+                                        <img src="img/svg/item-prev.svg" alt="">
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
+                                        <img src="img/svg/item-next.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/watch.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/headphone.png" alt="">
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div><!-- item slide end -->
+                            <div class="products-slider__item--footer d-flex flex-column align-items-start">
+                                <div class="products-slider__item--status">
+                                    NEW
+                                </div>
+                                <div class="products-slider__item--price">
+                                    ₾1,239.39
+                                </div>
+                                <a href="" class="products-slider__item--name">
+                                    TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                                </a>
+                                <div class="products-slider__item--stars">
+                                    review
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- item end -->
+                    <div class="splide__slide">
+                        <div class="products-slider__item">
+                            <!-- item slider -->
+                            <div class="item-slider">
+                                <div class="splide__arrows item-slider__navs">
+                                    <button class="splide__arrow splide__arrow--prev item-slider__navs--btn item-slider__navs--prev">
+                                        <img src="img/svg/item-prev.svg" alt="">
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next item-slider__navs--btn item-slider__navs--next">
+                                        <img src="img/svg/item-next.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/watch.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <div class="item-slider__item">
+                                                <img src="img/headphone.png" alt="">
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div><!-- item slide end -->
+                            <div class="products-slider__item--footer d-flex flex-column align-items-start">
+                                <div class="products-slider__item--status">
+                                    NEW
+                                </div>
+                                <div class="products-slider__item--price">
+                                    ₾1,239.39
+                                </div>
+                                <a href="" class="products-slider__item--name">
+                                    TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                                </a>
+                                <div class="products-slider__item--stars">
+                                    review
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- item end -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="js/slider.js"></script> -->
+    <script src="js/splide.js"></script>
+    <script src="js/function.js"></script>
+
 </body>
 </html>

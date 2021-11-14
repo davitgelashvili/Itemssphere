@@ -1,0 +1,17 @@
+.products {
+    &__section {
+        margin-bottom: 18px;
+        font-size: 20px;
+        line-height: 27px;
+
+        &--text {
+            color: #3D3D3D;
+        }
+
+        &--link {
+            margin-left: 12px;
+            color: #40CF25;
+            text-decoration: none;
+        }
+    }
+}
