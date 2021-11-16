@@ -21,7 +21,7 @@ document.querySelectorAll('.products-slider').forEach( (item, key) => {
     new Splide( `.products-slider-${key}`, {
         type: 'slide',
         autoplay: false,
-        perPage: 4,
+        perPage: 5,
         // padding: { left: 9, right: 9 },
         breakpoints: {
             1024: {
