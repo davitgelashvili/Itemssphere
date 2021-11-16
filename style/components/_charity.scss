@@ -1,0 +1,49 @@
+.charity {
+    margin-top: 55px;
+    margin-bottom: 45px;
+    padding: 79px 133px;
+    border-radius: 112px;
+    background-color: #F3F3F3;
+
+    &__text {
+        padding-left: 30px;
+
+        &--title {
+            color: #000;
+            font-size: 76px;
+            line-height: 69px;
+
+            p {
+                color: #41C227;
+                font-size: 50px;
+            }
+        }
+
+        &--desc {
+            height: 72px;
+            color: #000;
+            font-size: 15px;
+            line-height: 24px;
+            overflow: hidden;
+        }
+
+        &--btns {
+            margin-top: 38px;
+        }
+
+        &--li {
+            margin-right: 11px;
+            list-style: none;
+        }
+
+        &--btn {
+            padding: 15px 28px;
+            border-radius: 100px;
+            border: 2px solid #41C227;
+            color: #41C227;
+            font-size: 15px;
+            line-height: 20px;
+            text-decoration: none;
+        }
+    }
+}

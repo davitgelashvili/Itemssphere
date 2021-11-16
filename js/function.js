@@ -35,6 +35,37 @@ document.querySelectorAll('.products-slider').forEach( (item, key) => {
 
 })
 
+new Splide( `.social-program-slider`, {
+    type: 'slide',
+    autoplay: false,
+    perPage: 3,
+    // padding: { left: 9, right: 9 },
+    breakpoints: {
+        1024: {
+            perPage: 2,
+        },
+    },
+    arrows: false,
+    pagination: false,
+    updateOnMove: true,
+}).mount();
+
+new Splide( `.charity-slider`, {
+    type: 'slide',
+    autoplay: false,
+    perPage: 2,
+    // padding: { left: 9, right: 9 },
+    breakpoints: {
+        1024: {
+            perPage: 2,
+        },
+    },
+    arrows: false,
+    pagination: false,
+    updateOnMove: true,
+}).mount();
+
+
 document.querySelectorAll('.item-slider').forEach( (item, key) => {
     item.classList.add(`item-slider-${key}`)
 

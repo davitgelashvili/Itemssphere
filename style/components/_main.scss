@@ -17,8 +17,9 @@ $boxshadow: 0 3px 6px rgba(#000000, .16);
         justify-content: center;
         opacity: unset;
         padding: unset;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 0;
+        // transform: translateY(-50%);
+        transform: unset;
         z-index: 1;
         left: unset;
         

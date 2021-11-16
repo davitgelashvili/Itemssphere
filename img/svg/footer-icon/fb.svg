@@ -1,0 +1,11 @@
+<svg id="Component_46_95" data-name="Component 46 – 95" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_271" data-name="Ellipse 271" cx="14" cy="14" r="14" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_67" data-name="Mask Group 67" clip-path="url(#clip-path)">
+    <circle id="Ellipse_270" data-name="Ellipse 270" cx="14" cy="14" r="14" fill="#fff"/>
+    <path id="Path_387" data-name="Path 387" d="M178,83.992a14,14,0,1,0-16.187,13.823V88.037h-3.556V83.992h3.556V80.909c0-3.506,2.091-5.444,5.288-5.444a21.536,21.536,0,0,1,3.134.273v3.443h-1.766a2.024,2.024,0,0,0-2.282,2.186v2.625h3.882l-.62,4.045h-3.262v9.777A14,14,0,0,0,178,83.992Z" transform="translate(-150.08 -70)" fill="#206dfc" fill-rule="evenodd"/>
+  </g>
+</svg>

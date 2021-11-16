@@ -1,0 +1,18 @@
+.ourshop {
+
+    &__item {
+        width: calc(100%/4);
+        padding: 35px;
+        list-style: none;
+
+        &--link {
+            text-decoration: none;
+        }
+
+        &--img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+}
