@@ -79,3 +79,11 @@ document.querySelectorAll('.item-slider').forEach( (item, key) => {
     }).mount();
 
 })
+
+document.querySelector('.header__search--input').addEventListener("keyup", function(e){
+    if(e.target.value === ''){
+        document.querySelector('.header__search__bar').style.display = "none"
+    }else{
+        document.querySelector('.header__search__bar').style.display = "block"
+    }
+});

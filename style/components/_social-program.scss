@@ -18,7 +18,7 @@
     }
 
     &__text {
-        width: 500px;
+        width: 450px;
         padding-right: 80px;
 
         &--title {
@@ -28,10 +28,11 @@
         }
 
         &--desc {
+            margin-top: 15px;
             height: 76px;
             color: #fff;
             font-size: 15px;
-            font-size: 24px;
+            line-height: 24px;
             overflow: hidden;
         }
 
