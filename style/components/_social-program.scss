@@ -54,3 +54,32 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .social-program{
+        &__text {
+            width: 100%;
+            padding-right: 0;
+
+            &--title {
+                font-size: 56px;
+            }
+
+            &--desc {
+                width: 80%;
+                height: 48px;
+            }
+        }
+
+        &__bg {
+            width: calc(100% + 100px);
+            height: 600px;
+            border-radius: 40px;
+        }
+
+        &__content {
+            width: calc(100% - 100px);
+            padding: 58px 0 0 40px;
+        }
+    }
+}

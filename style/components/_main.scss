@@ -9,6 +9,7 @@ h1,h2,h3,h4,h5,h6 {
 
 body {
     background-color: #FBFBFB;
+    overflow-x: hidden;
 }
 
 $boxshadow: 0 3px 6px rgba(#000000, .16);
@@ -33,5 +34,12 @@ $boxshadow: 0 3px 6px rgba(#000000, .16);
         &--next {
             right: 0;
         }
+    }
+}
+
+@media (max-width: 1024px) {
+    .mobile-container {
+        padding-left: 0;
+        padding-right: 0;
     }
 }

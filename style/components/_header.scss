@@ -167,4 +167,16 @@
             }
         }
     }
+
+    &__mobile {
+        position: relative;
+    }
+}
+
+.burger {
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    border: none;
+    outline: none;
 }

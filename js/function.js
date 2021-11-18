@@ -1,16 +1,22 @@
 
 new Splide( '.main-slider', {
-    type: 'loop',
+    type: 'slide',
     perPage: 1,
     autoplay: true,
     arrows: false,
     pagination: false,
-    arrowPath: 'M.348,16.89a1.762,1.762,0,0,1,.369-2.438L6.946,8.37,1,2.549A1.558,1.558,0,0,1,.768.355,1.619,1.619,0,0,1,3,.568l6.558,6.42a1.9,1.9,0,0,1,.577,1.142,2.043,2.043,0,0,1-.665,1.932L2.825,16.548a2.3,2.3,0,0,1-1.557.693A1.278,1.278,0,0,1,.348,16.89Z',
+    breakpoints: {
+        1024: {
+            pagination: true,
+        },
+    },
     classes: {
 		arrows: 'main-slider__navs',
 		arrow : 'main-slider__navs--btn',
 		prev  : 'main-slider__navs--prev',
 		next  : 'main-slider__navs--next',
+        pagination: 'splide__pagination main-slider__pagination',
+		page      : 'splide__pagination__page main-slider__page',
     },
 }).mount();
 
@@ -39,10 +45,18 @@ new Splide( `.social-program-slider`, {
     type: 'slide',
     autoplay: false,
     perPage: 3,
-    // padding: { left: 9, right: 9 },
     breakpoints: {
+        768: {
+            perPage: 1,
+            padding: {
+                right: '100px'
+            },
+        },
         1024: {
             perPage: 2,
+            padding: {
+                right: '100px'
+            },
         },
     },
     arrows: false,
@@ -56,8 +70,17 @@ new Splide( `.charity-slider`, {
     perPage: 2,
     // padding: { left: 9, right: 9 },
     breakpoints: {
+        768: {
+            perPage: 1,
+            padding: {
+                right: '100px'
+            },
+        },
         1024: {
             perPage: 2,
+            padding: {
+                right: '100px'
+            },
         },
     },
     arrows: false,

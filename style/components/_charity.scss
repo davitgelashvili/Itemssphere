@@ -47,3 +47,14 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .charity {
+        border-radius: 40px;
+        padding: 19px 0 43px 44px;
+
+        &__text {
+            padding-right: 50px;
+        }
+    }
+}
