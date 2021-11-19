@@ -37,6 +37,11 @@ $boxshadow: 0 3px 6px rgba(#000000, .16);
     }
 }
 
+.touch {
+    transition: 0.5s;
+    transform: rotate(0deg);
+}
+
 @media (max-width: 1024px) {
     .mobile-container {
         padding-left: 0;

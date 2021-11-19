@@ -42,6 +42,13 @@ body {
   right: 0;
 }
 
+.touch {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 @media (max-width: 1024px) {
   .mobile-container {
     padding-left: 0;
