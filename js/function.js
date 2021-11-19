@@ -157,9 +157,9 @@ function pageName(n){
         const element = pageNamesData[i];
         if($('.touch').hasClass(element)){
             var page = i + n;
+            console.log(page > 0 || page == 0 && page < (pageNamesData.length - 1) || page == (pageNamesData.length - 1))
             if(page > 0 || page == 0 && page < (pageNamesData.length - 1) || page == (pageNamesData.length - 1)) {
                 TransformActive = true;
-                console.log(page)
                 setTimeout(() => {
                     location.href = `${pageNamesData[page]}.html`;
                 }, 200);
