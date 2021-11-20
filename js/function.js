@@ -111,39 +111,13 @@ document.querySelector('.header__search--input').addEventListener("keyup", funct
     }
 });
 
-// var rotateLeft = 'rotate(-10deg)';
-// var translateLeft = 'translateX(-100px)';
-
-// document.querySelector('main').addEventListener('touchstart', function(e){
-//     console.log(111, e)
-// }, false);
-// document.querySelector('main').addEventListener('touchmove', function(e){
-//     console.log(00000,e)
-// }, false);
-// document.querySelector('main').addEventListener('touchcancel', function(e){
-//     console.log(222, e)
-// }, false);
-// document.querySelector('main').addEventListener('touchend', function(e){
-//     console.log(3333, e)
-// }, false);
-
-
-// var t;
-// function ragaca(e){
-//     console.log(e.x)
-//     t = e.x;
-//     return e.x
-// }
-// document.querySelector('main').addEventListener('mousedown', ragaca);
-
-// document.querySelector('main').addEventListener('touchmove', function(e){
-//     console.log('touch: ', e)
-//     if(e.changedTouches[0].clientX < t) {
-//         console.log('naklebia')
-//     }else {
-//         console.log('metia')
-//     }
-// });
+function PageMargin(){
+    if(marginPageCount > 10 || marginPageCount < -10){
+        $('.touch').css('margin-left', `${marginPageCount * 2}px`)
+    }else{
+        $('.touch').css('margin-left', `${0}px`)
+    }
+}
 
 var pageNamesData = [
     'product',
@@ -158,33 +132,31 @@ function pageName(n){
         if($('.touch').hasClass(element)){
             var page = i + n;
             console.log(page > 0 || page == 0 && page < (pageNamesData.length - 1) || page == (pageNamesData.length - 1))
-            if(page > 0 || page == 0 && page < (pageNamesData.length - 1) || page == (pageNamesData.length - 1)) {
+            if(page > 0 || page == 0 && page <= (pageNamesData.length - 1) || page == (pageNamesData.length - 1)) {
                 TransformActive = true;
+                PageMargin();
                 setTimeout(() => {
                     location.href = `${pageNamesData[page]}.html`;
-                }, 200);
+                }, 500);
             }
         }
     }
 }
+var marginPageCount = 0;
 
-
-
-var startTouch;
-$('.touch').bind('touchstart', function (e){
-    startTouch = e.originalEvent.touches[0].clientY;
-});
-
-$('.touch').bind('touchend', function (e){
-    var endTouch = e.originalEvent.changedTouches[0].clientY;
-
-    if(startTouch > endTouch){
-        pageName(+1)
-        if(TransformActive) $('.touch').css('transform', 'rotate(-10deg)')
-    }else if(startTouch == endTouch){
-        if(TransformActive) $('.touch').css('transform', 'rotate(0deg)')
-    }else {
+$(".touch").on( "swiperight", function(e){
+    marginPageCount = 0;
+    document.querySelector('.touch').addEventListener("touchmove", function(event) {
+        marginPageCount += 1;
         pageName(-1)
-        if(TransformActive) $('.touch').css('transform', 'rotate(10deg)')
-    }
+    });
 });
+
+$(".touch").on("swipeleft", function(e){
+    marginPageCount = 0;
+    document.querySelector('.touch').addEventListener("touchmove", function(event) {
+        marginPageCount -= 1;
+        pageName(+1)
+    });
+});
+
