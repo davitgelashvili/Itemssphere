@@ -23,11 +23,19 @@
                 height: 100%;
                 object-fit: cover;
             }
+
+            @media (max-width: 1025px) {
+                width: 100%;
+            }
         }
 
         &--text {
             width: fit-content;
             margin-left: 22px;
+
+            @media (max-width: 1025px){
+                margin-left: 0;
+            }
         }
 
         &--title {
@@ -48,6 +56,10 @@
             color: #A3A3A3;
             font-size: 13px;
             line-height: 17px;
+        }
+
+        @media (max-width: 1025px) {
+            margin-left: 18px;
         }
     }
 }

@@ -341,6 +341,11 @@
             color: #5A5A5A;
             font-size: 13px;
             line-height: 17px;
+
+            @media (max-width: 1025px) {
+                height: 34px;
+                overflow: hidden;
+            }
         }
 
         &--price {

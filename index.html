@@ -20,11 +20,8 @@
                     </div>
                 </div>
                 <div class="col-10 d-none d-lg-flex justify-content-between">
-                    <form class="header__search d-flex">
+                    <form class="header__search d-flex align-items-center justify-content-between">
                         <input type="text" placeholder="search" class="header__search--input regular">
-                        <select name="" id="" class="header__search--select regular">
-                            <option value="">All category</option>
-                        </select>
                         <button class="header__search--btn">
                             <img src="img/svg/loop.svg" alt="">
                         </button>
@@ -79,6 +76,11 @@
                             <img src="img/svg/burger.svg" alt="">
                         </button>
                         <img src="img/svg/m-logo.svg" alt="">
+                        <div class="header__mobile__btns d-flex justify-content-end">
+                            <button class="header__mobile__btns--search"><img src="img/svg/header-btn/m-loop.svg" alt=""></button>
+                            <button class="header__mobile__btns--btn"><img src="img/svg/header-btn/m-sms.svg" alt=""></button>
+                            <button class="header__mobile__btns--btn"><img src="img/svg/header-btn/m-notification.svg" alt=""></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,15 +89,21 @@
         <div class="header__search__bar">
             <div class="container">
                 <div class="row">
+                    <div class="col-12 d-lg-none">
+                        <form class="m-header__search d-flex align-items-center justify-content-end">
+                            <input type="text" placeholder="I want to buy…" class="m-header__search--input regular">
+                            <div class="m-search-cancel"><img src="img/svg/header-btn/m-search-cancel.svg" alt=""></div>
+                        </form>
+                    </div>
                     <div class="col-12">
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-lg-2">
                                 <div class="header__search__bar--left d-flex flex-column align-items-end regular">
                                     Products (234)
                                     <a href="">View all</a>
                                 </div>
                             </div>
-                            <div class="col-10">
+                            <div class="col-lg-10">
                                 <ul class="header__search__bar__list">
                                     <li class="header__search__bar__list--li">
                                         <a href="" class="header__search__bar__list--link d-flex align-items-center">
@@ -119,13 +127,13 @@
                     </div><!-- end -->
                     <div class="col-12">
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-lg-2">
                                 <div class="header__search__bar--left d-flex flex-column align-items-end regular">
                                     Charities (56)
                                     <a href="">View all</a>
                                 </div>
                             </div>
-                            <div class="col-10">
+                            <div class="col-lg-10">
                                 <ul class="header__search__bar__list">
                                     <li class="header__search__bar__list--li">
                                         <a href="" class="header__search__bar__list--link d-flex align-items-center">
@@ -141,13 +149,13 @@
                     </div><!-- end -->
                     <div class="col-12">
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-lg-2">
                                 <div class="header__search__bar--left d-flex flex-column align-items-end regular">
                                     News (2)
                                     <a href="">View all</a>
                                 </div>
                             </div>
-                            <div class="col-10">
+                            <div class="col-lg-10">
                                 <ul class="header__search__bar__list">
                                     <li class="header__search__bar__list--li">
                                         <a href="" class="header__search__bar__list--link d-flex align-items-center">
@@ -199,9 +207,89 @@
         </div>
     </div>
 
-    <!-- mobile search end menu bar -->
-    <div class="d-block d-lg-none">
+    <!-- mobile menu bar -->
+    <div class="m-header d-block d-lg-none">
+        <div class="container">
+            <ul class="m-header__menu d-flex justify-content-between">
+                <li class="m-header__menu--li">
+                    <a href="" class="m-header__menu--a regular d-flex flex-column align-items-center">
+                        <figure class="m-header__menu--icon d-flex justify-content-center">
+                            <img src="img/svg/header-btn/market-menu.svg" alt="">
+                        </figure>
+                        Market
+                    </a>
+                </li>
+                <li class="m-header__menu--li">
+                    <a href="" class="m-header__menu--a regular d-flex flex-column align-items-center">
+                        <figure class="m-header__menu--icon d-flex justify-content-center">
+                            <img src="img/svg/header-btn/shop-menu.svg" alt="">
+                        </figure>
+                        Shop
+                    </a>
+                </li>
+                <li class="m-header__menu--li">
+                    <a href="" class="m-header__menu--a regular d-flex flex-column align-items-center">
+                        <figure class="m-header__menu--icon d-flex justify-content-center">
+                            <img src="img/svg/header-btn/social-program-menu.svg" alt="">
+                        </figure>
+                        Social Programs
+                    </a>
+                </li>
+                <li class="m-header__menu--li">
+                    <a href="" class="m-header__menu--a regular d-flex flex-column align-items-center">
+                        <figure class="m-header__menu--icon d-flex justify-content-center">
+                            <img src="img/svg/header-btn/charities-menu.svg" alt="">
+                        </figure>
+                        Charities 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
+    <!-- fix menu bar mobile -->
+    <div class="fix-bar d-block d-lg-none">
+        <div class="container">
+            <ul class="fix-bar__lists d-flex justify-content-between align-items-start">
+                <li class="fix-bar__lists--li">
+                    <a href="" class="fix-bar__lists--link regular d-flex align-items-center flex-column">
+                        <figure class="fix-bar__lists--icon">
+                            <img src="img/svg/header-btn/bar-home.svg" alt="">
+                        </figure>
+                        Home
+                    </a>
+                </li>
+                <li class="fix-bar__lists--li">
+                    <a href="" class="fix-bar__lists--link regular d-flex align-items-center flex-column">
+                        <figure class="fix-bar__lists--icon">
+                            <img src="img/svg/header-btn/bar-wishlist.svg" alt="">
+                        </figure>
+                        Wishlist
+                    </a>
+                </li>
+                <li class="fix-bar__lists--btn">
+                    <a href="" class="d-flex align-items-center flex-column">
+                        <img src="img/svg/header-btn/bar-add.svg" alt="">
+                    </a>
+                </li>
+                <li class="fix-bar__lists--li">
+                    <a href="" class="fix-bar__lists--link regular d-flex align-items-center flex-column">
+                        <figure class="fix-bar__lists--icon">
+                            <img src="img/svg/header-btn/bar-cart.svg" alt="">
+                        </figure>
+                        Cart
+                    </a>
+                </li>
+                <li class="fix-bar__lists--li">
+                    <a href="" class="fix-bar__lists--link regular d-flex align-items-center flex-column">
+                        <figure class="fix-bar__lists--icon">
+                            <img src="img/svg/header-btn/bar-profile.svg" alt="">
+                        </figure>
+                        Profile
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <section class="touch index">
@@ -1322,7 +1410,7 @@
         </div>
 
         <!-- news end our shop section -->
-        <div class="container">
+        <div class="container-lg mobile-container">
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="products__section d-flex align-items-center justify-content-center justify-content-lg-between">
@@ -1331,7 +1419,8 @@
                             <a href="" class="products__section--link regular">View all</a>
                         </div>
                     </div><!-- section head end -->
-                    <ul class="news">
+                    <!-- news desktop version -->
+                    <ul class="news d-none d-lg-block">
                         <li class="d-flex">
                             <a href="" class="news__item d-flex">
                                 <figure class="news__item--img">
@@ -1409,8 +1498,76 @@
                             </a>
                         </li>
                     </ul>
+                    <!-- news mobile version -->
+                    <!-- mobile version -->
+                    <div class="d-block d-lg-none">
+                        <div class="news-slider">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <div class="splide__slide">
+                                        <a href="" class="news news__item d-flex flex-column">
+                                            <figure class="news__item--img">
+                                                <img src="img/news.png" alt="">
+                                            </figure>
+                                            <div class="news__item--text">
+                                                <p class="news__item--date regular">
+                                                    01/06/2021
+                                                </p>
+                                                <h1 class="news__item--title bold">
+                                                    Elit Electronics Is Going To Joined Itemssphere 
+                                                    With Most Highest Percentage OF CHARITY
+                                                </h1>
+                                                <p class="news__item--desc regular">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi rem quo, nam atque tenetur dignissimos excepturi quas molestias, vero nulla alias. Nulla, quam natus. Nam, incidunt! Voluptate, debitis ducimus!
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div><!-- item end -->
+                                    <div class="splide__slide">
+                                        <a href="" class="news news__item d-flex flex-column">
+                                            <figure class="news__item--img">
+                                                <img src="img/news.png" alt="">
+                                            </figure>
+                                            <div class="news__item--text">
+                                                <p class="news__item--date regular">
+                                                    01/06/2021
+                                                </p>
+                                                <h1 class="news__item--title bold">
+                                                    Elit Electronics Is Going To Joined Itemssphere 
+                                                    With Most Highest Percentage OF CHARITY
+                                                </h1>
+                                                <p class="news__item--desc regular">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi rem quo, nam atque tenetur dignissimos excepturi quas molestias, vero nulla alias. Nulla, quam natus. Nam, incidunt! Voluptate, debitis ducimus!
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div><!-- item end -->
+                                    <div class="splide__slide">
+                                        <a href="" class="news news__item d-flex flex-column">
+                                            <figure class="news__item--img">
+                                                <img src="img/news.png" alt="">
+                                            </figure>
+                                            <div class="news__item--text">
+                                                <p class="news__item--date regular">
+                                                    01/06/2021
+                                                </p>
+                                                <h1 class="news__item--title bold">
+                                                    Elit Electronics Is Going To Joined Itemssphere 
+                                                    With Most Highest Percentage OF CHARITY
+                                                </h1>
+                                                <p class="news__item--desc regular">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nisi rem quo, nam atque tenetur dignissimos excepturi quas molestias, vero nulla alias. Nulla, quam natus. Nam, incidunt! Voluptate, debitis ducimus!
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div><!-- item end -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div><!-- news end -->
 
+                <!-- our shopt -->
                 <div class="col-12 col-lg-6">
                     <div class="products__section d-flex align-items-center justify-content-center justify-content-lg-between">
                         <div class="d-flex align-items-center">
@@ -1449,13 +1606,47 @@
                     </ul>
                     <!-- mobile version -->
                     <div class="d-block d-lg-none">
-                        mobile ourshop
+                        <div class="ourshop-slider">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <div class="splide__slide">
+                                        <li class="">
+                                            <a href="" class="ourshop__item--link">
+                                                <img src="img/alta.png" alt="" class="ourshop__item--img">
+                                            </a>
+                                        </li>
+                                    </div><!-- item end -->
+                                    <div class="splide__slide">
+                                        <li class="">
+                                            <a href="" class="ourshop__item--link">
+                                                <img src="img/alta.png" alt="" class="ourshop__item--img">
+                                            </a>
+                                        </li>
+                                    </div><!-- item end -->
+                                    <div class="splide__slide">
+                                        <li class="">
+                                            <a href="" class="ourshop__item--link">
+                                                <img src="img/alta.png" alt="" class="ourshop__item--img">
+                                            </a>
+                                        </li>
+                                    </div><!-- item end -->
+                                    <div class="splide__slide">
+                                        <li class="">
+                                            <a href="" class="ourshop__item--link">
+                                                <img src="img/alta.png" alt="" class="ourshop__item--img">
+                                            </a>
+                                        </li>
+                                    </div><!-- item end -->
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <!-- Tech delivered -->
+        <div class="container-lg mobile-container">
             <div class="delivered">
                 <div class="products__section d-flex align-items-center justify-content-center justify-content-lg-between">
                     <div class="d-flex align-items-center">
@@ -1464,7 +1655,7 @@
                     </div>
                 </div><!-- section head end -->
                 <!-- desktop verion -->
-                <div class="row d-none d-log-flex">
+                <div class="row d-none d-lg-flex">
                     <div class="col-3">
                         <div class="delivered__item">
                             <figure class="delivered__item--img">
@@ -1512,7 +1703,45 @@
                 </div>
                 <!-- mobile version -->
                 <div class="d-block d-lg-none">
-                    mobile version
+                    <div class="delivered-slider">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <div class="splide__slide">
+                                    <div class="delivered__item">
+                                        <figure class="delivered__item--img">
+                                            <img src="img/deliver.png" alt="">
+                                        </figure>
+                                        <h1 class="delivered__item--title bold">Name of Blog article for Jake Blake</h1>
+                                        <p class="delivered__item--desc regular">
+                                            On August 23rd my son was shot multiple times in the back by a … >
+                                        </p>
+                                    </div>
+                                </div><!-- item end -->
+                                <div class="splide__slide">
+                                    <div class="delivered__item">
+                                        <figure class="delivered__item--img">
+                                            <img src="img/deliver.png" alt="">
+                                        </figure>
+                                        <h1 class="delivered__item--title bold">Name of Blog article for Jake Blake</h1>
+                                        <p class="delivered__item--desc regular">
+                                            On August 23rd my son was shot multiple times in the back by a … >
+                                        </p>
+                                    </div>
+                                </div><!-- item end -->
+                                <div class="splide__slide">
+                                    <div class="delivered__item">
+                                        <figure class="delivered__item--img">
+                                            <img src="img/deliver.png" alt="">
+                                        </figure>
+                                        <h1 class="delivered__item--title bold">Name of Blog article for Jake Blake</h1>
+                                        <p class="delivered__item--desc regular">
+                                            On August 23rd my son was shot multiple times in the back by a … >
+                                        </p>
+                                    </div>
+                                </div><!-- item end -->
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1651,6 +1880,8 @@
     <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
     <!-- <script src="js/slider.js"></script> -->
     <script src="js/splide.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/pagination.js"></script>
     <script src="js/function.js"></script>
 
 </body>

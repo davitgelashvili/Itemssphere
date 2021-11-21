@@ -2,12 +2,14 @@
     margin-top: 54px;
     
     &__item {
-        width: 100%;
+        // width: 100%;
 
         &--img {
             width: 100%;
             max-height: 400px;
             height: 100vw;
+            border-radius: 20px;
+            overflow: hidden;
 
             img {
                 width: 100%;
@@ -30,6 +32,10 @@
             font-size: 13px;
             line-height: 17px;
             text-align: center;
+        }
+
+        @media (max-width: 1024px) {
+            margin-right: 18px;    
         }
     }
 }

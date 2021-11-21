@@ -4,8 +4,17 @@
         font-size: 20px;
         line-height: 27px;
 
+        @media (max-width:1025px) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
         &--text {
             color: #3D3D3D;
+
+            @media (max-width:1025px) {
+                font-family: 'Bold';
+            }
         }
 
         &--link {

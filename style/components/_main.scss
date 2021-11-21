@@ -10,6 +10,10 @@ h1,h2,h3,h4,h5,h6 {
 body {
     background-color: #FBFBFB;
     overflow-x: hidden;
+
+    @media (max-width: 1025px) {
+        padding-bottom: 35px;
+    }
 }
 
 $boxshadow: 0 3px 6px rgba(#000000, .16);
@@ -35,6 +39,11 @@ $boxshadow: 0 3px 6px rgba(#000000, .16);
             right: 0;
         }
     }
+
+    &__track {
+        // margin-left: -18px;
+        // margin-right: -9px;
+    }
 }
 
 .touch {
@@ -42,6 +51,13 @@ $boxshadow: 0 3px 6px rgba(#000000, .16);
     overflow: hidden;
     transition: 0.5s;
     transform: rotate(0deg);
+}
+
+.ui-loader {
+    display: none;
+}
+.ui-textinput {
+    width: 100%;
 }
 
 @media (max-width: 1024px) {

@@ -45,6 +45,10 @@
             line-height: 20px;
             text-decoration: none;
         }
+
+        @media (max-width: 769px) {
+            padding-left: 0;
+        }
     }
 }
 

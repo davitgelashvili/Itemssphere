@@ -1,0 +1,5 @@
+<svg id="trolley" xmlns="http://www.w3.org/2000/svg" width="24" height="19.999" viewBox="0 0 24 19.999">
+  <path id="Path_393" data-name="Path 393" d="M19.09,19H10.1a2.907,2.907,0,0,1-2.8-2.07l-3.04-10.3A.9.9,0,0,0,3.382,6H1A1,1,0,1,1,1,4H3.382a2.905,2.905,0,0,1,2.8,2.07L6.748,8H22.042a1.972,1.972,0,0,1,1.583.795,1.889,1.889,0,0,1,.288,1.7L21.85,17.039A2.9,2.9,0,0,1,19.09,19Zm2.953-9h.01Z" transform="translate(0 -4)" fill="#9a9a9a"/>
+  <path id="Path_394" data-name="Path 394" d="M11,24a2,2,0,1,1,2-2A2,2,0,0,1,11,24Zm0-2h0Z" transform="translate(0 -4.001)" fill="#9a9a9a"/>
+  <path id="Path_395" data-name="Path 395" d="M18,24a2,2,0,1,1,2-2A2,2,0,0,1,18,24Zm0-2h0Z" transform="translate(-0.001 -4.001)" fill="#9a9a9a"/>
+</svg>
