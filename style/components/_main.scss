@@ -34,9 +34,21 @@ $boxshadow: 0 3px 6px rgba(#000000, .16);
         transform: unset;
         z-index: 1;
         left: unset;
+
+        svg {
+            width: unset;
+            height: unset;
+            fill: unset;
+        }
         
         &--next {
             right: 0;
+        }
+
+        &--prev {
+            svg {
+                transform: unset;
+            }
         }
     }
 
@@ -45,6 +57,7 @@ $boxshadow: 0 3px 6px rgba(#000000, .16);
         // margin-right: -9px;
     }
 }
+
 
 .touch {
     width: 100%;

@@ -44,8 +44,19 @@ body {
   left: unset;
 }
 
+.splide__arrow svg {
+  width: unset;
+  height: unset;
+  fill: unset;
+}
+
 .splide__arrow--next {
   right: 0;
+}
+
+.splide__arrow--prev svg {
+  -webkit-transform: unset;
+          transform: unset;
 }
 
 .touch {
@@ -324,7 +335,7 @@ body {
   list-style: none;
 }
 
-.m-header__menu--li:last-child .m-header__menu--icon {
+.m-header__menu--li:last-child .m-header__menu--figure {
   border-right: none;
 }
 
@@ -652,7 +663,7 @@ body {
 }
 
 .item-slider__navs--next {
-  right: 17px;
+  right: 0;
 }
 
 .social-program-slider {

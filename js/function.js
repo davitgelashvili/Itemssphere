@@ -104,7 +104,7 @@ const convertImages = (query, callback) => {
     });
   }
   
-  convertImages('img');
+  convertImages('.convert-svg');
 
   $(function(){
     $("a").each(function(){
