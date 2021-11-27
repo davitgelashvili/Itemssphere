@@ -6,6 +6,10 @@
     box-shadow: $boxshadow;
     padding: 10px 0 29px 18px;
 
+    &__shop {
+        height: auto;
+    }
+
     &--title {
         margin-bottom: 14px;
         color: #3D3D3D;

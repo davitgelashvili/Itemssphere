@@ -8,9 +8,10 @@ function PageMargin(){
 }
 
 var pageNamesData = [
-    'product',
-    'index',
-    'shop',
+    'market-touch',
+    'shop-touch',
+    'social-program-touch',
+    'charities-touch',
 ]
 var TransformActive = false;
 

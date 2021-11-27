@@ -1,0 +1,47 @@
+.popup {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(16px);
+    background-color: rgba(#000, 0.2);
+    z-index: 10;
+
+    &.active{
+        display: flex;
+    }
+
+    &__container {
+        width: 100%;
+        max-width: 400px;
+        max-height: 100%;
+        background-color: #fff;
+        border-radius: 20px;
+        display: block;
+        position: relative;
+        overflow: auto;
+
+        @media (max-width: 1024px) {
+            height: 100%;
+            border-radius: 0;
+        }
+    }
+
+    &__close {
+        cursor: pointer;
+        outline: none;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 11px;
+        right: 11px;
+        z-index: 1;
+
+        @media (max-width: 1024px) {
+            right: unset;
+            left: 18px;
+            top: 19px;
+        }
+    }
+}

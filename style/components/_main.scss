@@ -59,6 +59,10 @@ $boxshadow: 0 3px 6px rgba(#000000, .16);
 .ui-textinput {
     width: 100%;
 }
+.ui-focus {
+    border: none;
+    outline: none;
+}
 
 @media (max-width: 1024px) {
     .mobile-container {

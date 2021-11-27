@@ -1,5 +1,5 @@
-
-new Splide( '.main-slider', {
+let MainSlider = $('.main-slider');
+MainSlider && new Splide( '.main-slider', {
     type: 'slide',
     perPage: 1,
     autoplay: true,
@@ -20,11 +20,12 @@ new Splide( '.main-slider', {
     },
 }).mount();
 
-
-document.querySelectorAll('.products-slider').forEach( (item, key) => {
+let ProdouctSlider = document.querySelectorAll('.products-slider');
+ProdouctSlider && ProdouctSlider.forEach( (item, key) => {
     item.classList.add(`products-slider-${key}`)
 
-    new Splide( `.products-slider-${key}`, {
+    let ProdouctSliderFunction = $(`.products-slider-${key}`);
+    ProdouctSliderFunction && new Splide( `.products-slider-${key}`, {
         type: 'slide',
         autoplay: false,
         perPage: 5,
@@ -41,7 +42,8 @@ document.querySelectorAll('.products-slider').forEach( (item, key) => {
 
 })
 
-new Splide( `.social-program-slider`, {
+let SocialSlider = $('.social-program-slider');
+SocialSlider && new Splide( `.social-program-slider`, {
     type: 'slide',
     autoplay: false,
     perPage: 3,
@@ -64,7 +66,8 @@ new Splide( `.social-program-slider`, {
     updateOnMove: true,
 }).mount();
 
-new Splide( `.charity-slider`, {
+let CharitySlider = $('.charity-slider');
+CharitySlider && new Splide( `.charity-slider`, {
     type: 'slide',
     autoplay: false,
     perPage: 2,
@@ -88,11 +91,12 @@ new Splide( `.charity-slider`, {
     updateOnMove: true,
 }).mount();
 
-
-document.querySelectorAll('.item-slider').forEach( (item, key) => {
+let ItemSlider = document.querySelectorAll('.item-slider');
+ItemSlider && ItemSlider.forEach( (item, key) => {
     item.classList.add(`item-slider-${key}`)
 
-    new Splide( `.item-slider-${key}`, {
+    let ItemSliderFunction = $(`.item-slider-${key}`);
+    ItemSliderFunction && new Splide( `.item-slider-${key}`, {
         type: 'loop',
         perPage: 1,
         autoplay: false,
@@ -103,7 +107,8 @@ document.querySelectorAll('.item-slider').forEach( (item, key) => {
 
 })
 
-new Splide( `.ourshop-slider`, {
+let OurShopSlider = $('.ourshop-slider');
+OurShopSlider && new Splide( `.ourshop-slider`, {
     type: 'slide',
     autoplay: false,
     perPage: 3,
@@ -115,7 +120,8 @@ new Splide( `.ourshop-slider`, {
     updateOnMove: true,
 }).mount();
 
-new Splide( `.delivered-slider`, {
+let DeliverSlider = $('.delivered-slider');
+DeliverSlider && new Splide( `.delivered-slider`, {
     type: 'slide',
     autoplay: false,
     perPage: 1,
@@ -135,7 +141,8 @@ new Splide( `.delivered-slider`, {
     updateOnMove: true,
 }).mount();
 
-new Splide( `.news-slider`, {
+let NewsSlider = $('.news-slider');
+NewsSlider && new Splide( `.news-slider`, {
     type: 'slide',
     autoplay: false,
     perPage: 1,

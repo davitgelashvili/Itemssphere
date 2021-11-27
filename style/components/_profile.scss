@@ -1,0 +1,69 @@
+.profile {
+    width: 100vw;
+    max-width: 341px;
+    display: none;
+    position: absolute;
+    top: calc(100% + 40px);
+    box-shadow: $boxshadow;
+    border-radius: 24px;
+    background-color: #fff;
+    z-index: 2;
+
+    &.active {
+        display: block;
+    }
+
+    &__head {
+        padding: 30px;
+
+        &--title {
+            color: #000;
+            font-size: 20px;
+            margin-bottom: 4px;
+        }
+
+        &--mail {
+            color: #40CF25;
+            font-size: 15px;
+        }
+    }
+
+    &__menu {
+        border-top: 1px solid #E6E6E6;
+
+        &--li {
+            width: 100%;
+            list-style: none;
+        }
+
+        &--link {
+            padding: 7px 30px ;
+            display: block;
+            color: #828282;
+            font-size: 15px;
+            text-decoration: none;
+
+            &:hover {
+                background-color: #F3F3F3;
+            }
+        }
+    }
+
+    &__logout {
+        border-top: 1px solid #E6E6E6;
+        padding: 17px 30px ;
+
+        &--btn {
+            background-color: transparent;
+            color: #206DFC;
+            font-size: 15px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.mobile-profile {
+    padding: 50px 0;
+}

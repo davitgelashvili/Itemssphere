@@ -143,6 +143,10 @@
         box-shadow: $boxshadow;
         position: relative;
 
+        &.shop__item {
+            margin: 0 0 24px 0;
+        }
+
         &--fav {
             position: absolute;
             z-index: 1;
@@ -280,6 +284,10 @@
 .social-program-slider {
     width: calc(100% - 450px);
 
+    @media (max-width: 1199px) {
+        width: calc(100% - 350px);        
+    }
+
     &__navs {
         position: absolute;
         right: 0;
@@ -314,6 +322,10 @@
         background-color: #fff;
         box-shadow: $boxshadow;
         overflow: hidden;
+
+        &.shop__item {
+            margin: 0 0 24px 0;
+        }
 
         &--cover {
             width: 100%;
