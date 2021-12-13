@@ -102,12 +102,37 @@ const convertImages = (query, callback) => {
       .then(callback)
       .catch(error => console.error(error))
     });
-  }
-  
-  convertImages('.convert-svg');
-
-  $(function(){
+}
+convertImages('.convert-svg');
+$(function(){
     $("a").each(function(){
-      $(this).attr("rel","external");
+        $(this).attr("rel","external");
     });
-  });
+});
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    var let = document.querySelector('.header').clientHeight;
+    document.querySelector('.head-menu--fix').style.top = `${let}px`;
+});
+
+$(function() {
+    $(".quantity__btn").on("click", function() {
+
+        var $button = $(this);
+        var oldValue = $button.parent().find("input").val();
+      
+        if ($button.text() == "+") {
+            var newVal = parseFloat(oldValue) + 1;
+          } else {
+         // Don't allow decrementing below zero
+          if (oldValue > 0) {
+            var newVal = parseFloat(oldValue) - 1;
+          } else {
+            newVal = 0;
+          }
+        }
+      
+        $button.parent().find("input").val(newVal);
+      
+      });
+});

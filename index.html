@@ -103,12 +103,12 @@
                                 <img src="img/svg/header-btn/zari.svg" alt="">
                             </a>
                         </li>
-                        <li class="header__btns--item">
+                        <li class="header__btns--item click-open" data-active="wishlist-popup">
                             <a href="" class="header__btns--link d-flex align-items-center justify-content-center">
                                 <img src="img/svg/header-btn/heart.svg" alt="">
                             </a>
                         </li>
-                        <li class="header__btns--item">
+                        <li class="header__btns--item click-open" data-active="cart-popup">
                             <div class="header__btns--item--count d-flex justify-content-center align-items-center regular">
                                 1
                             </div>
@@ -226,33 +226,35 @@
     </header>
 
     <!-- head menu -->   
-    <div class="container d-none d-lg-block ">
-        <div class="head-menu d-flex justify-content-between align-items-center">
-            <ul class="head-menu__categories d-flex">
-                <li class="head-menu__categories--item">
-                    <a href="" class="head-menu__categories--link regular">Market</a>
-                </li>
-                <li class="head-menu__categories--item">
-                    <a href="" class="head-menu__categories--link regular">Shop</a>
-                </li>
-                <li class="head-menu__categories--item">
-                    <a href="" class="head-menu__categories--link regular">Charitys And Other NPOs</a>
-                </li>
-                <li class="head-menu__categories--item">
-                    <a href="" class="head-menu__categories--link regular">Social Programs</a>
-                </li>
-                <li class="head-menu__categories--item">
-                    <a href="" class="head-menu__categories--link regular">News</a>
-                </li>
-            </ul>
-            <ul class="head-menu__categories d-flex">
-                <li class="head-menu__categories--item">
-                    <a href="" class="head-menu__categories--link regular">About us</a>
-                </li>
-                <li class="head-menu__categories--item">
-                    <a href="" class="head-menu__categories--link regular">Help&Contact</a>
-                </li>
-            </ul>
+    <div class="head-menu--fix d-none d-lg-block">
+        <div class="container">
+            <div class="head-menu d-flex justify-content-between align-items-center">
+                <ul class="head-menu__categories d-flex">
+                    <li class="head-menu__categories--item">
+                        <a href="/market-touch.html" class="head-menu__categories--link regular">Market</a>
+                    </li>
+                    <li class="head-menu__categories--item">
+                        <a href="shop-touch.html" class="head-menu__categories--link regular">Shop</a>
+                    </li>
+                    <li class="head-menu__categories--item">
+                        <a href="charities-touch.html" class="head-menu__categories--link regular">Charitys And Other NPOs</a>
+                    </li>
+                    <li class="head-menu__categories--item">
+                        <a href="social-program-touch.html" class="head-menu__categories--link regular">Social Programs</a>
+                    </li>
+                    <li class="head-menu__categories--item">
+                        <a href="" class="head-menu__categories--link regular">News</a>
+                    </li>
+                </ul>
+                <ul class="head-menu__categories d-flex">
+                    <li class="head-menu__categories--item">
+                        <a href="" class="head-menu__categories--link regular">About us</a>
+                    </li>
+                    <li class="head-menu__categories--item">
+                        <a href="" class="head-menu__categories--link regular">Help&Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -2097,12 +2099,93 @@
         </div>
     </div>
 
+    <!-- card popup -->
+    <div class="popup open-active align-items-start justify-content-end" data-active="cart-popup">
+        <div class="cart-popup">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="sign-in__title bold">Cart</h1>
+                <button class="popup__close close-click" data-active="cart-popup">
+                    <img src="img/svg/popup-close.svg" alt="" class="d-none d-lg-block">
+                    <img src="img/svg/popup-back-btn.svg" alt="" class="d-block d-lg-none">
+                </button>
+            </div>
+            <div class="cart-item d-flex justify-content-start flex-wrap ">
+                <figure class="cart-item__img d-flex align-items-center justify-content-center">
+                    <img src="img/iphone-white.jpg" alt="">
+                </figure>
+                <div class="cart-item__content d-flex">
+                    <div class="cart-item__content--text d-flex flex-column align-items-start">
+                        <div class="products-slider__item--status regular">
+                            NEW
+                        </div>
+                        <a href="" class="products-slider__item--name regular">
+                            TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                        </a>
+                        <div class="products-slider__item--price bold">
+                            ₾1,239.39
+                        </div>
+                    </div>
+                    <div>
+                        <button>
+                            <img src="img/svg/header-btn/bar-wishlist.svg" alt="">
+                        </button>
+                        <button>
+                            <img src="img/svg/header-btn/bar-wishlist.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- wishlist popup -->
+    <div class="popup open-active align-items-start justify-content-end" data-active="wishlist-popup">
+        <div class="cart-popup">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="sign-in__title bold">Wishlist</h1>
+                <button class="popup__close close-click" data-active="wishlist-popup">
+                    <img src="img/svg/popup-close.svg" alt="" class="d-none d-lg-block">
+                    <img src="img/svg/popup-back-btn.svg" alt="" class="d-block d-lg-none">
+                </button>
+            </div>
+            <div class="cart-item d-flex justify-content-start flex-wrap ">
+                <figure class="cart-item__img d-flex align-items-center justify-content-center">
+                    <img src="img/iphone-white.jpg" alt="">
+                </figure>
+                <div class="cart-item__content d-flex">
+                    <div class="cart-item__content--text d-flex flex-column align-items-start">
+                        <div class="products-slider__item--status regular">
+                            NEW
+                        </div>
+                        <a href="" class="products-slider__item--name regular">
+                            TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                        </a>
+                        <div class="products-slider__item--price bold">
+                            ₾1,239.39
+                        </div>
+                    </div>
+                    <div>
+                        <button>
+                            <img src="img/svg/header-btn/bar-wishlist.svg" alt="">
+                        </button>
+                        <button>
+                            <img src="img/svg/header-btn/bar-wishlist.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
     <script src="js/splide.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/pagination.js"></script>
     <script src="js/function.js"></script>
+    <script>
+        MainPageSliderFunction()
+    </script>
 
 </body>
 </html>
