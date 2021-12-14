@@ -1,0 +1,15 @@
+.page{
+    &__navigation{
+        margin: 50px 0;
+        
+        
+        &--btn{
+            padding: 20px 30px;
+            outline: none;
+            border-radius: 10px;
+            background-color: green;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

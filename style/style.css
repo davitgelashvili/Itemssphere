@@ -2080,4 +2080,17 @@ body {
 .cart-total__body {
   padding: 21px 31px;
 }
+
+.page__navigation {
+  margin: 50px 0;
+}
+
+.page__navigation--btn {
+  padding: 20px 30px;
+  outline: none;
+  border-radius: 10px;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
