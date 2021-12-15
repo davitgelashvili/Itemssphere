@@ -69,3 +69,57 @@
     }
 
 }
+.cart-total{
+    &__desc h1{
+        color:#000000;
+        text-transform: bold;
+        font-size: 30px;
+    }
+}
+.cart-total{
+    &__body  button{
+        background-color:#42d921 ;
+        color:white;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 39px;
+        border:none;
+        padding-left: 55px;
+        padding-right: 55px;
+        padding-top: 21px;
+        padding-bottom: 21px;
+        margin: 20px 0;
+
+    }
+}
+.cart-total{
+    &__title h1{
+        color:#000000;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform:capitalize;
+    }
+}
+.cart-total{
+    &__title p{
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color:#000000;
+        margin: 10px 0;
+        text-transform: capitalize;
+    }
+}
+.cart-total{
+    &__desc p{
+        margin: 10px 0;
+    }
+}
+.cart-total{
+    &__body p span{
+        color:#206dfc;
+        font-size: 15px;
+        font-weight: bold;
+        margin: 50px 0;
+
+    }
+}
