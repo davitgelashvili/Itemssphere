@@ -66,6 +66,74 @@
 
     &__body {
         padding: 21px 31px;
+        .type {
+            color:#206DfC;
+            /*margin-left: 30px;*/
+            font-size: 15px;
+            font-family: bold;
+            margin-left: 20px;
+        }
+        .shipping-type{
+            font-size: 18px;
+            font-family: bold;
+            text-transform: capitalize;
+            margin-top: 11px;
+        }
+        button{
+            background-color:#42d921 ;
+            color:white;
+            font-size: 15px;
+            font-family: bold;
+            border-radius: 25px;
+            border:none;
+            outline: none;
+            padding: 13px 47px;
+            margin-left: 25px;
+            margin-top: 15px;
+        }
+        .click{
+            font-size: 15px;
+            text-align: center;
+            margin-top: 10px;
+            font-family: regular;
+
+        }
     }
 
+
+    &__title{
+        .title{
+            color: #000000;
+            font-family:bold;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        .product{
+            color:#000000;
+            font-size:15px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-transform: capitalize;
+            margin-top: 8px;
+        }
+        .sale{
+            font-size:15px;
+            text-transform: capitalize;
+            margin-top: 8px;
+        }
+        .shipping-price{
+            margin-top: 8px;
+            text-transform:capitalize;
+            font-size: 15px;
+        }
+    }
+    &__desc{
+        .desc{
+            font-size: 30px;
+            font-family:bold;
+        }
+        .classes{
+            margin-top: 8px;
+            font-size: 15px;
+        }
+    }
 }
