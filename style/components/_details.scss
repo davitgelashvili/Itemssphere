@@ -1,0 +1,75 @@
+.shop-detail {
+    
+    &__info {
+
+        &--title {
+            color: #000;
+            font-size: 20px;
+        }
+
+        &--create-data {
+            color: #707070;
+            font-size: 13px;
+        }
+
+        &--manufacturing-data {
+            margin-right: 54px;
+            color: #3D3D3D;
+            font-size: 15px;
+        }
+
+        &--color {
+            p {
+                color: #3D3D3D;
+            }
+
+            span {
+                color: #3D3D3D;
+            }
+            font-size: 15px;
+
+            &__products {
+                li {
+                    list-style: none;
+                    margin-right: 7px;
+
+                    a {
+                        width: 47px;
+                        height: 47px;
+                        text-decoration: none;
+                        display: block;
+                        background-color: #fff;
+                        border-radius: 10px;
+                        overflow: hidden;
+
+                        &.active {
+                            border: 1px solid #42D921;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__window-banner {
+        box-shadow: $boxshadow;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 11px 18px;
+
+        &--title {
+            color: #3D3D3D;
+            font-size: 20px;
+        }
+    }
+
+    &__donation {
+
+    }
+}

@@ -1,0 +1,28 @@
+.about-page {
+
+    &__context {
+        margin: 25px 0;
+        border: 1px solid #41C227;
+        border-radius: 12px;
+        padding: 22px;
+
+        &--title {
+            color: #000;
+            font-size: 18px;
+        }
+
+        &--desc {
+            color: #5A5A5A;
+            font-size: 17px;
+        }
+
+        &--icon {
+            margin-right: 27px;
+        }
+
+        &--big-title {
+            color: #41C227;
+            font-size: 50px;
+        }
+    }
+}
