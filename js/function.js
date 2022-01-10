@@ -64,7 +64,8 @@ ActiveWinodw && ActiveWinodw.forEach(function(e) {
         document.querySelectorAll('.open-active').forEach(function(e){
             let elementActive = e.getAttribute("data-active")
             if(elementActive == elementClick){
-                e.classList.toggle('active')
+                e.classList.toggle('active');
+                document.querySelector('body').style.overflowY = 'hidden';
             }
         })
     });
@@ -78,6 +79,19 @@ CloseActiveWindow && CloseActiveWindow.forEach(function(e) {
             let elementActive = e.getAttribute("data-active")
             if(elementActive == elementClick){
                 e.classList.toggle('active')
+                document.querySelector('body').style.overflowY = 'auto';
+            }
+        })
+    });
+});
+
+let CloseBgActiveWindow = document.querySelectorAll(".popup");
+CloseBgActiveWindow && CloseBgActiveWindow.forEach(function(e) {
+    e.addEventListener("click", function(i){
+        document.querySelectorAll('.open-active').forEach(function(e){
+            if(i.target == i.currentTarget){
+                e.classList.remove('active')
+                document.querySelector('body').style.overflowY = 'auto';
             }
         })
     });
@@ -134,3 +148,15 @@ $(function() {
       
       });
 });
+
+$('.shop-detail__tabs--menu').on( 'click', function(e) {
+    var thisData = this;
+    $('.shop-detail__tabs--content').each(function () {
+        if ($(this).data('tab') == $(thisData).data('tab')) {
+            $('.shop-detail__tabs--menu').removeClass('active');
+            $(thisData).addClass('active');
+            $('.shop-detail__tabs--content').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
+})

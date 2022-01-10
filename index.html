@@ -243,7 +243,7 @@
                         <a href="social-program-touch.html" class="head-menu__categories--link regular">Social Programs</a>
                     </li>
                     <li class="head-menu__categories--item">
-                        <a href="" class="head-menu__categories--link regular">News</a>
+                        <a href="news.html" class="head-menu__categories--link regular">News</a>
                     </li>
                 </ul>
                 <ul class="head-menu__categories d-flex">
@@ -2101,79 +2101,163 @@
 
     <!-- card popup -->
     <div class="popup open-active align-items-start justify-content-end" data-active="cart-popup">
-        <div class="cart-popup">
-            <div class="d-flex justify-content-between align-items-center">
+        <div class="cart-popup d-flex flex-column">
+            <div class="cart-popup--padding d-flex justify-content-between align-items-center">
                 <h1 class="sign-in__title bold">Cart</h1>
                 <button class="popup__close close-click" data-active="cart-popup">
                     <img src="img/svg/popup-close.svg" alt="" class="d-none d-lg-block">
                     <img src="img/svg/popup-back-btn.svg" alt="" class="d-block d-lg-none">
                 </button>
             </div>
-            <div class="cart-item d-flex justify-content-start flex-wrap ">
-                <figure class="cart-item__img d-flex align-items-center justify-content-center">
-                    <img src="img/iphone-white.jpg" alt="">
-                </figure>
-                <div class="cart-item__content d-flex">
-                    <div class="cart-item__content--text d-flex flex-column align-items-start">
-                        <div class="products-slider__item--status regular">
-                            NEW
+            <div class="cart-popup__list">
+                <div class="cart-popup--padding cart-item d-flex justify-content-start flex-wrap ">
+                    <figure class="cart-item__img d-flex align-items-center justify-content-center">
+                        <img src="img/iphone-white.jpg" alt="">
+                    </figure>
+                    <div class="cart-item__content d-flex">
+                        <div class="cart-item__content--text d-flex flex-column align-items-start">
+                            <div class="cart-item__new products-slider__item--status regular">
+                                NEW
+                            </div>
+                            <a href="" class="products-slider__item--name regular">
+                                TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                            </a>
+                            <div class="products-slider__item--price bold">
+                                ₾1,239.39
+                            </div>
+                            <div class="d-flex">
+                                <div class="shop-detail__info--color">
+                                    <p class="bold">Quantity </p>
+                                </div>
+                                <div>
+                                    <div class="shop-detail__info--quantity quantity d-flex align-items-center justify-content-between">
+                                        <div class="dec quantity__btn regular">-</div>
+                                        <input type="text" name="turtle-doves" value="0" class="quantity__input regular">
+                                        <div class="inc quantity__btn regular">+</div>
+                                    </div>
+                                    <p class="shop-detail__info--create-data regular">On stock: 249</p>
+                                </div>
+                            </div>
                         </div>
-                        <a href="" class="products-slider__item--name regular">
-                            TCL 40S325 40 Inch 1080p Smart LED Roku TV
-                        </a>
-                        <div class="products-slider__item--price bold">
-                            ₾1,239.39
+                        <div>
+                            <button class="cart-item--btn d-flex align-items-center justify-content-center">
+                                <img src="img/svg/header-btn/bar-wishlist.svg" alt="">
+                            </button>
+                            <button class="cart-item--btn d-flex align-items-center justify-content-center">
+                                <img src="img/svg/trash.svg" alt="">
+                            </button>
                         </div>
                     </div>
-                    <div>
-                        <button>
-                            <img src="img/svg/header-btn/bar-wishlist.svg" alt="">
-                        </button>
-                        <button>
-                            <img src="img/svg/header-btn/bar-wishlist.svg" alt="">
-                        </button>
+                </div><!-- item end -->
+                <div class="cart-popup--padding cart-item d-flex justify-content-start flex-wrap ">
+                    <figure class="cart-item__img d-flex align-items-center justify-content-center">
+                        <img src="img/iphone-white.jpg" alt="">
+                    </figure>
+                    <div class="cart-item__content d-flex">
+                        <div class="cart-item__content--text d-flex flex-column align-items-start">
+                            <div class="cart-item__new products-slider__item--status regular">
+                                NEW
+                            </div>
+                            <a href="" class="products-slider__item--name regular">
+                                TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                            </a>
+                            <div class="products-slider__item--price bold">
+                                ₾1,239.39
+                            </div>
+                            <div class="d-flex">
+                                <div class="shop-detail__info--color">
+                                    <p class="bold">Quantity </p>
+                                </div>
+                                <div>
+                                    <div class="shop-detail__info--quantity quantity d-flex align-items-center justify-content-between">
+                                        <div class="dec quantity__btn regular">-</div>
+                                        <input type="text" name="turtle-doves" value="0" class="quantity__input regular">
+                                        <div class="inc quantity__btn regular">+</div>
+                                    </div>
+                                    <p class="shop-detail__info--create-data regular">On stock: 249</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="cart-item--btn d-flex align-items-center justify-content-center">
+                                <img src="img/svg/header-btn/bar-wishlist.svg" alt="">
+                            </button>
+                            <button class="cart-item--btn d-flex align-items-center justify-content-center">
+                                <img src="img/svg/trash.svg" alt="">
+                            </button>
+                        </div>
                     </div>
-                </div>
+                </div><!-- item end -->
             </div>
+            <div class="cart-item__total bold d-flex align-items-end cart-popup--padding d-flex justify-content-end">
+                Total:
+                <h1 class="cart-item__total--count">₾2,239.39</h1>
+            </div>
+            <div class="cart-item__product-count d-flex justify-content-end regular cart-popup--padding">
+                2 products
+            </div>
+            <div class="cart-popup--padding">
+                <button class="cart-item__check-btn bold">Proceed To checkout</button>
+            </div>
+
         </div>
     </div>
 
     <!-- wishlist popup -->
     <div class="popup open-active align-items-start justify-content-end" data-active="wishlist-popup">
-        <div class="cart-popup">
-            <div class="d-flex justify-content-between align-items-center">
+        <div class="cart-popup d-flex flex-column">
+            <div class="cart-popup--padding d-flex justify-content-between align-items-center">
                 <h1 class="sign-in__title bold">Wishlist</h1>
                 <button class="popup__close close-click" data-active="wishlist-popup">
                     <img src="img/svg/popup-close.svg" alt="" class="d-none d-lg-block">
                     <img src="img/svg/popup-back-btn.svg" alt="" class="d-block d-lg-none">
                 </button>
             </div>
-            <div class="cart-item d-flex justify-content-start flex-wrap ">
-                <figure class="cart-item__img d-flex align-items-center justify-content-center">
-                    <img src="img/iphone-white.jpg" alt="">
-                </figure>
-                <div class="cart-item__content d-flex">
-                    <div class="cart-item__content--text d-flex flex-column align-items-start">
-                        <div class="products-slider__item--status regular">
-                            NEW
+            <div class="cart-popup__list">
+                <div class="cart-popup--padding cart-item d-flex justify-content-start flex-wrap ">
+                    <figure class="cart-item__img d-flex align-items-center justify-content-center">
+                        <img src="img/iphone-white.jpg" alt="">
+                    </figure>
+                    <div class="cart-item__content d-flex">
+                        <div class="cart-item__content--text d-flex flex-column align-items-start">
+                            <div class="cart-item__new products-slider__item--status regular">
+                                NEW
+                            </div>
+                            <a href="" class="products-slider__item--name regular">
+                                TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                            </a>
+                            <div class="products-slider__item--price bold">
+                                ₾1,239.39
+                            </div>
+                            <button class="cart-item--move-cart regular">
+                                move to cart
+                            </button>
                         </div>
-                        <a href="" class="products-slider__item--name regular">
-                            TCL 40S325 40 Inch 1080p Smart LED Roku TV
-                        </a>
-                        <div class="products-slider__item--price bold">
-                            ₾1,239.39
+                        <div>
+                            <button class="cart-item--btn d-flex align-items-center justify-content-center">
+                                <img src="img/svg/trash.svg" alt="">
+                            </button>
                         </div>
                     </div>
-                    <div>
-                        <button>
-                            <img src="img/svg/header-btn/bar-wishlist.svg" alt="">
-                        </button>
-                        <button>
-                            <img src="img/svg/header-btn/bar-wishlist.svg" alt="">
-                        </button>
-                    </div>
-                </div>
+                </div><!-- item end -->
             </div>
+            <!-- checkbox -->
+            <label class="element__check d-flex align-items-center cart-popup--padding">
+                <div>
+                    <input type="checkbox" class="element__check--input">
+                    <span class="element__check--checked">
+                        <img src="./img/svg/checked.svg" alt="">
+                    </span>
+                </div>
+                <span class="element__check--text regular">
+                    I want to receive information about promotions and new arrivals
+                </span>
+            </label><!-- end -->
+            <div class="cart-popup--padding">
+                <button class="cart-item__wishlist-go">Go TO WISH LIST</button>
+                <button class="cart-item__compare">Compare</button>
+            </div>
+
         </div>
     </div>
 

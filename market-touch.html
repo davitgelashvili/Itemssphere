@@ -413,43 +413,33 @@
                             </div>
                         </div><!-- end -->
                         <form>
-                            <!-- checkbox -->
-                            <label class="element__check d-flex align-items-center">
-                                <div>
-                                    <input type="checkbox" class="element__check--input">
-                                    <span class="element__check--checked">
-                                        <img src="./img/svg/checked.svg" alt="">
-                                    </span>
-                                </div>
-                                <span class="element__check--text regular">
-                                    Name
-                                </span>
-                            </label><!-- end -->
-                            <!-- checkbox -->
-                            <label class="element__check d-flex align-items-center">
-                                <div>
-                                    <input type="checkbox" class="element__check--input">
-                                    <span class="element__check--checked">
-                                        <img src="./img/svg/checked.svg" alt="">
-                                    </span>
-                                </div>
-                                <span class="element__check--text regular">
-                                    Full Name
-                                </span>
-                            </label><!-- end -->
-                            <!-- checkbox -->
-                            <label class="element__check d-flex align-items-center">
-                                <div>
-                                    <input type="checkbox" class="element__check--input">
-                                    <span class="element__check--checked">
-                                        <img src="./img/svg/checked.svg" alt="">
-                                    </span>
-                                </div>
-                                <span class="element__check--text regular">
-                                    Name Name 
-                                </span>
-                            </label><!-- end -->
-                            <a href="" class="categories-filter--all-btn regular">View all</a>
+                            <!-- input -->
+                            <div class="min-max d-flex align-items-center">
+                                <label class="min-max__label">
+                                    <input type="text" class="min-max__label--input h-roman" placeholder="min" value="">
+                                </label>
+                                <label class="min-max__label">
+                                    <input type="text" class="min-max__label--input h-roman" placeholder="max" value="">
+                                </label>
+                            </div>
+                            <!-- select -->
+                            <div class="select">
+                                <h1 class="select__title regular">Choose shipping type:</h1>
+                                <select name="" id="" class="select__list regular">
+                                    <option value="" class="select__list--item">Delivery</option>
+                                    <option value="" class="select__list--item">erti</option>
+                                    <option value="" class="select__list--item">ori</option>
+                                </select>
+                            </div>
+                            <!-- select -->
+                            <div class="select">
+                                <h1 class="select__title regular">Location:</h1>
+                                <select name="" id="" class="select__list regular">
+                                    <option value="" class="select__list--item">Tbilisi</option>
+                                    <option value="" class="select__list--item">erti</option>
+                                    <option value="" class="select__list--item">ori</option>
+                                </select>
+                            </div>
                         </form>
                     </div><!-- end -->
 
@@ -554,6 +544,17 @@
                 <div class="col">
                     <div class="row">
                         <div class="col-12">
+                            <ul class="page__navigation--links d-flex">
+                                <li class="page__navigation--link regular">
+                                    <a href="">Home</a>
+                                </li>
+                                <li class="page__navigation--link regular">
+                                    >
+                                    <a href="">Home</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12">
                             <!-- slider -->
                             <div class="product-page-banner-slider  d-flex align-items-center">
                                 <div class="splide__arrows product-page-banner-slider__navs d-none d-lg-flex">
@@ -648,16 +649,52 @@
                                     <div class="col-3">
                                         <div class="product-filter__item">
                                             <p class="product-filter__item--title regular">Sort by</p>
-                                            <select name="" id="" class="regular">
-                                                <option value="">feature</option>
-                                                <option value="">erti</option>
-                                                <option value="">ori</option>
-                                            </select>
+                                            <!-- select -->
+                                            <div class="select">
+                                                <select name="" id="" class="select__list regular">
+                                                    <option value="" class="select__list--item">Delivery</option>
+                                                    <option value="" class="select__list--item">erti</option>
+                                                    <option value="" class="select__list--item">ori</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div><!-- end -->
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12">
+                            <div class="page__title regular">
+                                Top offers <span>More 60,000 products</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="products-slider__item shop__item">
+                                <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
+                                <!-- item slider -->
+                                <div class="item-slider__item">
+                                    <img src="img/watch.png" alt="">
+                                </div>
+                                <div class="products-slider__item--footer d-flex flex-column align-items-start">
+                                    <div class="products-slider__item--status regular">
+                                        NEW
+                                    </div>
+                                    <div class="products-slider__item--price bold">
+                                        ₾1,239.39
+                                    </div>
+                                    <a href="" class="products-slider__item--name regular">
+                                        TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                                    </a>
+                                    <div class="products-slider__item--stars regular d-flex align-items-center">
+                                        <div class="products-slider__item--stars--item products-slider__item--stars--item--active"></div>
+                                        <div class="products-slider__item--stars--item products-slider__item--stars--item--active"></div>
+                                        <div class="products-slider__item--stars--item products-slider__item--stars--item--active"></div>
+                                        <div class="products-slider__item--stars--item products-slider__item--stars--item--active"></div>
+                                        <div class="products-slider__item--stars--item"></div>
+                                        <span>132 review</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end -->
                         <div class="col-lg-3 col-6">
                             <div class="products-slider__item shop__item">
                                 <button class="products-slider__item--fav"><img src="img/svg/product-fav.svg" alt=""></button>
@@ -689,7 +726,7 @@
 
                         <div class="col-12">
                             <div class="page__navigation d-flex justify-content-center">
-                                <button class="page__navigation--btn">More</button>
+                                <button class="page__navigation--btn bold">More</button>
                             </div>
                         </div>
                     </div>

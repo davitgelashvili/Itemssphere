@@ -391,6 +391,18 @@
         &--btns {
             margin-top: 15px;
         }
+
+        &--donate {
+            background-color: #41C227;
+            border-radius: 100px;
+            border: none;
+            padding: 8px 27px;
+            margin-top: 19px;
+            margin-left: 18px;
+            font-size: 15px;
+            color: #fff;
+            cursor: pointer;
+        }
     }
 }
 

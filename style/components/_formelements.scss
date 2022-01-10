@@ -1,28 +1,4 @@
 .element {
-    &__select {
-        width: 100%;
-        margin-bottom: 24px;
-
-        &--btn {
-            width: 100%;
-            background-color: #fff;
-            border: 1px solid #DEDFE4;
-            border-radius: 8px !important;
-            padding: 19px 30px;
-            overflow: hidden;
-        }
-
-        &--text {
-            color: #9495A5;
-            font-size: 14px;
-        }
-
-        &--item {
-            color: #9495A5;
-            font-size: 14px;
-        }
-    }
-
     &__check {
         margin-bottom: 3px;
 
@@ -207,6 +183,54 @@
             right: 8px;
             z-index: 2;
             cursor: pointer;
+        }
+    }
+}
+
+.min-max {
+    border: 2px solid #F2F2F2;
+    border-radius: 38px;
+    overflow: hidden;
+    margin: 16px 0;
+
+    &__label {
+        border-right: 1px solid #F2F2F2;
+        
+        &--input {
+            width: 100%;
+            padding: 7px 15px;
+            outline: none;
+            border: none;
+            color: #4E4E4E;
+            font-size: 13px;
+        }
+    }
+}
+
+.select {
+    margin-bottom: 10px;
+
+    .ui-selectmenu-button-text {
+        display: none;
+    }
+    &__title {
+        margin-bottom: 10px;
+        color: #3D3D3D;
+        font-size: 15px;
+    }
+
+    &__list {
+        color: #000;
+        font-size: 15px;
+        outline: none;
+        border: 2px solid #F2F2F2;
+        border-radius: 38px;
+        background-color: #fff;
+        width: 100%;
+        padding: 5px 18px;
+
+        &--item {
+
         }
     }
 }
