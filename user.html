@@ -384,17 +384,17 @@
                         </div>
                     </div>
                     <div class="col-9">
-                        <h1 class="organization__header--title bold">
+                        <h1 class="organization__header--title bgcolor bold">
                             Davit Gelashvili
                         </h1>
                         <div class="d-flex">
-                            <div class="organization__header--follow regular">
+                            <div class="organization__header--follow regular d-flex align-items-center">
+                                <img src="img/svg/heart-red.svg" alt="">
                                 <p>20</p>
-                                <span>Followers</span>
                             </div>
-                            <div class="organization__header--follow regular">
-                                <p>15</p>
-                                <span>Following</span>
+                            <div class="organization__header--follow regular d-flex align-items-center">
+                                <img src="img/svg/share-blue.svg" alt="">
+                                <p>20</p>
                             </div>
                         </div>
                     </div>
@@ -405,33 +405,114 @@
                     <!-- dont delete -->
                 </div>
                 <div class="col-9">
-                    <div class="organization__contact d-flex align-items-center">
-                        <a href="">send message</a>
-                        <a href="">995 591 111 996</a>
-                        <a href="">datoogelashvili@gmail.com</a>
-                        <a href="">fb</a>
-                        <a href="">web</a>
+                    <div class="organization__contact d-flex align-items-center d-flex align-items-center">
+                        <a href="" class="organization__contact--menu d-flex align-items-center organization__contact--green bold">
+                            <img src="img/svg/sms-green.svg" alt="">
+                            send message</a>
+                        <a href="" class="organization__contact--menu d-flex align-items-center organization__contact--gray regular">
+                            <img src="img/svg/call-gray.svg" alt="">
+                            995 591 111 996
+                        </a>
+                        <a href="" class="organization__contact--menu d-flex align-items-center organization__contact--gray regular">
+                            <img src="img/svg/mail-gray.svg" alt="">
+                            datoogelashvili@gmail.com
+                        </a>
+                        <a href="" class="d-flex align-items-center">
+                            <img src="img/svg/fb-profile.svg" alt="">
+                        </a>
+                        <a href="" class="d-flex align-items-center">
+                            <img src="img/svg/web-profile.svg" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div>
-                        support
+                    <div class="user--content">
+                        <h1 class="user--title bold">SUPPORT</h1>
+                        <div class="d-flex justify-content-between">
+                            <div class="user--desc">
+                                You can sell some product and % give for charity
+                            </div>
+                            <div>
+                                <button>Sale For</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-8">
-                    <div>
-                        donate
+                    <div class="user--content">
+                        <div class="row">
+                            <div class="col-4">
+                                <h1 class="user--title bold">Donate</h1>
+                                <div class="user--desc">
+                                    You can donate some money For our fonds or some our Social programs. In this time we Collect money for 15 programs
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h1 class="user--title bold">We Already Rased </h1>
+                                dsds
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-8">
-                    about us
+                    <div class="user--content">
+                        <h1 class="user--title bold">ABOUT US</h1>
+                        <div class="user--desc">
+                            The NES Classic Edition system is a miniaturized version of the groundbreaking NES, originally released in 1985.  Just plug the NES Classic Edition into your TV, pick up that gray controller, and rediscover the joy of NES games.
+                        </div>
+                    </div>
                 </div>
                 <div class="col-4">
-                    <div>
-                        Our Donors
+                    <div class="user--content">
+                        <h1 class="user--title bold">Our Donors</h1>
+                        <div class="user-ourshop-slider">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <div class="splide__slide">
+                                        <li class="">
+                                            <a href="" class="ourshop__item--link">
+                                                <img src="img/alta.png" alt="" class="ourshop__item--img">
+                                            </a>
+                                        </li>
+                                    </div><!-- item end -->
+                                    <div class="splide__slide">
+                                        <li class="">
+                                            <a href="" class="ourshop__item--link">
+                                                <img src="img/alta.png" alt="" class="ourshop__item--img">
+                                            </a>
+                                        </li>
+                                    </div><!-- item end -->
+                                    <div class="splide__slide">
+                                        <li class="">
+                                            <a href="" class="ourshop__item--link">
+                                                <img src="img/alta.png" alt="" class="ourshop__item--img">
+                                            </a>
+                                        </li>
+                                    </div><!-- item end -->
+                                    <div class="splide__slide">
+                                        <li class="">
+                                            <a href="" class="ourshop__item--link">
+                                                <img src="img/alta.png" alt="" class="ourshop__item--img">
+                                            </a>
+                                        </li>
+                                    </div><!-- item end -->
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        CATEGORIES
+                    <div class="user--content">
+                        <h1 class="user--title bold">SUPPORT</h1>
+                        <ul class="user__categories">
+                            <li>
+                                <a href="">dsds</a>
+                            </li>
+                            <li>
+                                <a href="">dsds</a>
+                            </li>
+                            <li>
+                                <a href="">dsds</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -1071,6 +1152,24 @@
                     padding: {
                         right: '100px'
                     },
+                },
+            },
+            arrows: false,
+            pagination: false,
+            updateOnMove: true,
+        }).mount();
+
+        const ourshopSlider = $('.user-ourshop-slider');
+        ourshopSlider && new Splide( `.user-ourshop-slider`, {
+            type: 'slide',
+            autoplay: false,
+            perPage: 4,
+            breakpoints: {
+                768: {
+                    perPage: 2,
+                },
+                1024: {
+                    perPage: 4,
                 },
             },
             arrows: false,

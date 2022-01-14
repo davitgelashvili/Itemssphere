@@ -9,6 +9,13 @@
             margin-bottom: 25px;
             color: #fff;
             font-size: 30px;
+
+            &.bgcolor {
+                background-color: rgba(#000000, .16);
+                border-radius: 20px;
+                width: max-content;
+                padding: 2px 24px;
+            }
         }
 
         &--cover {
@@ -92,6 +99,7 @@
         border-radius: 20px;
         box-shadow: $boxshadow;
         background-color: #fff;
+        overflow: hidden;
 
         &--title {
             color: #000;
@@ -106,5 +114,32 @@
 
     &__col {
         width: calc(100% /5);
+    }
+
+    &__contact {
+        margin-top: -30px;
+
+        &--menu {
+            margin-right: 15px;
+            padding: 12px 25px;
+            border-radius: 100px;
+            text-decoration: none;
+
+            img {
+                margin-right: 10px;
+            }
+        }
+
+        &--green {
+            color: #2ADF00;
+            font-size: 15px;
+            border: 1px solid #2ADF00;
+        }
+
+        &--gray {
+            background-color: #EDEDED;
+            color: #000;
+            font-size: 18px;
+        }
     }
 }

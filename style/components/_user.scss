@@ -1,0 +1,15 @@
+.user {
+    &--content {
+        margin-top: 20px;
+        padding: 20px 30px;
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: $boxshadow;
+    }
+
+    &--title {
+        margin-bottom: 16px;
+        color: #000;
+        font-size: 18px;
+    }
+}

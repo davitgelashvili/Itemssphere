@@ -38,4 +38,46 @@
             margin-right: 18px;    
         }
     }
+
+    &__list {
+
+        &--item {
+            padding: 18px 28px;
+            margin-bottom: 23px;
+            border-radius: 20px;
+            border: 1px solid #E6E6E6;
+
+            &:hover {
+                border: 1px solid #2ADF00;
+            }
+        }
+
+        &--content {
+            margin-bottom: 19px;
+        }
+
+        &--title {
+            color: #535353;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        &--desc {
+            color: #000;
+            font-size: 18px;
+        }
+
+        &--buttons {
+            height: 100%;
+        }
+
+        &--main-addres {
+            color: #2ADF00;
+            font-size: 15px;
+
+            img {
+                margin-right: 11px;
+            }
+        }
+    }
 }
