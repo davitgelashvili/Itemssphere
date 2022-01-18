@@ -160,3 +160,18 @@ $('.shop-detail__tabs--menu').on( 'click', function(e) {
         }
     });
 })
+
+
+function fileUploadImage(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            var x= $(input).closest('.upload__image').find('.upload__image--uploaded');
+            x.attr('src', e.target.result);
+            x.show();
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}

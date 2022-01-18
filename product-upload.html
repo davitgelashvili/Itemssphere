@@ -363,13 +363,52 @@
             <div class="row">
                 <div class="col-5">
                     <div class="shop-detail__slider">
-                        <div class="shop-detail__main-slider d-flex align-items-center">
-                            ds
+                        <div class="shop-detail__main-slider">
+                            <label class="upload__image d-flex flex-column align-items-center justify-content-center">
+                                <img class="upload__image--icon" src="img/svg/upload-icon.svg" alt="">
+                                <div class="upload__image--text regular d-flex flex-column align-items-center">
+                                    <p>Drop Images to upload</p> 
+                                    <p>or</p>
+                                </div>
+                                <input 
+                                    type="file" 
+                                    class="upload__image--input h-roman"
+                                    onchange="fileUploadImage(this, value)">
+                                <img src="" alt="" class="upload__image--uploaded">
+                                <div class="upload__image--btn regular">Browse</div>
+                            </label>
                         </div>
                         <br />
                         <div class="shop-detail__mini-slider d-flex align-items-center">
                             <div class="shop-detail__mini-slider--cover d-flex align-items-center justify-content-center">
-                                dsds
+                                <label class="upload__image d-flex flex-column align-items-center justify-content-center">
+                                    <img class="upload__image--icon" src="img/svg/upload-icon.svg" alt="">
+                                    <input 
+                                        type="file" 
+                                        class="upload__image--input h-roman"
+                                        onchange="fileUploadImage(this, value)">
+                                    <img src="" alt="" class="upload__image--uploaded">
+                                </label>
+                            </div>
+                            <div class="shop-detail__mini-slider--cover d-flex align-items-center justify-content-center">
+                                <label class="upload__image d-flex flex-column align-items-center justify-content-center">
+                                    <img class="upload__image--icon" src="img/svg/upload-icon.svg" alt="">
+                                    <input 
+                                        type="file" 
+                                        class="upload__image--input h-roman"
+                                        onchange="fileUploadImage(this, value)">
+                                    <img src="" alt="" class="upload__image--uploaded">
+                                </label>
+                            </div>
+                            <div class="shop-detail__mini-slider--cover d-flex align-items-center justify-content-center">
+                                <label class="upload__image d-flex flex-column align-items-center justify-content-center">
+                                    <img class="upload__image--icon" src="img/svg/upload-icon.svg" alt="">
+                                    <input 
+                                        type="file" 
+                                        class="upload__image--input h-roman"
+                                        onchange="fileUploadImage(this, value)">
+                                    <img src="" alt="" class="upload__image--uploaded">
+                                </label>
                             </div>
                         </div>
                     </div>

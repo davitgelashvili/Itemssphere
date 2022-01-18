@@ -271,7 +271,7 @@
                     </a>
                 </li>
                 <li class="m-header__menu--li">
-                    <a href="" class="m-header__menu--a active regular d-flex flex-column align-items-center">
+                    <a href="" class="m-header__menu--a regular d-flex flex-column align-items-center">
                         <figure class="m-header__menu--figure d-flex justify-content-center">
                             <div class="m-header__menu--icon">
                                 <img src="img/svg/header-btn/shop-menu.svg" class="convert-svg" alt="">
@@ -281,7 +281,7 @@
                     </a>
                 </li>
                 <li class="m-header__menu--li">
-                    <a href="" class="m-header__menu--a regular d-flex flex-column align-items-center">
+                    <a href="" class="m-header__menu--a active regular d-flex flex-column align-items-center">
                         <figure class="m-header__menu--figure d-flex justify-content-center">
                             <div class="m-header__menu--icon">
                                 <img src="img/svg/header-btn/social-program-menu.svg" class="convert-svg" alt="">
@@ -358,93 +358,133 @@
         </div>
     </div>
 
-    <!-- categories, main slider, banner -->
-    <div class="container">
-        <div class="row">
-            <div class="col-7">
-                <ul>
-                    <li>
-                        <a href="about.html" target="_blank">about</a>
-                    </li>
-                    <li>
-                        <a href="blog.html" target="_blank">blog</a>
-                    </li>
-                    <li>
-                        <a href="blog-detail.html" target="_blank">blog-detail</a>
-                    </li>
-                    <li>
-                        <a href="cart.html" target="_blank">cart</a>
-                    </li>
-                    <li>
-                        <a href="charities-touch.html" target="_blank">charties</a>
-                    </li>
-                    <li>
-                        <a href="contact.html" target="_blank">contact</a>
-                    </li>
-                    <li>
-                        <a href="index.html" target="_blank">index</a>
-                    </li>
-                    <li>
-                        <a href="market-touch.html" target="_blank">market</a>
-                    </li>
-                    <li>
-                        <a href="myaccount.html" target="_blank">my account</a>
-                    </li>
-                    <li>
-                        <a href="news.html" target="_blank">news</a>
-                    </li>
-                    <li>
-                        <a href="organization-account.html" target="_blank">organization account</a>
-                    </li>
-                    <li>
-                        <a href="organization-delivery.html" target="_blank">organization delivery</a>
-                    </li>
-                    <li>
-                        <a href="organization-messages.html" target="_blank">organization messages</a>
-                    </li>
-                    <li>
-                        <a href="organization-order.html" target="_blank">organization order</a>
-                    </li>
-                    <li>
-                        <a href="organization-password.html" target="_blank">organization password</a>
-                    </li>
-                    <li>
-                        <a href="organization-products.html" target="_blank">organization products</a>
-                    </li>
-                    <li>
-                        <a href="organization-social.html" target="_blank">organization social</a>
-                    </li>
-                    <li>
-                        <a href="organization-sold.html" target="_blank">organization sold</a>
-                    </li>
-                    <li>
-                        <a href="policy.html" target="_blank">policy</a>
-                    </li>
-                    <li>
-                        <a href="shop-detail.html" target="_blank">shop-detail</a>
-                    </li>
-                    <li>
-                        <a href="shop-touch.html" target="_blank">shop</a>
-                    </li>
-                    <li>
-                        <a href="social-program-touch.html" target="_blank">social-program</a>
-                    </li>
-                    <li>
-                        <a href="social-program-detail.html" target="_blank">social-program-detail</a>
-                    </li>
-                    <li>
-                        <a href="user.html" target="_blank">user</a>
-                    </li>
-                    <li>
-                        <a href="product-upload.html" target="_blank">upload product</a>
-                    </li>
-                    <li>
-                        <a href="social-program-upload.html" target="_blank">upload social program</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-5">
-                right
+    <div class="shop-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <div class="shop-detail__slider">
+                        <div class="shop-detail__main-slider">
+                            <label class="upload__image d-flex flex-column align-items-center justify-content-center">
+                                <img class="upload__image--icon" src="img/svg/upload-icon.svg" alt="">
+                                <div class="upload__image--text regular d-flex flex-column align-items-center">
+                                    <p>Drop Images to upload</p> 
+                                    <p>or</p>
+                                </div>
+                                <input 
+                                    type="file" 
+                                    class="upload__image--input h-roman"
+                                    onchange="fileUploadImage(this, value)">
+                                <img src="" alt="" class="upload__image--uploaded">
+                                <div class="upload__image--btn regular">Browse</div>
+                            </label>
+                        </div>
+                        <br />
+                        <div class="shop-detail__mini-slider d-flex align-items-center">
+                            <div class="shop-detail__mini-slider--cover d-flex align-items-center justify-content-center">
+                                <label class="upload__image d-flex flex-column align-items-center justify-content-center">
+                                    <img class="upload__image--icon" src="img/svg/upload-icon.svg" alt="">
+                                    <input 
+                                        type="file" 
+                                        class="upload__image--input h-roman"
+                                        onchange="fileUploadImage(this, value)">
+                                    <img src="" alt="" class="upload__image--uploaded">
+                                </label>
+                            </div>
+                            <div class="shop-detail__mini-slider--cover d-flex align-items-center justify-content-center">
+                                <label class="upload__image d-flex flex-column align-items-center justify-content-center">
+                                    <img class="upload__image--icon" src="img/svg/upload-icon.svg" alt="">
+                                    <input 
+                                        type="file" 
+                                        class="upload__image--input h-roman"
+                                        onchange="fileUploadImage(this, value)">
+                                    <img src="" alt="" class="upload__image--uploaded">
+                                </label>
+                            </div>
+                            <div class="shop-detail__mini-slider--cover d-flex align-items-center justify-content-center">
+                                <label class="upload__image d-flex flex-column align-items-center justify-content-center">
+                                    <img class="upload__image--icon" src="img/svg/upload-icon.svg" alt="">
+                                    <input 
+                                        type="file" 
+                                        class="upload__image--input h-roman"
+                                        onchange="fileUploadImage(this, value)">
+                                    <img src="" alt="" class="upload__image--uploaded">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="shop-detail__info">
+                        <ul class="page__navigation--links d-flex">
+                            <li class="page__navigation--link regular">
+                                <a href="">Home</a>
+                            </li>
+                            <li class="page__navigation--link regular">
+                                >
+                                <a href="">Home</a>
+                            </li>
+                        </ul>
+                        <h1 class="shop-detail__info--title bold">Upload Social program</h1>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="upload">
+                                    <form class="upload__body">
+                                        <div class="upload__body--tab">
+                                            <div class="col-6">
+                                                <div class="cart-order__form--label">
+                                                    <span class="cart-order__form--title regular">
+                                                        <img src="img/svg/red-union.svg" alt="">
+                                                        title
+                                                    </span>
+                                                    <input type="text" class="cart-order__form--input regular" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="cart-order__form--label">
+                                                    <span class="cart-order__form--title regular">
+                                                        <img src="img/svg/red-union.svg" alt="">
+                                                        title
+                                                    </span>
+                                                    <textarea type="text" class="cart-order__form--input regular" placeholder="ქარ"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="cart-order__form--label">
+                                                    <span class="cart-order__form--title regular">
+                                                        <img src="img/svg/red-union.svg" alt="">
+                                                        title
+                                                    </span>
+                                                    <div class="select">
+                                                        <select name="" id="" class="select__list regular">
+                                                            <option value="" class="select__list--item">Tbilisi</option>
+                                                            <option value="" class="select__list--item">erti</option>
+                                                            <option value="" class="select__list--item">ori</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- end -->
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <button type="button" class="upload__body--next bold">List Project</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="d-flex justify-content-end">
+                                                    <button class="cart-order__body--btn cart-order__body--blue bold">Save as draft</button>
+                                                    <button class="cart-order__form--btn bold">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -577,160 +617,6 @@
         </div>
     </footer>
 
-    <!-- profile popup mobile -->
-    <div class="popup open-active d-lg-none align-items-center justify-content-center" data-active="mobile-popup-menu">
-        <div class="popup__container">
-            <button class="popup__close close-click" data-active="mobile-popup-menu">
-                <img src="img/svg/popup-close.svg" alt="" class="d-none d-lg-block">
-                <img src="img/svg/popup-back-btn.svg" alt="" class="d-block d-lg-none">
-            </button>
-            <div class="mobile-profile">
-                <h1 class="sign-in__title bold">Profile</h1>
-                <div class="profile__head">
-                    <h1 class="profile__head--title bold">Davit Gelashvili</h1>
-                    <p class="profile__head--mail regular">datoogelashvili@gmail.com</p>
-                </div>
-                <ul class="profile__menu regular">
-                    <li class="profile__menu--li">
-                        <a href="" class="profile__menu--link">Profile</a>
-                    </li>
-                    <li class="profile__menu--li">
-                        <a href="" class="profile__menu--link">Account Information</a>
-                    </li>
-                    <li class="profile__menu--li">
-                        <a href="" class="profile__menu--link">My Products</a>
-                    </li>
-                </ul>
-                <ul class="profile__menu regular">
-                    <li class="profile__menu--li">
-                        <a href="" class="profile__menu--link">Message</a>
-                    </li>
-                    <li class="profile__menu--li">
-                        <a href="" class="profile__menu--link">Change Password</a>
-                    </li>
-                </ul>
-                <div class="profile__logout">
-                    <button class="profile__logout--btn regular">Log Out</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- login popup -->
-    <div class="popup open-active align-items-center justify-content-center" data-active="login-popup">
-        <div class="popup__container">
-            <button class="popup__close close-click" data-active="login-popup">
-                <img src="img/svg/popup-close.svg" alt="" class="d-none d-lg-block">
-                <img src="img/svg/popup-back-btn.svg" alt="" class="d-block d-lg-none">
-            </button>
-            <div class="sign-in login">
-                <h1 class="sign-in__title bold">Sign in</h1>
-                <form class="sign-in__form">
-                    <label class="sign-in__form--label d-flex align-items-center">
-                        <input type="text" class="sign-in__form--input regular" placeholder="Email">
-                        <img src="img/svg/username.svg" alt="" class="sign-in__form--icon">
-                    </label>
-                    <label class="sign-in__form--label d-flex align-items-center">
-                        <input type="password" class="sign-in__form--input regular" placeholder="Password">
-                        <img src="img/svg/key.svg" alt="" class="sign-in__form--icon">
-                    </label>
-                    <li class="sign-in__forgot d-flex justify-content-end">
-                        <a href="" class="regular">Forgot Password?</a>
-                    </li>
-                    <button class="sign-in__form--btn bold">Sign in</button>
-                </form>
-                <div class="sign-in__or d-flex align-items-center justify-content-center">
-                    <span class="sign-in__or--text regular">Or</span>
-                    <button class="sign-in__or--btn"><img src="img/svg/login-google-btn.svg" alt=""></button>
-                    <button class="sign-in__or--btn"><img src="img/svg/login-fb-btn.svg" alt=""></button>
-                </div>
-                <div class="sign-in__register d-flex align-items-center justify-content-between">
-                    <span class="sign-in__register--text regular">New customer?</span>
-                    <button class="sign-in__register--btn register-open bold">Register</button>
-                </div>
-            </div>
-            <div class="sign-in register">
-                <h1 class="sign-in__title bold">Registration as:</h1>
-                <div class="register__btns d-flex justify-content-between">
-                    <button data-step="1" class="register__btns--btn active regular d-flex justify-content-center align-items-center">
-                        Individual
-                    </button>
-                    <button data-step="2" class="register__btns--btn regular d-flex justify-content-center align-items-center">
-                        Shop
-                    </button>
-                    <button data-step="3" class="register__btns--btn regular d-flex justify-content-center align-items-center">
-                        Charity
-                    </button>
-                </div><!-- tep nav end -->
-                <form data-step="1" class="sign-in__form register__step active">
-                    <label class="sign-in__form--label d-flex align-items-center">
-                        <input type="text" class="sign-in__form--input regular" placeholder="Full name">
-                        <img src="img/svg/username.svg" alt="" class="sign-in__form--icon">
-                    </label>
-                    <label class="sign-in__form--label d-flex align-items-center">
-                        <input type="text" class="sign-in__form--input regular" placeholder="Email">
-                        <img src="img/svg/input-mail.svg" alt="" class="sign-in__form--icon">
-                    </label>
-                    <label class="sign-in__form--label d-flex align-items-center">
-                        <input type="password" class="sign-in__form--input regular" placeholder="Password">
-                        <img src="img/svg/key.svg" alt="" class="sign-in__form--icon">
-                    </label>
-                    <label class="sign-in__form--label d-flex align-items-center">
-                        <input type="password" class="sign-in__form--input regular" placeholder="Password">
-                        <img src="img/svg/key.svg" alt="" class="sign-in__form--icon">
-                    </label>
-                    <button class="sign-in__form--btn bold">Create Account</button>
-                </form><!-- step end -->
-                <form data-step="2" class="sign-in__form register__step">
-                    <label class="sign-in__form--label d-flex align-items-center">
-                        <input type="text" class="sign-in__form--input regular" placeholder="Company name">
-                        <img src="img/svg/username.svg" alt="" class="sign-in__form--icon">
-                    </label>
-                    <label class="sign-in__form--label d-flex align-items-center">
-                        <input type="text" class="sign-in__form--input regular" placeholder="Email">
-                        <img src="img/svg/input-mail.svg" alt="" class="sign-in__form--icon">
-                    </label>
-                    <label class="sign-in__form--label d-flex align-items-center">
-                        <input type="password" class="sign-in__form--input regular" placeholder="Password">
-                        <img src="img/svg/key.svg" alt="" class="sign-in__form--icon">
-                    </label>
-                    <label class="sign-in__form--label d-flex align-items-center">
-                        <input type="password" class="sign-in__form--input regular" placeholder="Password">
-                        <img src="img/svg/key.svg" alt="" class="sign-in__form--icon">
-                    </label>
-                    <button class="sign-in__form--btn bold">Create Account</button>
-                </form><!-- step end -->
-                <form data-step="3" class="sign-in__form register__step">
-                    <label class="sign-in__form--label d-flex align-items-center">
-                        <input type="text" class="sign-in__form--input regular" placeholder="Name">
-                        <img src="img/svg/username.svg" alt="" class="sign-in__form--icon">
-                    </label>
-                    <label class="sign-in__form--label d-flex align-items-center">
-                        <input type="text" class="sign-in__form--input regular" placeholder="Email">
-                        <img src="img/svg/input-mail.svg" alt="" class="sign-in__form--icon">
-                    </label>
-                    <label class="sign-in__form--label d-flex align-items-center">
-                        <input type="password" class="sign-in__form--input regular" placeholder="Password">
-                        <img src="img/svg/key.svg" alt="" class="sign-in__form--icon">
-                    </label>
-                    <label class="sign-in__form--label d-flex align-items-center">
-                        <input type="password" class="sign-in__form--input regular" placeholder="Password">
-                        <img src="img/svg/key.svg" alt="" class="sign-in__form--icon">
-                    </label>
-                    <button class="sign-in__form--btn bold">Create Account</button>
-                </form><!-- step end -->
-                <div class="register__text regular">
-                    <p class="sign-in__register--text">By creating account, you agree to the</p>
-                    <a href="">ItemsSphere's Free Membership Agreement</a>
-                    <p class="sign-in__register--text">and <a href="">Privacy Policy</a></p>
-                </div>
-                <div class="register__link">
-                    <span class="sign-in__register--text regular">Have account?</span>
-                    <button class="register__link--btn register-open bold">Sign in</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
@@ -738,6 +624,84 @@
     <script src="js/slider.js"></script>
     <script src="js/pagination.js"></script>
     <script src="js/function.js"></script>
+
+    <script>
+        var currentTab = 0; // Current tab is set to be the first tab (0)
+        showTab(currentTab); // Display the current tab
+        
+        function showTab(n) {
+            // This function will display the specified tab of the form...
+            var x = document.getElementsByClassName("upload__body--tab");
+            x[n].style.display = "block";
+            //... and fix the Previous/Next buttons:
+            if (n == 0) {
+                document.getElementById("prevBtn").style.display = "none";
+            } else {
+                document.getElementById("prevBtn").style.display = "flex";
+            }
+            //   if (n == (x.length - 1)) {
+            //     document.getElementById("nextBtnText").innerHTML = "Submit";
+            //   } else {
+            //     document.getElementById("nextBtnText").innerHTML = "Next";
+            //   }
+            //... and run a function that will display the correct step indicator:
+            fixStepIndicator(n)
+        }
+    
+        function nextPrev(n) {
+            // This function will figure out which tab to display
+            var x = document.getElementsByClassName("upload__body--tab");
+            // Exit the function if any field in the current tab is invalid:
+            if (n == 1 && !validateForm()) return false;
+            // Hide the current tab:
+            x[currentTab].style.display = "none";
+            // Increase or decrease the current tab by 1:
+            currentTab = currentTab + n;
+            // if you have reached the end of the form...
+            if (currentTab >= x.length) {
+                // ... the form gets submitted:
+                document.getElementsByClassName("upload__body").submit();
+                return false;
+            }
+            // Otherwise, display the correct tab:
+            showTab(currentTab);
+        }
+        
+        function validateForm() {
+            // This function deals with validation of the form fields
+            var x, y, i, valid = true;
+            x = document.getElementsByClassName("upload__body--tab");
+            y = x[currentTab].getElementsByTagName("input");
+            // A loop that checks every input field in the current tab:
+            for (i = 0; i < y.length; i++) {
+                // If a field is empty...
+                // ეს ქვედა კომენტარი გამოიყენება შემოწმებისას... 
+                // if (y[i].value == "") 
+                if (y[i].value == true) {
+                // add an "invalid" class to the field:
+                y[i].className += " invalid";
+                // and set the current valid status to false
+                valid = false;
+                }
+            }
+        // If the valid status is true, mark the step as finished and valid:
+            if (valid) {
+                document.getElementsByClassName("upload__head--menu")[currentTab].classList.add("finish");
+            }
+        return valid; // return the valid status
+        }
+        
+        function fixStepIndicator(n) {
+            // This function removes the "active" class of all steps...
+            var i, x = document.getElementsByClassName("upload__head--menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].className = x[i].className.replace(" active", "");
+            }
+            //... and adds the "active" class on the current step:
+            x[n].classList.add("active");
+        }
+        
+    </script>
 
 </body>
 </html>
