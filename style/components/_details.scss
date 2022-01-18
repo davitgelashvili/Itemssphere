@@ -97,10 +97,53 @@
             color: #3D3D3D;
             font-size: 20px;
         }
+        
+        &--desc {
+            color: #5A5A5A;
+            font-size: 15px;
+            margin-top: 7px;
+            margin-bottom: 18px;
+        }
     }
 
     &__donation {
+        &--send-sms {
+            width: 100%;
+            padding: 14px 0;
+            margin-bottom: 11px;
+            background-color: transparent;
+            border-radius: 100px;
+            border: 1px solid #2ADF00;
+            color: #2ADF00;
+            font-size: 15px;
+            outline: none;
+            cursor: pointer;
 
+            img {
+                margin-right: 29px;
+            }
+        }
+
+        &--send-mail {
+            margin-bottom: 11px;
+            padding: 14px 0;
+            background-color: #EDEDED;
+            border-radius: 100px;
+            color: #131313;
+            font-size: 15px;
+            text-decoration: none;
+
+            img {
+                margin-right: 13px;
+            }
+        }
+
+        &--report {
+            display: block;
+            color: #3D3D3D;
+            font-size: 15px;
+            text-align: center;
+        }
     }
 
     &__tabs {

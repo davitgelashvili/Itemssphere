@@ -1,0 +1,64 @@
+.upload {
+    background-color: #fff;
+    padding: 23px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: $boxshadow;
+    margin-top: 15px;
+
+    &__head {
+        &--menu {
+            padding: 12px;
+            color: #AFAFAF;
+            font-size: 18px;
+            border-bottom: 4px solid #DEDBDB;
+
+            &.active {
+                border-bottom: 4px solid #206DFC;
+                color: #1E1E1E;
+            }
+        }
+    }
+
+    &__body {
+        &--tab {
+            display: none;
+            margin-bottom: 25px;
+        }
+
+        &--next {
+            background-color: #42D921;
+            border-radius: 38px;
+            color: #fff;
+            padding: 13px 48px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    &__draft-list {
+        margin-top: 44px;
+
+        &--item {
+            margin-bottom: 38px;
+        }
+
+        &--title {
+            color: #206DFC;
+            font-size: 20px;
+        }
+
+        &--date {
+            margin-right: 22px;
+            color: #626262;
+            font-size: 20px;
+        }
+
+        &--delete {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
