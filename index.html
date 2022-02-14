@@ -230,19 +230,28 @@
         <div class="container">
             <div class="head-menu d-flex justify-content-between align-items-center">
                 <ul class="head-menu__categories d-flex">
-                    <li class="head-menu__categories--item">
+                    <li class="head-menu__categories--item d-flex align-items-center">
+                        <img src="img/svg/menu/home.svg" alt="" class="head-menu__categories--icon">
+                        <a href="/index.html" class="head-menu__categories--link regular">Home</a>
+                    </li>
+                    <li class="head-menu__categories--item d-flex align-items-center">
+                        <img src="img/svg/menu/market.svg" alt="" class="head-menu__categories--icon">
                         <a href="/market-touch.html" class="head-menu__categories--link regular">Market</a>
                     </li>
-                    <li class="head-menu__categories--item">
+                    <li class="head-menu__categories--item d-flex align-items-center">
+                        <img src="img/svg/menu/shop.svg" alt="" class="head-menu__categories--icon">
                         <a href="shop-touch.html" class="head-menu__categories--link regular">Shop</a>
                     </li>
-                    <li class="head-menu__categories--item">
+                    <li class="head-menu__categories--item d-flex align-items-center">
+                        <img src="img/svg/menu/charitys.svg" alt="" class="head-menu__categories--icon">
                         <a href="charities-touch.html" class="head-menu__categories--link regular">Charitys And Other NPOs</a>
                     </li>
-                    <li class="head-menu__categories--item">
+                    <li class="head-menu__categories--item d-flex align-items-center">
+                        <img src="img/svg/menu/social.svg" alt="" class="head-menu__categories--icon">
                         <a href="social-program-touch.html" class="head-menu__categories--link regular">Social Programs</a>
                     </li>
-                    <li class="head-menu__categories--item">
+                    <li class="head-menu__categories--item d-flex align-items-center">
+                        <img src="img/svg/menu/news.svg" alt="" class="head-menu__categories--icon">
                         <a href="news.html" class="head-menu__categories--link regular">News</a>
                     </li>
                 </ul>
@@ -365,30 +374,180 @@
         <!-- categories, main slider, banner -->
         <div class="container">
             <div class="row">
-                <div class="col d-none d-lg-block" style="max-width: 250px;">
-                    <div class="categories">
-                        <h2 class="categories--title regular">Categories</h2>
-                        <ul class="categories__list">
-                            <li class="categories__list--item">
-                                <a href="" class="categories__list--link regular">Agriculture & Food</a>
-                            </li>
-                            <li class="categories__list--item">
-                                <a href="" class="categories__list--link regular">Auto & Transportation</a>
-                            </li>
-                            <li class="categories__list--item">
-                                <a href="" class="categories__list--link regular">Clothing, Shoes & Accessories</a>
-                            </li>
-                            <li class="categories__list--item">
-                                <a href="" class="categories__list--link regular">Packaging, Advertising & Office</a>
-                            </li>
-                            <li class="categories__list--item">
-                                <a href="" class="categories__list--link regular">Agriculture & Food</a>
-                            </li>
-                        </ul>
+                <div class="d-none d-lg-block" style="max-width: 250px; position: relative;">
+                    <div class="categories__first">
+                        <div class="categories">
+                            <h2 class="categories--title regular">Categories</h2>
+                            <ul class="categories__list">
+                                <li class="categories__list--item categories__first--item" data-id="0">
+                                    <a href="/about.html" class="categories__list--link regular">Agriculture & Food</a>
+                                </li>
+                                <li class="categories__list--item categories__first--item" data-id="1">
+                                    <a href="" class="categories__list--link regular">Auto & Transportation</a>
+                                </li>
+                                <li class="categories__list--item categories__first--item" data-id="2">
+                                    <a href="" class="categories__list--link regular">Clothing, Shoes & Accessories</a>
+                                </li>
+                                <li class="categories__list--item categories__first--item" data-id="3">
+                                    <a href="" class="categories__list--link regular">Packaging, Advertising & Office</a>
+                                </li>
+                                <li class="categories__list--item categories__first--item" data-id="4">
+                                    <a href="" class="categories__list--link regular">Agriculture & Food</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="row">
+                        <div class="d-flex">
+                            <div class="col"  style="max-width: 250px;">
+                                <div class="categories__second"  data-id="0">
+                                    <div class="categories">
+                                        <h2 class="categories--title regular">Categories 2.1</h2>
+                                        <ul class="categories__list">
+                                            <li class="categories__list--item categories__second--item" data-id="10">
+                                                <a href="" class="categories__list--link regular">Agriculture & Food</a>
+                                            </li>
+                                            <li class="categories__list--item categories__second--item" data-id="11">
+                                                <a href="" class="categories__list--link regular">Auto & Transportation</a>
+                                            </li>
+                                            <li class="categories__list--item categories__second--item" data-id="12">
+                                                <a href="" class="categories__list--link regular">Clothing, Shoes & Accessories</a>
+                                            </li>
+                                            <li class="categories__list--item categories__second--item" data-id="3">
+                                                <a href="" class="categories__list--link regular">Packaging, Advertising & Office</a>
+                                            </li>
+                                            <li class="categories__list--item categories__second--item" data-id="14">
+                                                <a href="" class="categories__list--link regular">Agriculture & Food</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div><!-- second step end -->
+                                <div class="categories__second"  data-id="1">
+                                    <div class="categories">
+                                        <h2 class="categories--title regular">Categories 2.2</h2>
+                                        <ul class="categories__list">
+                                            <li class="categories__list--item categories__second--item" data-id="15">
+                                                <a href="" class="categories__list--link regular">Agriculture & Food</a>
+                                            </li>
+                                            <li class="categories__list--item categories__second--item" data-id="16">
+                                                <a href="" class="categories__list--link regular">Auto & Transportation</a>
+                                            </li>
+                                            <li class="categories__list--item categories__second--item" data-id="17">
+                                                <a href="" class="categories__list--link regular">Clothing, Shoes & Accessories</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div><!-- second step end -->
+                            </div>
+                            <div class="col" style="position: relative;">
+                                <div class="categories__three flex-row flex-wrap" data-id="10">
+                                    <div class="col-4">
+                                        <h2 class="categories--title regular">Categories 3.1</h2>
+                                        <ul class="categories__list">
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Agriculture & Food</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Auto & Transportation</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Clothing, Shoes & Accessories</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Packaging, Advertising & Office</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Agriculture & Food</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <h2 class="categories--title regular">Categories 3.2</h2>
+                                        <ul class="categories__list">
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Agriculture & Food</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Auto & Transportation</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Clothing, Shoes & Accessories</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Packaging, Advertising & Office</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Agriculture & Food</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <h2 class="categories--title regular">Categories 3.2</h2>
+                                        <ul class="categories__list">
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Agriculture & Food</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Auto & Transportation</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Clothing, Shoes & Accessories</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Packaging, Advertising & Office</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Agriculture & Food</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="categories__three flex-row flex-wrap" data-id="11">
+                                    <div class="col-4">
+                                        <h2 class="categories--title regular">Categories 3.1</h2>
+                                        <ul class="categories__list">
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Agriculture & Food</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Auto & Transportation</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Clothing, Shoes & Accessories</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Packaging, Advertising & Office</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Agriculture & Food</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <h2 class="categories--title regular">Categories 3.2</h2>
+                                        <ul class="categories__list">
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Agriculture & Food</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Auto & Transportation</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Clothing, Shoes & Accessories</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Packaging, Advertising & Office</a>
+                                            </li>
+                                            <li class="categories__list--item">
+                                                <a href="" class="categories__list--link regular">Agriculture & Food</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- main slider -->
                         <div class="col-12">
                             <div class="main-slider d-flex align-items-center">
@@ -417,28 +576,29 @@
                             </div>
                         </div>
                         <!-- banner -->
-                        <div class="col-4 d-none d-lg-block">
+                        <div class="col-3 d-none d-lg-block">
                             <div class="banner__mini banner">
                                 <img src="img/mini-banner1.png" alt="">
                             </div>
                         </div>
                         <!-- banner -->
-                        <div class="col-4 d-none d-lg-block">
+                        <div class="col-3 d-none d-lg-block">
                             <div class="banner__mini banner">
                                 <img src="img/mini-banner2.png" alt="">
                             </div>
                         </div>
                         <!-- banner -->
-                        <div class="col-4 d-none d-lg-block">
+                        <div class="col-3 d-none d-lg-block">
                             <div class="banner__mini banner">
                                 <img src="img/mini-banner3.png" alt="">
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col d-none d-lg-block" style="max-width: 250px;">
-                    <div class="banner__larg banner">
-                        <img src="img/larg-banner1.png" alt="">
+                        <!-- banner -->
+                        <div class="col-3 d-none d-lg-block">
+                            <div class="banner__mini banner">
+                                <img src="img/mini-banner3.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

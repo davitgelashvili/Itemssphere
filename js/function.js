@@ -175,3 +175,26 @@ function fileUploadImage(input) {
         reader.readAsDataURL(input.files[0]);
     }
 }
+
+
+$('.categories__first--item').on( 'click', function(e) {
+    var firstElem = this;
+    $('.categories__second').each(function () {
+        if ($(this).data('id') === $(firstElem).data('id')) {
+            $(this).addClass('d-flex');
+        }else {
+            $(this).removeClass('d-flex');
+        }
+    });
+})
+
+$('.categories__second--item').on( 'click', function(e) {
+    var firstElem = this;
+    $('.categories__three').each(function () {
+        if ($(this).data('id') === $(firstElem).data('id')) {
+            $(this).addClass('d-flex');
+        }else {
+            $(this).removeClass('d-flex');
+        }
+    });
+})

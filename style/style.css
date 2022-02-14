@@ -402,6 +402,10 @@ body {
   list-style: none;
 }
 
+.head-menu__categories--icon {
+  margin-right: 6px;
+}
+
 .head-menu__categories--link {
   color: #2B2B2B;
   font-size: 15px;
@@ -1013,6 +1017,29 @@ body {
   color: #707070;
   font-size: 14px;
   text-decoration: none;
+}
+
+.categories__first {
+  position: absolute;
+  height: 100%;
+}
+
+.categories__second {
+  position: absolute;
+  z-index: 9;
+  display: none;
+}
+
+.categories__three {
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+  display: none;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 10px 0 29px 18px;
 }
 
 .banner {

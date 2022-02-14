@@ -37,4 +37,26 @@
             text-decoration: none;
         }
     }
+
+    &__first {
+        position: absolute;
+        height: 100%;
+    }
+
+    &__second {
+        position: absolute;
+        z-index: 9;
+        display: none;
+    }
+
+    &__three {
+        width: 100%;
+        position: absolute;
+        z-index: 9;
+        display: none;
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: $boxshadow;
+        padding: 10px 0 29px 18px;
+    }
 }
