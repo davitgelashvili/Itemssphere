@@ -388,11 +388,11 @@
                             Organization Name
                         </h1>
                         <div class="d-flex">
-                            <div class="organization__header--follow regular">
+                            <div class="organization__header--follow click-open regular" data-active="follow-popup">
                                 <p>20</p>
                                 <span>Followers</span>
                             </div>
-                            <div class="organization__header--follow regular">
+                            <div class="organization__header--follow click-open regular" data-active="follow-popup">
                                 <p>15</p>
                                 <span>Following</span>
                             </div>
@@ -878,6 +878,48 @@
                 <div class="register__link">
                     <span class="sign-in__register--text regular">Have account?</span>
                     <button class="register__link--btn register-open bold">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup open-active align-items-center justify-content-center" data-active="follow-popup">
+        <div class="popup__container">
+            <button class="popup__close close-click" data-active="follow-popup">
+                <img src="img/svg/popup-close.svg" alt="" class="d-none d-lg-block">
+                <img src="img/svg/popup-back-btn.svg" alt="" class="d-block d-lg-none">
+            </button>
+            <div class="sign-in login">
+                <h1 class="sign-in__title bold">Following ''7''</h1>
+                <div class="follow">
+                    <div class="follow__item d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <div class="follow__item--cover">
+                                <img src="img/zoomer.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="follow__item--title bold">Name Surname</h1>
+                                <p class="follow__item--desc regular">Following</p>
+                            </div>
+                        </div>
+                        <div class="follow__item--status regular follow__item--blue">
+                            Unfollow
+                        </div>
+                    </div>
+                    <div class="follow__item d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <div class="follow__item--cover">
+                                <img src="img/zoomer.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="follow__item--title bold">Name Surname</h1>
+                                <p class="follow__item--desc regular">Following</p>
+                            </div>
+                        </div>
+                        <div class="follow__item--status regular follow__item--green">
+                            Follow
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

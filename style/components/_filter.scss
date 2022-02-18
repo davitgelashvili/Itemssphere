@@ -48,7 +48,18 @@
 
 .categories-filter {
     margin-bottom: 18px;
-    padding: 10px 15px 29px 18px;
+    padding: 0;
+
+    &__form {
+        border-bottom: 1px solid #E6E6E6;
+        padding: 10px 15px 10px 18px;
+        // padding-bottom: 10px;
+        margin-bottom: 10px;
+
+        &:last-child {
+            border-bottom: 1px solid transparent;
+        }
+    }
 
     &__title {
         min-width: 60px;
@@ -57,7 +68,8 @@
     }
 
     &__clear {
-        color: #0039F4;
+        padding: 10px 15px 10px 18px;
+        color: #B6B6B6;
         font-size: 15px;
         background-color: transparent;
         border: none;
@@ -72,14 +84,13 @@
     &--all-btn {
         display: block;
         margin-top: 15px;
-        color: #0039F4;
+        color: #B6B6B6;
         font-size: 15px;
         text-decoration: none;
     }
 
     &__ratings {
         width: 100%;
-        margin-left: 15px;
     }
 
     &__rating {

@@ -177,8 +177,9 @@ function fileUploadImage(input) {
 }
 
 
-$('.categories__first--item').on( 'click', function(e) {
+$('.categories__first--item').on( 'mouseover', function(e) {
     var firstElem = this;
+    $('.categories__three').removeClass('d-flex')
     $('.categories__second').each(function () {
         if ($(this).data('id') === $(firstElem).data('id')) {
             $(this).addClass('d-flex');
@@ -188,7 +189,7 @@ $('.categories__first--item').on( 'click', function(e) {
     });
 })
 
-$('.categories__second--item').on( 'click', function(e) {
+$('.categories__second--item').on( 'mouseover', function(e) {
     var firstElem = this;
     $('.categories__three').each(function () {
         if ($(this).data('id') === $(firstElem).data('id')) {
