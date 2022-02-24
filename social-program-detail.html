@@ -307,6 +307,23 @@
     <!-- fix menu bar mobile -->
     <div class="fix-bar d-block d-lg-none">
         <div class="container">
+            <div class="d-flex justify-content-between align-items-start" style="margin-bottom: 30px;">
+                <div>
+                    <div class="user--desc regular">
+                        You can donate some money For our fonds
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="d-flex justify-content-between">
+                        <div class="min-max d-flex align-items-center">
+                            <label class="min-max__label">
+                                <input type="text" class="min-max__label--input h-roman" placeholder="min" value="">
+                            </label>
+                        </div>
+                    </div>
+                    <button class="social-program-slider__item--donate">Donate</button>
+                </div>
+            </div>
             <ul class="fix-bar__lists d-flex justify-content-between align-items-start">
                 <li class="fix-bar__lists--li">
                     <a href="" class="fix-bar__lists--link regular d-flex align-items-center flex-column">
@@ -361,7 +378,18 @@
     <div class="shop-detail">
         <div class="container">
             <div class="row">
-                <div class="col-5">
+                <div class="col-12 d-block d-lg-none">
+                    <ul class="page__navigation--links d-flex">
+                        <li class="page__navigation--link regular">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="page__navigation--link regular">
+                            >
+                            <a href="">Home</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
                     <div class="shop-detail__slider">
                         <div class="shop-detail__main-slider d-flex align-items-center">
                             <div class="splide__track">
@@ -389,7 +417,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="shop-detail__mini-slider d-flex align-items-center">
+                        <div class="shop-detail__mini-slider d-none d-lg-flex align-items-center">
                             <div class="splide__arrows main-slider__navs d-none d-lg-flex">
                                 <button class="splide__arrow splide__arrow--prev main-slider__navs--btn main-slider__navs--prev">
                                     <img src="img/svg/slider-prev.svg" alt="">
@@ -425,9 +453,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-7">
+                <div class="col-lg-7">
                     <div class="shop-detail__info">
-                        <ul class="page__navigation--links d-flex">
+                        <ul class="page__navigation--links d-none d-lg-flex">
                             <li class="page__navigation--link regular">
                                 <a href="">Home</a>
                             </li>
@@ -450,7 +478,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-lg-12">
                                 <div class="d-flex">
                                     <p class="shop-detail__info--manufacturing-data regular">
                                         Days left: 123
@@ -460,8 +488,9 @@
                                     </p>
                                 </div>
                                 <div class="row">
-                                    <div class="col-8">
-                                        <div class="shop-detail__window-banner">
+                                    <div class="col-lg-8">
+                                        <!-- desktop -->
+                                        <div class="d-none d-lg-block shop-detail__window-banner">
                                             <h1 class="user--title bold">Rased</h1>
                                             <div class="social-program-slider__item--price regular">
                                                 <span class="social-program-slider__item--price--green bold">$13,535</span> raised of $25,000 Goal
@@ -502,8 +531,50 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- mobile -->
+                                        <div class="d-block d-lg-none">
+                                            <h1 class="d-none d-lg-block user--title bold">Rased</h1>
+                                            <div class="social-program-slider__item--price regular">
+                                                <span class="social-program-slider__item--price--green bold">$13,535</span> raised of $25,000 Goal
+                                            </div>
+                                            <div class="social-program-slider__item--price--line">
+                                                <div class="social-program-slider__item--price--line--green" style="width: 50%;"></div>
+                                            </div>
+                                            <div class="social-program-slider__item--price regular d-flex justify-content-between">
+                                                <p>23 Donations</p>
+                                                <p>$400000To go</p>
+                                            </div>
+                                            <br />
+                                            <h2 class="user--sub-title bold">We need your help</h2>
+                                            <div class="d-flex flex-column flex-lg-wrap justify-content-lg-between">
+                                                <div class="user--desc regular" style="max-width: 50%;">
+                                                    You can sell some product and % give for charity
+                                                </div>
+                                                <div>
+                                                    <button class="cart-item__wishlist-go">Sale for</button>
+                                                </div>
+                                            </div>
+                                            <h1 class="d-none d-lg-block user--title bold">Donate</h1>
+                                            <div class="d-none d-lg-flex justify-content-between align-items-start">
+                                                <div>
+                                                    <div class="user--desc regular">
+                                                        You can donate some money For our fonds
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-start">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="min-max d-flex align-items-center">
+                                                            <label class="min-max__label">
+                                                                <input type="text" class="min-max__label--input h-roman" placeholder="min" value="">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <button class="social-program-slider__item--donate">Donate</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-lg-4">
                                         <div class="shop-detail__window-banner">
                                             <h1 class="shop-detail__window-banner--title regular">Seller</h1>
                                             <div class="shop-detail__donation">
@@ -532,7 +603,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-lg-8">
                     <div class="shop-detail__tabs">
                         <div class="shop-detail__tabs--head d-flex">
                             <div class="shop-detail__tabs--menu regular active" data-tab="0">
@@ -559,7 +630,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="products-slider">
                         <div class="splide__arrows products-slider__navs d-none d-lg-flex">
                             <button class="splide__arrow splide__arrow--prev products-slider__navs--btn products-slider__navs--prev">

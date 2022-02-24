@@ -192,6 +192,11 @@ function ProductDetailSlider(){
         pagination : false,
         arrows     : false,
         cover      : true,
+        breakpoints : {
+            1024: {
+                pagination : true,
+            },
+        },
     } );
       
     var thumbnails = new Splide( '.shop-detail__mini-slider', {

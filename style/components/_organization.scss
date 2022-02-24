@@ -118,7 +118,12 @@
 
     &__col {
         width: calc(100% /5);
+
+        @media (max-width: 1024px) {
+            width: calc(100% /2);
+        }
     }
+
 
     &__contact {
         margin-top: -30px;

@@ -3313,6 +3313,12 @@ body {
   width: calc(100% /5);
 }
 
+@media (max-width: 1024px) {
+  .organization__col {
+    width: calc(100% /2);
+  }
+}
+
 .organization__contact {
   margin-top: -30px;
 }
