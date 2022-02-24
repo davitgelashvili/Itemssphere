@@ -307,54 +307,11 @@
     <!-- fix menu bar mobile -->
     <div class="fix-bar d-block d-lg-none">
         <div class="container">
-            <ul class="fix-bar__lists d-flex justify-content-between align-items-start">
-                <li class="fix-bar__lists--li">
-                    <a href="" class="fix-bar__lists--link regular d-flex align-items-center flex-column">
-                        <figure class="fix-bar__lists--icon">
-                            <img src="img/svg/header-btn/bar-home.svg" alt="">
-                        </figure>
-                        Home
-                    </a>
-                </li>
-                <li class="fix-bar__lists--li">
-                    <a href="" class="fix-bar__lists--link regular d-flex align-items-center flex-column">
-                        <figure class="fix-bar__lists--icon">
-                            <img src="img/svg/header-btn/bar-wishlist.svg" alt="">
-                        </figure>
-                        Wishlist
-                    </a>
-                </li>
-                <li class="fix-bar__lists--btn">
-                    <a href="" class="d-flex align-items-center flex-column">
-                        <img src="img/svg/header-btn/bar-add.svg" alt="">
-                    </a>
-                </li>
-                <li class="fix-bar__lists--li">
-                    <a href="" class="fix-bar__lists--link regular d-flex align-items-center flex-column">
-                        <figure class="fix-bar__lists--icon">
-                            <img src="img/svg/header-btn/bar-cart.svg" alt="">
-                        </figure>
-                        Cart
-                    </a>
-                </li>
-                <li class="fix-bar__lists--li">
-                    <!-- loged in window / profile menu  -->
-                    <!-- <a href="" data-active="mobile-popup-menu" class="fix-bar__lists--link click-open regular d-flex align-items-center flex-column">
-                        <figure class="fix-bar__lists--icon">
-                            <img src="img/svg/header-btn/bar-profile.svg" alt="">
-                        </figure>
-                        Profile
-                    </a> -->
-
-                    <!-- log in window  -->
-                    <a href="" data-active="login-popup" class="fix-bar__lists--link click-open regular d-flex align-items-center flex-column">
-                        <figure class="fix-bar__lists--icon">
-                            <img src="img/svg/header-btn/bar-profile.svg" alt="">
-                        </figure>
-                        Profile
-                    </a>
-                </li>
-            </ul>
+            <div class="d-flex justify-content-center">
+                <button class="cart-file__btn bold cart-file--blue d-block d-lg-none">
+                    export
+                </button>
+            </div>
         </div>
     </div>
 
@@ -401,7 +358,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-3">
+                <div class="d-none d-lg-block col-lg-3">
                     <ul class="organization__menu">
                         <li class="organization__menu--item">
                             <a href="organization-account.html" class="organization__menu--link regular">Account Informaton</a>
@@ -429,34 +386,67 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-9">
+                <div class="col-lg-9">
                     <div class="organization__content">
-                        <div class="d-flex justify-content-between">
-                            <h1 class="organization__content--title d-flex align-items-center organization__content--padding bold">Sold</h1>
-                            <form action="" class="cart-head d-flex align-items-center organization__content--padding">
-                                <p class="cart-head__title regular">Filtr from</p>
-                                <div class="d-flex align-items-center">
-                                    <label class="sign-in__form--label  cart-head--label d-flex align-items-center">
-                                        <input type="date" class="sign-in__form--input cart-head--input regular" placeholder="სახელი">
-                                    </label>
+                        <div class="d-flex justify-content-between flex-column flex-lg-row">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h1 class="organization__content--title d-flex align-items-center organization__content--padding bold">
+                                    Sold
+                                </h1>
+                                <div class="cart-diagram d-flex d-lg-none align-items-end regular">
+                                    <div class="cart-diagram__list d-flex align-items-end">
+                                        <div class="cart-diagram__list--item" style="height: 20%"></div>
+                                        <div class="cart-diagram__list--item" style="height: 30%"></div>
+                                        <div class="cart-diagram__list--item" style="height: 40%"></div>
+                                    </div>
                                 </div>
-                                <p class="cart-head__title regular">To</p>
-                                <div class="d-flex align-items-center">
-                                    <label class="sign-in__form--label  cart-head--label d-flex align-items-center">
-                                        <input type="date" class="sign-in__form--input cart-head--input regular" placeholder="სახელი">
-                                    </label>
+                            </div>
+                            <form action="" class="cart-head d-block d-lg-flex align-items-lg-center organization__content--padding">
+                                <div class="d-flex">
+                                    <p class="cart-head__title regular">Filtr from</p>
+                                    <div class="cart-statistic d-flex d-lg-none align-items-center regular">
+                                        <p>
+                                            <img src="img/svg/eye-cart.svg" alt="">
+                                            Products View 124
+                                        </p>
+                                        <p>
+                                            <img src="img/svg/trolley-cart.svg" alt="">
+                                            Sold products 456
+                                        </p>
+                                        <p class="d-none d-lg-block bold">
+                                            Your earn ₾3,678.78
+                                        </p>
+                                    </div>
                                 </div>
-                                <button class="cart-item__compare cart-head--btn bold">Ok</button>
-                                <button class="cart-item__cancel cart-head--btn bold">cancel</button>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <label class="sign-in__form--label  cart-head--label d-flex align-items-center">
+                                            <input type="date" class="sign-in__form--input cart-head--input regular" placeholder="სახელი">
+                                        </label>
+                                    </div>
+                                    <p class="cart-head__title regular">To</p>
+                                    <div class="d-flex align-items-center">
+                                        <label class="sign-in__form--label  cart-head--label d-flex align-items-center">
+                                            <input type="date" class="sign-in__form--input cart-head--input regular" placeholder="სახელი">
+                                        </label>
+                                    </div>
+                                    <button class="cart-item__compare cart-head--btn bold">Ok</button>
+                                    <button class="d-none d-lg-block cart-item__cancel cart-head--btn bold">cancel</button>
+                                </div>
+                                <div class="d-flex d-lg-none justify-content-center">
+                                    <p class="bold">
+                                        Your earn ₾3,678.78
+                                    </p>
+                                </div>
 
                             </form>
                         </div>
                         <div class="d-flex justify-content-between">
                             <div class="cart-file d-flex align-items-end">
-                                <button class="cart-file__btn bold cart-file--blue">
+                                <button class="cart-file__btn bold cart-file--blue d-none d-lg-block">
                                     export
                                 </button>
-                                <div class="cart-diagram d-flex align-items-end regular">
+                                <div class="cart-diagram d-none d-lg-flex align-items-end regular">
                                     Last 6 month sold
                                     <div class="cart-diagram__list d-flex align-items-end">
                                         <div class="cart-diagram__list--item" style="height: 20%"></div>
@@ -468,7 +458,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="cart-statistic d-flex align-items-center regular">
+                            <div class="d-none cart-statistic d-lg-flex align-items-center regular">
                                 <p>
                                     <img src="img/svg/eye-cart.svg" alt="">
                                     Products View 124
@@ -484,9 +474,9 @@
                         </div>
                         <div class="cart-item organization__content--padding">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-lg-6">
                                     <div class="row">
-                                        <div class="col-9">
+                                        <div class="col-lg-9">
                                             <figure class="cart-item__img d-flex align-items-center justify-content-center">
                                                 <img src="img/iphone-white.jpg" alt="">
                                             </figure>
@@ -499,8 +489,8 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col-3">
-                                            <form>
+                                        <div class="col-lg-3">
+                                            <form class="d-flex d-lg-block justify-content-between">
                                                 <div class="shop-detail__info--color">
                                                     <p class="bold">Quantity:</p>
                                                 </div>
@@ -515,10 +505,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6">
                                     <div class="row">
-                                        <div class="col-4">
-                                            <div class="d-flex flex-column">
+                                        <div class="col-lg-4">
+                                            <div class="d-flex flex-wrap flex-lg-column justify-content-between">
                                                 <div class="shop-detail__info--color">
                                                     <p class="bold d-flex justify-content-end">Delivery: </p>
                                                 </div>
@@ -528,8 +518,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-4">
-                                            <div class="d-flex flex-column">
+                                        <div class="col-lg-4">
+                                            <div class="d-flex flex-wrap flex-lg-column justify-content-between">
                                                 <div class="shop-detail__info--color">
                                                     <p class="bold d-flex justify-content-end">Sum: </p>
                                                 </div>
@@ -539,8 +529,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-4 d-flex flex-column">
-                                            <div class="d-flex flex-column align-items-end">
+                                        <div class="col-lg-4 d-flex flex-column">
+                                            <div class="d-flex flex-wrap flex-lg-column justify-content-between align-items-lg-end">
                                                 <div class="shop-detail__info--color">
                                                     <p class="bold d-flex justify-content-end">Status: </p>
                                                 </div>
@@ -567,7 +557,7 @@
                                                 Collapse
                                             </div>
                                         </div>
-                                        <div class="cart-order__body d-flex justify-content-between align-items-center">
+                                        <div class="cart-order__body d-flex justify-content-lg-between align-items-lg-center flex-column flex-lg-row">
                                             <div class="d-flex align-items-center">
                                                 <figure class="cart-order__body--avatar">
                                                     <img src="img/zoomer.png" alt="">
@@ -587,7 +577,7 @@
                                         </div>
                                         <form class="cart-order__form">
                                             <div class="row">
-                                                <div class="col-4">
+                                                <div class="col-lg-4">
                                                     <label class="cart-order__form--label">
                                                         <p class="cart-order__form--title regular">Address</p>
                                                         <input type="text" class="cart-order__form--input regular" placeholder="">
@@ -601,7 +591,7 @@
                                                         <input type="text" class="cart-order__form--input regular" placeholder="">
                                                     </label>
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="col-lg-4">
                                                     <label class="cart-order__form--label">
                                                         <p class="cart-order__form--title regular">Address</p>
                                                         <input type="text" class="cart-order__form--input regular" placeholder="">
@@ -615,7 +605,7 @@
                                                         <input type="text" class="cart-order__form--input regular" placeholder="">
                                                     </label>
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="col-lg-4">
                                                     <p class="cart-order__form--title regular">Comment</p>
                                                     <textarea type="text" class="cart-order__form--textarea regular"></textarea>
                                                 </div>

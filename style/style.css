@@ -3232,6 +3232,12 @@ body {
   background-color: #fff;
 }
 
+@media (max-width: 1024px) {
+  .organization__header--logo {
+    margin-left: 15px;
+  }
+}
+
 .organization__header--logo img {
   max-width: 100%;
   max-height: 100%;
@@ -3309,6 +3315,12 @@ body {
 
 .organization__contact {
   margin-top: -30px;
+}
+
+@media (max-width: 1024px) {
+  .organization__contact {
+    margin-top: 0;
+  }
 }
 
 .organization__contact--menu {
