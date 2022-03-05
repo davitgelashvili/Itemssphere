@@ -43,6 +43,31 @@ function MainPageSliderFunction(){
 
     })
 
+    const ProdouctCartSlider = document.querySelectorAll('.cart-popup .products-slider');
+    ProdouctCartSlider && ProdouctCartSlider.forEach( (item, key) => {
+        item.classList.add(`products-slider-${key}`)
+
+        const ProdouctCartSliderFunction = $(`.products-slider-${key}`);
+        ProdouctCartSliderFunction && new Splide( `.cart-popup .products-slider-${key}`, {
+            type: 'slide',
+            autoplay: false,
+            perPage: 1,
+            // padding: { left: 9, right: 9 },
+            padding: {
+                right: '100px'
+            },
+            breakpoints: {
+                1024: {
+                    perPage: 2,
+                },
+            },
+            arrows: false,
+            pagination: false,
+            updateOnMove: true,
+        }).mount();
+
+    })
+
     const SocialSlider = $('.social-program-slider');
     SocialSlider && new Splide( `.social-program-slider`, {
         type: 'slide',

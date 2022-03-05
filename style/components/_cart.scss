@@ -1,6 +1,12 @@
 .cart-popup {
     height: 100%;
     background-color: #fff;
+    max-width: 558px;
+    width: 100%;
+
+    .shop-detail__donation--send-sms img {
+        margin-right: 15px;
+    }
 
     &--padding {
         padding: 22px 30px;
