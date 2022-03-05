@@ -71,7 +71,7 @@ function MainPageSliderFunction(){
     CharitySlider && new Splide( `.charity-slider`, {
         type: 'slide',
         autoplay: false,
-        perPage: 2,
+        perPage: 3,
         // padding: { left: 9, right: 9 },
         breakpoints: {
             768: {
