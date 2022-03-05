@@ -123,9 +123,17 @@ body {
 .header__head--lang {
   position: absolute;
   right: 0;
-  top: 15px;
-  font-size: 14px;
+  top: 8px;
+}
+
+.header__head--lang .select__list {
+  background-color: transparent;
+  border: none;
   color: #fff;
+}
+
+.header__head--lang .select__list--item {
+  color: #000;
 }
 
 .header__logo {

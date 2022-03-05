@@ -28,9 +28,19 @@
         &--lang {
             position: absolute;
             right: 0;
-            top: 15px;
-            font-size: 14px;
-            color: #fff;
+            top: 8px;
+
+            .select {
+                &__list {
+                    background-color: transparent;
+                    border: none;
+                    color: #fff;
+
+                    &--item {
+                        color: #000;
+                    }
+                }
+            }
         }
     }
 
