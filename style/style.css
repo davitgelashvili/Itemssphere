@@ -2281,6 +2281,34 @@ body {
   color: #0039F4;
 }
 
+@media (max-width: 1025px) {
+  .active-filter {
+    position: absolute;
+    width: 100%;
+    max-width: 100% !important;
+    z-index: 99999;
+    left: 0;
+    height: 100%;
+    overflow: auto;
+    bottom: 0;
+    background: #fff;
+    border-radius: 20px;
+  }
+  .touch-active {
+    height: calc(100% - 67px);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    overflow-x: hidden;
+  }
+  .delete-filter {
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+}
+
 .element__check {
   margin-bottom: 3px;
 }

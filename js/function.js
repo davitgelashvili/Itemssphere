@@ -205,6 +205,33 @@ $('.categories-btn').on( 'click', function() {
     $('body').css('overflow-y','hidden');
 })
 
+$('.open-filter').on( 'click', function() {
+    $('.js-filter').removeClass('d-none');
+    $('.js-filter').addClass('d-block');
+    $('.js-filter').addClass('active-filter');
+    $('.touch').addClass('touch-active');
+    $('body').css('overflow-y','hidden');
+    $('.fix-bar__lists').removeClass('d-flex')
+    $('.fix-bar__lists').hide();
+    $('.filter-btns').addClass('d-flex')
+    $('.filter-btns').removeClass('d-none')
+})
+
+$('.delete-filter').on( 'click', function() {
+    $('.js-filter').addClass('d-none');
+    $('.js-filter').removeClass('d-block');
+    $('.js-filter').removeClass('active-filter');
+    $('.touch').removeClass('touch-active');
+    $('body').css('overflow-y','auto');
+    $('body').css('overflow-x','hidden');
+
+    $('.fix-bar__lists').addClass('d-flex')
+    $('.fix-bar__lists').removeClass('d-none')
+
+    $('.filter-btns').hide();
+    $('.filter-btns').removeClass('d-flex')
+})
+
 
 $('.mobile-categories__first--item').on( 'click', function(e) {
     var firstElem = this;
