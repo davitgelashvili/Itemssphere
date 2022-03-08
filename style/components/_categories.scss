@@ -74,13 +74,13 @@
 }
 
 .mobile-categories {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     z-index: 2;
     background-color: #fff;
     display: none;
-    margin-top: 50px;
+    top: 0;
     left: 0;
     overflow: auto;
 
@@ -90,11 +90,23 @@
 
     &__head {
         width: 100%;
-        overflow: scroll;
-        background-color: #F3F3F3;
         display: block;
-
+        padding-top: 10px;
+        
+        &--close {
+            background-color: transparent;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            position: absolute;
+            left: 29px;
+            top: 21px;
+        }
+        
         &--list {
+            margin-top: 10px;
+            overflow: scroll;
+            background-color: #F3F3F3;
             display: flex;
         }
 

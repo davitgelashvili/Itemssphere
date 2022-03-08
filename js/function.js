@@ -56,7 +56,6 @@ registerStepFunc && registerStepFunc.on( 'click', function() {
     });
 })
 
-
 let ActiveWinodw = document.querySelectorAll(".click-open");
 ActiveWinodw && ActiveWinodw.forEach(function(e) {
     let elementClick = e.getAttribute("data-active");
@@ -66,6 +65,7 @@ ActiveWinodw && ActiveWinodw.forEach(function(e) {
             if(elementActive == elementClick){
                 e.classList.toggle('active');
                 document.querySelector('body').style.overflowY = 'hidden';
+                document.querySelector('body').classList.add('opened-popup');
             }
         })
     });
@@ -80,6 +80,7 @@ CloseActiveWindow && CloseActiveWindow.forEach(function(e) {
             if(elementActive == elementClick){
                 e.classList.toggle('active')
                 document.querySelector('body').style.overflowY = 'auto';
+                document.querySelector('body').classList.remove('opened-popup');
             }
         })
     });
@@ -92,11 +93,11 @@ CloseBgActiveWindow && CloseBgActiveWindow.forEach(function(e) {
             if(i.target == i.currentTarget){
                 e.classList.remove('active')
                 document.querySelector('body').style.overflowY = 'auto';
+                document.querySelector('body').classList.remove('opened-popup');
             }
         })
     });
 });
-
 
 const convertImages = (query, callback) => {
     const images = document.querySelectorAll(query);
@@ -177,6 +178,10 @@ function fileUploadImage(input) {
 }
 
 
+$('.categories-not').on( 'mouseleave', function() {
+    $('.categories__three, .categories__second').removeClass('d-flex')
+})
+
 $('.categories__first--item').on( 'mouseover', function(e) {
     var firstElem = this;
     $('.categories__three').removeClass('d-flex')
@@ -255,4 +260,9 @@ $('.mobile-categories__second--item').on( 'click', function(e) {
             $(this).hide();
         }
     });
+})
+
+$('.mobile-categories__head--close').on( 'click', function() {
+    $('.mobile-categories').removeClass('active');
+    $('body').css('overflow-y','auto');
 })

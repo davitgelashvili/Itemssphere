@@ -9,6 +9,20 @@
         }
         
         font-size: 20px;
+
+        &--mobile {
+            a {
+                text-decoration: none;
+            }
+            img {
+                margin-right: 20px;
+            }
+
+            h1 {
+                color: #606062;
+                font-size: 20px;
+            }
+        }
     }
 
     &__navigation {
