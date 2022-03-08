@@ -15,7 +15,7 @@
         
         &--container {
             position: relative;
-            padding: 12px 0;
+            padding: 5px 0 12px 0;
         }
 
         &--text {
@@ -28,7 +28,7 @@
         &--lang {
             position: absolute;
             right: 0;
-            top: 8px;
+            top: 6px;
 
             .select {
                 &__list {
@@ -71,7 +71,7 @@
         }
 
         &--btn {
-            margin: 6px;
+            margin: 8px;
             border: none;
             background: transparent;
             outline: none;

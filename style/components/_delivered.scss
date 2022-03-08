@@ -79,5 +79,44 @@
                 margin-right: 11px;
             }
         }
+
+        &--add {
+            color: #2ADF00;
+            border: 1px solid #2ADF00;
+            padding: 14px 60px;
+            border-radius: 100px;
+            background-color: transparent;
+            cursor: pointer;
+            outline: none;
+            font-size: 15px;
+        }
+
+        &--input-checked {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #E6E6E6;
+            border-radius: 50%;
+
+            img {
+                display: none;
+            }
+        }
+        &--input {
+            position: absolute;
+            z-index: -2;
+            opacity: 0;
+
+            &:checked ~ .delivered__list--input-checked {
+                img {
+                    display: block;
+                }
+            }   
+        }
+    }
+
+    &__popup {
+        &--container {
+            max-width: 1002px !important;
+        }
     }
 }
