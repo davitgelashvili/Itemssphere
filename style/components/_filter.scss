@@ -59,6 +59,40 @@
         &:last-child {
             border-bottom: 1px solid transparent;
         }
+
+        &--search {
+            border: 2px solid #F2F2F2;
+            border-radius: 38px;
+            overflow: hidden;
+            position: relative;
+            padding-left: 4px;
+
+            input {
+                width: 100%;
+                outline: none;
+                border: none;
+                background-color: transparent;
+            }
+
+            button {
+                background-color: transparent;
+                border: none;
+                outline: none;
+                width: 24px;
+                height: 24px;
+                margin: 4px 8px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        &--search-list {
+            margin-top: 10px;
+            max-height: 223px;
+            overflow: auto;
+        }
     }
 
     &__title {

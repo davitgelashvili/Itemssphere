@@ -13,7 +13,9 @@
         margin: 15px 0;
 
         &--img {
+            width: 100%;
             min-width: 154px;
+            max-width: 154px;
             height: 128px;
             border-radius: 10px;
             overflow: hidden;
