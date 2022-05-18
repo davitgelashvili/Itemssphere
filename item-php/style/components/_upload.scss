@@ -1,0 +1,105 @@
+.upload {
+    background-color: #fff;
+    padding: 23px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: $boxshadow;
+    margin-top: 15px;
+
+    &__head {
+        &--menu {
+            padding: 12px;
+            color: #AFAFAF;
+            font-size: 18px;
+            border-bottom: 4px solid #DEDBDB;
+
+            &.active {
+                border-bottom: 4px solid #206DFC;
+                color: #1E1E1E;
+            }
+        }
+    }
+
+    &__body {
+        &--tab {
+            display: none;
+            margin-bottom: 25px;
+        }
+
+        &--next {
+            background-color: #42D921;
+            border-radius: 38px;
+            color: #fff;
+            padding: 13px 48px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    &__draft-list {
+        margin-top: 44px;
+
+        &--item {
+            margin-bottom: 38px;
+        }
+
+        &--title {
+            color: #206DFC;
+            font-size: 20px;
+        }
+
+        &--date {
+            margin-right: 22px;
+            color: #626262;
+            font-size: 20px;
+        }
+
+        &--delete {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+
+        &--input {
+            opacity: 0;
+            z-index: -2;
+            position: absolute;
+        }
+
+        &--text {
+            margin-top: 15px;
+            color: #535353;
+            font-size: 20px;
+        }
+
+        &--btn {
+            margin-top: 13px;
+            color: #005DFF;
+            font-size: 20px;
+            padding: 12px 50px;
+            border-radius: 25px;
+            background-color: transparent;
+            border: 3px solid #F5F5F5;
+            cursor: pointer;
+        }
+
+        &--uploaded {
+            position: absolute;
+            // top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,185 @@
+.shop-detail {
+    
+    &__info {
+
+        &--title {
+            color: #000;
+            font-size: 20px;
+        }
+
+        &--create-data {
+            margin-top: 7px;
+            color: #707070;
+            font-size: 13px;
+        }
+
+        &--manufacturing-data {
+            margin-top: 15px;
+            margin-right: 54px;
+            margin-bottom: 23px;
+            color: #3D3D3D;
+            font-size: 15px;
+        }
+
+        &--color {
+            p {
+                color: #3D3D3D;
+            }
+
+            span {
+                color: #3D3D3D;
+            }
+            font-size: 15px;
+
+            &__products {
+                margin-top: 10px;
+                margin-bottom: 20px;
+
+                li {
+                    list-style: none;
+                    margin-right: 7px;
+
+                    a {
+                        width: 47px;
+                        height: 47px;
+                        text-decoration: none;
+                        display: block;
+                        background-color: #fff;
+                        border-radius: 10px;
+                        overflow: hidden;
+
+                        &.active {
+                            border: 1px solid #42D921;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--price {
+            margin-bottom: 17px;
+        }
+
+        &--quantity {
+            width: 88px;
+            margin-top: 2px;
+            margin-bottom: 8px;
+            margin-right: 28px;
+        }
+    }
+
+    &__add-cart {
+        margin-top: 25px;
+        padding: 15px 60px;
+        background-color: #42D921;
+        border-radius: 39px;
+        border: none;
+        box-shadow: $boxshadow;
+        color: #fff;
+        font-size: 15px;
+        outline: none;
+        cursor: pointer;
+    }
+
+    &__window-banner {
+        box-shadow: $boxshadow;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 11px 18px;
+
+        &--title {
+            color: #3D3D3D;
+            font-size: 20px;
+        }
+        
+        &--desc {
+            color: #5A5A5A;
+            font-size: 15px;
+            margin-top: 7px;
+            margin-bottom: 18px;
+        }
+    }
+
+    &__donation {
+        &--send-sms {
+            width: 100%;
+            padding: 14px 0;
+            margin-bottom: 11px;
+            background-color: transparent;
+            border-radius: 100px;
+            border: 1px solid #2ADF00;
+            color: #2ADF00;
+            font-size: 15px;
+            outline: none;
+            cursor: pointer;
+
+            img {
+                margin-right: 29px;
+            }
+        }
+
+        &--send-mail {
+            margin-bottom: 11px;
+            padding: 14px 0;
+            background-color: #EDEDED;
+            border-radius: 100px;
+            color: #131313;
+            font-size: 15px;
+            text-decoration: none;
+
+            img {
+                margin-right: 13px;
+            }
+        }
+
+        &--report {
+            display: block;
+            color: #3D3D3D;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+
+    &__tabs {
+        margin-top: 23px;
+        background-color: #fff;
+        box-shadow: $boxshadow;
+        border-radius: 20px;
+
+        &--head {
+            margin-bottom: 20px;
+            padding: 10px 32px;
+        }
+
+        &--menu {
+            padding: 20px;
+            color: #A8A8A8;
+            font-size: 20px;
+            cursor: pointer;
+
+            &.active {
+                border-bottom: 4px solid #206DFC;
+                color: #1E1E1E;
+            }
+        }
+
+        &--body {
+            padding: 0 32px;
+        }
+
+        &--content {
+            display: none;
+            padding-bottom: 20px;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+}

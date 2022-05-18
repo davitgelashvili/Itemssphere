@@ -1,0 +1,64 @@
+.charity {
+    margin-top: 55px;
+    margin-bottom: 45px;
+    padding: 78px 65px;
+    border-radius: 112px;
+    background-color: #F3F3F3;
+
+    &__text {
+        padding-left: 30px;
+
+        &--title {
+            color: #000;
+            font-size: 53px;
+            line-height: 69px;
+
+            p {
+                color: #41C227;
+                font-size: 35px;
+            }
+        }
+
+        &--desc {
+            height: 72px;
+            color: #000;
+            font-size: 15px;
+            line-height: 24px;
+            overflow: hidden;
+        }
+
+        &--btns {
+            margin-top: 38px;
+        }
+
+        &--li {
+            margin-right: 11px;
+            list-style: none;
+        }
+
+        &--btn {
+            padding: 15px 28px;
+            border-radius: 100px;
+            border: 2px solid #41C227;
+            color: #41C227;
+            font-size: 15px;
+            line-height: 20px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 769px) {
+            padding-left: 0;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .charity {
+        border-radius: 40px;
+        padding: 19px 0 43px 44px;
+
+        &__text {
+            padding-right: 50px;
+        }
+    }
+}

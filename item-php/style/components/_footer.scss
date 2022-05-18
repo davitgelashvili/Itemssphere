@@ -1,0 +1,64 @@
+.footer {
+    margin-top: 77px;
+    background-color: #fff;
+    box-shadow: 0 -5px 0 rgba(#B1B1B1, .10);
+
+    &__content {
+        padding: 50px 0;
+
+        &--status {
+            margin-top: 15px;
+            color: #6C6C6C;
+            font-size: 16px;
+            line-height: 21px;
+        }
+
+        &--app {
+            margin-top: 20px;
+
+            img {
+                margin-right: 18px;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 23px;
+        color: #707070;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    &__menu {
+        &--item {
+            list-style: none;
+        }
+
+        &--link {
+            margin-bottom: 8px;
+            color: #535353;
+            font-size: 14px;
+            line-height: 19px;
+            text-decoration: none;
+
+            img {
+                margin-right: 9px;
+            }
+        }
+    }
+
+    &__payment {
+        &--title {
+            margin-top: 5px;
+            margin-bottom: 12px;
+            color: #707070;
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        &--icon {
+            margin-right: 7px;
+        }
+    }
+    
+}

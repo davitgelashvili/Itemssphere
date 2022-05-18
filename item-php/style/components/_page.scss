@@ -1,0 +1,66 @@
+.page {
+
+    &__title {
+        margin-bottom: 24px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 0;
+        }
+
+        color: #3D3D3D;
+        
+        span {
+            color: #A0A0A0;
+        }
+        
+        font-size: 20px;
+
+        &--mobile {
+            a {
+                text-decoration: none;
+            }
+            img {
+                margin-right: 20px;
+            }
+
+            h1 {
+                color: #606062;
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__navigation {
+        margin-top: 40px;
+
+        &--btn {
+            padding: 15px 58px;
+            border-radius: 39px;
+            border: 2px solid #42D921;
+            background-color: transparent;
+            color: #42D921;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        &--links {
+            margin-bottom: 12px;
+        }
+
+        &--link {
+            margin-right: 5px;
+            list-style: none;
+            opacity: .5;
+
+            a {
+                color: #3D3D3D;
+                font-style: 13px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.market-touch {
+    height: 100%;
+}

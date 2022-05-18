@@ -1,0 +1,38 @@
+.fix-bar {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+    background-color: #fff;
+    box-shadow: -1px -3px 14px 0px rgba(#000, .16);
+    padding-top: 10px;
+    padding-bottom: 6px;
+
+    &__lists {
+
+        &--btn {
+            list-style: none;
+            background-color: #fff;
+            box-shadow: 2px -10px 6px -13px rgba(#000, .16);
+            margin-top: -29px;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            padding: 9px;
+        }
+
+        &--li {
+            list-style: none;
+        }
+
+        &--link {
+            color: #707070;
+            font-size: 11px;
+            line-height: 15px;
+            text-decoration: none;
+        }
+
+        &--icon {
+            margin-bottom: 5px;
+        }
+    }
+}

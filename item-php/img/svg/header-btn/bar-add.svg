@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="62" viewBox="0 0 62 62">
+  <defs>
+    <filter id="Rectangle_1140" x="0" y="0" width="62" height="62" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Component_89_1" data-name="Component 89 – 1" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_1140)">
+      <g id="Rectangle_1140-2" data-name="Rectangle 1140" transform="translate(9 6)" fill="#fff" stroke="#42be29" stroke-width="2">
+        <rect width="44" height="44" rx="22" stroke="none"/>
+        <rect x="1" y="1" width="42" height="42" rx="21" fill="none"/>
+      </g>
+    </g>
+    <g id="Component_35_52" data-name="Component 35 – 52" transform="translate(14.368 15.583)">
+      <path id="Union_6" data-name="Union 6" d="M5.878,13.361V8.666H1.334A1.333,1.333,0,1,1,1.334,6H5.878V1.306a1.306,1.306,0,0,1,2.612,0V6h4.544a1.333,1.333,0,1,1,0,2.667H8.49v4.694a1.306,1.306,0,0,1-2.612,0Z" transform="translate(0 0)" fill="#42be29"/>
+    </g>
+  </g>
+</svg>

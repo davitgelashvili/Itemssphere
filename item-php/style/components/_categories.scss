@@ -1,0 +1,152 @@
+.categories {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: $boxshadow;
+    padding: 10px 0 29px 18px;
+
+    &__shop {
+        height: auto;
+        margin-bottom: 22px;
+    }
+
+    &--title {
+        // margin-bottom: 14px;
+        color: #3D3D3D;
+        font-size: 20px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__list {
+        margin-top: 14px;
+        width: 100%;
+        border-left: 2px solid #11FD00;
+        
+        &--item {
+            padding-left: 13px;
+            line-height: 26px;
+            list-style: none;
+
+            &:hover {
+                background-color: #CEEDCC;
+            }
+        }
+
+        &--link {
+            color: #707070;
+            font-size: 14px;
+            text-decoration: none;
+        }
+    }
+
+    &__first {
+        position: absolute;
+        height: 100%;
+    }
+
+    &__second {
+        position: absolute;
+        z-index: 9;
+        display: none;
+    }
+
+    &__three {
+        width: 100%;
+        position: absolute;
+        z-index: 9;
+        display: none;
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: $boxshadow;
+        padding: 10px 0 29px 18px;
+    }
+}
+
+.categories-btn {
+    width: 100%;
+    border: none;
+    background-color: #E5F4E2;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    color: #2BA513;
+    font-size: 16px;
+    padding: 8px 18px;
+    border-radius: 22px;
+
+    img {
+        margin-right: 7px;
+    }
+}
+
+.mobile-categories {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background-color: #fff;
+    display: none;
+    top: 0;
+    left: 0;
+    overflow: auto;
+
+    &.active {
+        display: block;
+    }
+
+    &__head {
+        width: 100%;
+        display: block;
+        padding-top: 10px;
+        
+        &--close {
+            background-color: transparent;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            position: absolute;
+            left: 29px;
+            top: 21px;
+        }
+        
+        &--list {
+            margin-top: 10px;
+            overflow: scroll;
+            background-color: #F3F3F3;
+            display: flex;
+        }
+
+        &--item {
+            min-width: max-content;
+            text-decoration: none;
+            padding: 10px 15px;
+            color: #5F625F;
+            border-bottom: 2px solid #8C8E8C;
+
+            &.show {
+                display: block;
+            }
+
+            &.hide {
+                display: none;
+            }
+            
+            &.active {
+                color: #206DFC;
+                border-bottom: 2px solid #206DFC; 
+            }
+        }
+    }
+
+    &__list {
+        display: none;
+    }
+
+    &__first {
+        display: block;
+    }
+}

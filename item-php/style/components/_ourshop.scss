@@ -1,0 +1,22 @@
+.ourshop {
+
+    &__item {
+        width: calc(100%/4);
+        padding: 35px;
+        list-style: none;
+
+        @media (max-width: 1024px) {
+            padding: 15px 10px;
+        }
+
+        &--link {
+            text-decoration: none;
+        }
+
+        &--img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/grid.css">
+    <link rel="stylesheet" href="style/splide.min.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>ItemsSphere</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block">
+                    <div class="header__logo d-flex align-items-center">
+                        <img src="img/svg/header-logo.svg" alt="" class="header__logo--img">
+                    </div>
+                </div>
+                <div class="col-10 d-none d-lg-flex justify-content-between">
+                    <form class="header__search d-flex align-items-center justify-content-between">
+                        <input type="text" placeholder="search" class="header__search--input regular">
+                        <button class="header__search--btn">
+                            <img src="img/svg/loop.svg" alt="">
+                        </button>
+                    </form>
+                    <ul class="header__btns d-flex align-items-center justify-content-end">
+                        
+                        <!-- is not log in -->
+                        <div class="header__account click-open d-flex align-items-center justify-content-between" data-active="login-popup">
+                            <div class="d-flex">
+                                <div class="header__account--avatar d-flex align-items-center justify-content-center">
+                                    <img src="img/svg/header-btn/avatar.svg" alt="">
+                                </div>
+                                <div class="header__account--text regular">
+                                    <p>Hello</p>
+                                    <p class="header__account--text--green">Davit</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center" style="position: relative;">
+                                <img src="img/svg/header-btn/arrow.svg" alt="" class="header__account--icon">
+                            </div>
+                        </div> 
+                        
+                        <!-- is loged in / profile window -->
+                        <!-- <div class="header__account click-open d-flex align-items-center justify-content-between" data-active="profile-window">
+                                <div class="d-flex">
+                                    <div class="header__account--avatar d-flex align-items-center justify-content-center">
+                                        <img src="img/svg/header-btn/avatar.svg" alt="">
+                                    </div>
+                                    <div class="header__account--text regular">
+                                        <p>Hello</p>
+                                        <p class="header__account--text--green">Davit</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center" style="position: relative;">
+                                    <img src="img/svg/header-btn/arrow.svg" alt="" class="header__account--icon">
+                                    <div class="profile open-active" data-active="profile-window">
+                                        <div class="profile__head">
+                                            <h1 class="profile__head--title bold">Davit Gelashvili</h1>
+                                            <p class="profile__head--mail regular">datoogelashvili@gmail.com</p>
+                                        </div>
+                                        <ul class="profile__menu regular">
+                                            <li class="profile__menu--li">
+                                                <a href="" class="profile__menu--link">Profile</a>
+                                            </li>
+                                            <li class="profile__menu--li">
+                                                <a href="" class="profile__menu--link">Account Information</a>
+                                            </li>
+                                            <li class="profile__menu--li">
+                                                <a href="" class="profile__menu--link">My Products</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="profile__menu regular">
+                                            <li class="profile__menu--li">
+                                                <a href="" class="profile__menu--link">Message</a>
+                                            </li>
+                                            <li class="profile__menu--li">
+                                                <a href="" class="profile__menu--link">Change Password</a>
+                                            </li>
+                                        </ul>
+                                        <div class="profile__logout">
+                                            <button class="profile__logout--btn regular">Log Out</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+                        <li class="header__btns--item">
+                            <a href="" class="header__btns--link header__btns--link--green d-flex align-items-center justify-content-center">
+                                <img src="img/svg/header-btn/add.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="header__btns--item">
+                            <a href="" class="header__btns--link d-flex align-items-center justify-content-center">
+                                <img src="img/svg/header-btn/mail.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="header__btns--item">
+                            <a href="" class="header__btns--link d-flex align-items-center justify-content-center">
+                                <img src="img/svg/header-btn/zari.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="header__btns--item">
+                            <a href="" class="header__btns--link d-flex align-items-center justify-content-center">
+                                <img src="img/svg/header-btn/heart.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="header__btns--item">
+                            <div class="header__btns--item--count d-flex justify-content-center align-items-center regular">
+                                1
+                            </div>
+                            <a href="" class="header__btns--link d-flex align-items-center justify-content-center">
+                                <img src="img/svg/header-btn/shop.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- mobile logo -->
+                <div class="col-12 d-block d-lg-none">
+                    <div class="header__mobile d-flex align-items-center justify-content-center">
+                        <button class="burger">
+                            <img src="img/svg/burger.svg" alt="">
+                        </button>
+                        <img src="img/svg/m-logo.svg" alt="">
+                        <div class="header__mobile__btns d-flex justify-content-end">
+                            <button class="header__mobile__btns--search"><img src="img/svg/header-btn/m-loop.svg" alt=""></button>
+                            <button class="header__mobile__btns--btn"><img src="img/svg/header-btn/m-sms.svg" alt=""></button>
+                            <button class="header__mobile__btns--btn"><img src="img/svg/header-btn/m-notification.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- search popup -->
+        <div class="header__search__bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-lg-none">
+                        <form class="m-header__search d-flex align-items-center justify-content-end">
+                            <input type="text" placeholder="I want to buy…" class="m-header__search--input regular">
+                            <div class="m-search-cancel"><img src="img/svg/header-btn/m-search-cancel.svg" alt=""></div>
+                        </form>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="header__search__bar--left d-flex flex-column align-items-end regular">
+                                    Products (234)
+                                    <a href="">View all</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-10">
+                                <ul class="header__search__bar__list">
+                                    <li class="header__search__bar__list--li">
+                                        <a href="" class="header__search__bar__list--link d-flex align-items-center">
+                                            <figure class="header__search__bar__list--img">
+                                                <img src="img/headphone.png" alt="">
+                                            </figure>
+                                            <h1 class="header__search__bar__list--title regular">iPhone5 40 Inch 1080p  Smart LED Roku TV</h1>
+                                        </a>
+                                    </li>
+                                    <li class="header__search__bar__list--li">
+                                        <a href="" class="header__search__bar__list--link d-flex align-items-center">
+                                            <figure class="header__search__bar__list--img">
+                                                <img src="img/headphone.png" alt="">
+                                            </figure>
+                                            <h1 class="header__search__bar__list--title regular">iPhone5 40 Inch 1080p  Smart LED Roku TV</h1>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- end -->
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="header__search__bar--left d-flex flex-column align-items-end regular">
+                                    Charities (56)
+                                    <a href="">View all</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-10">
+                                <ul class="header__search__bar__list">
+                                    <li class="header__search__bar__list--li">
+                                        <a href="" class="header__search__bar__list--link d-flex align-items-center">
+                                            <figure class="header__search__bar__list--img">
+                                                <img src="img/headphone.png" alt="">
+                                            </figure>
+                                            <h1 class="header__search__bar__list--title regular">iPhone5 40 Inch 1080p  Smart LED Roku TV</h1>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- end -->
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="header__search__bar--left d-flex flex-column align-items-end regular">
+                                    News (2)
+                                    <a href="">View all</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-10">
+                                <ul class="header__search__bar__list">
+                                    <li class="header__search__bar__list--li">
+                                        <a href="" class="header__search__bar__list--link d-flex align-items-center">
+                                            <h1 class="header__search__bar__list--title regular">iPhone5 40 Inch 1080p  Smart LED Roku TV</h1>
+                                        </a>
+                                    </li>
+                                    <li class="header__search__bar__list--li">
+                                        <a href="" class="header__search__bar__list--link d-flex align-items-center">
+                                            <h1 class="header__search__bar__list--title regular">iPhone5 40 Inch 1080p  Smart LED Roku TV</h1>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- end -->
+                </div>
+            </div>
+        </div><!-- search popup end -->
+    </header>
+
+    <!-- head menu -->   
+    <div class="container d-none d-lg-block ">
+        <div class="head-menu d-flex justify-content-between align-items-center">
+            <ul class="head-menu__categories d-flex">
+                <li class="head-menu__categories--item">
+                    <a href="" class="head-menu__categories--link regular">Market</a>
+                </li>
+                <li class="head-menu__categories--item">
+                    <a href="" class="head-menu__categories--link regular">Shop</a>
+                </li>
+                <li class="head-menu__categories--item">
+                    <a href="" class="head-menu__categories--link regular">Charitys And Other NPOs</a>
+                </li>
+                <li class="head-menu__categories--item">
+                    <a href="" class="head-menu__categories--link regular">Social Programs</a>
+                </li>
+                <li class="head-menu__categories--item">
+                    <a href="" class="head-menu__categories--link regular">News</a>
+                </li>
+            </ul>
+            <ul class="head-menu__categories d-flex">
+                <li class="head-menu__categories--item">
+                    <a href="" class="head-menu__categories--link regular">About us</a>
+                </li>
+                <li class="head-menu__categories--item">
+                    <a href="" class="head-menu__categories--link regular">Help&Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- mobile menu bar -->
+    <div class="m-header d-block d-lg-none">
+        <div class="container">
+            <ul class="m-header__menu d-flex justify-content-between">
+                <li class="m-header__menu--li">
+                    <a href="" class="m-header__menu--a regular d-flex flex-column align-items-center">
+                        <figure class="m-header__menu--figure d-flex justify-content-center">
+                            <div class="m-header__menu--icon">
+                                <img src="img/svg/header-btn/market-menu.svg" class="convert-svg" alt="">
+                            </div>
+                        </figure>
+                        Market
+                    </a>
+                </li>
+                <li class="m-header__menu--li">
+                    <a href="" class="m-header__menu--a regular d-flex flex-column align-items-center">
+                        <figure class="m-header__menu--figure d-flex justify-content-center">
+                            <div class="m-header__menu--icon">
+                                <img src="img/svg/header-btn/shop-menu.svg" class="convert-svg" alt="">
+                            </div>
+                        </figure>
+                        Shop
+                    </a>
+                </li>
+                <li class="m-header__menu--li">
+                    <a href="" class="m-header__menu--a active regular d-flex flex-column align-items-center">
+                        <figure class="m-header__menu--figure d-flex justify-content-center">
+                            <div class="m-header__menu--icon">
+                                <img src="img/svg/header-btn/social-program-menu.svg" class="convert-svg" alt="">
+                            </div>
+                        </figure>
+                        Social Programs
+                    </a>
+                </li>
+                <li class="m-header__menu--li">
+                    <a href="" class="m-header__menu--a regular d-flex flex-column align-items-center">
+                        <figure class="m-header__menu--figure d-flex justify-content-center">
+                            <div class="m-header__menu--icon">
+                                <img src="img/svg/header-btn/charities-menu.svg" class="convert-svg" alt="">
+                            </div>
+                        </figure>
+                        Charities 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- fix menu bar mobile -->
+    <div class="fix-bar d-block d-lg-none">
+        <div class="container">
+            <ul class="fix-bar__lists d-flex justify-content-between align-items-start">
+                <li class="fix-bar__lists--li">
+                    <a href="" class="fix-bar__lists--link regular d-flex align-items-center flex-column">
+                        <figure class="fix-bar__lists--icon">
+                            <img src="img/svg/header-btn/bar-home.svg" alt="">
+                        </figure>
+                        Home
+                    </a>
+                </li>
+                <li class="fix-bar__lists--li">
+                    <a href="" class="fix-bar__lists--link regular d-flex align-items-center flex-column">
+                        <figure class="fix-bar__lists--icon">
+                            <img src="img/svg/header-btn/bar-wishlist.svg" alt="">
+                        </figure>
+                        Wishlist
+                    </a>
+                </li>
+                <li class="fix-bar__lists--btn">
+                    <a href="" class="d-flex align-items-center flex-column">
+                        <img src="img/svg/header-btn/bar-add.svg" alt="">
+                    </a>
+                </li>
+                <li class="fix-bar__lists--li">
+                    <a href="" class="fix-bar__lists--link regular d-flex align-items-center flex-column">
+                        <figure class="fix-bar__lists--icon">
+                            <img src="img/svg/header-btn/bar-cart.svg" alt="">
+                        </figure>
+                        Cart
+                    </a>
+                </li>
+                <li class="fix-bar__lists--li">
+                    <!-- loged in window / profile menu  -->
+                    <!-- <a href="" data-active="mobile-popup-menu" class="fix-bar__lists--link click-open regular d-flex align-items-center flex-column">
+                        <figure class="fix-bar__lists--icon">
+                            <img src="img/svg/header-btn/bar-profile.svg" alt="">
+                        </figure>
+                        Profile
+                    </a> -->
+
+                    <!-- log in window  -->
+                    <a href="" data-active="login-popup" class="fix-bar__lists--link click-open regular d-flex align-items-center flex-column">
+                        <figure class="fix-bar__lists--icon">
+                            <img src="img/svg/header-btn/bar-profile.svg" alt="">
+                        </figure>
+                        Profile
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="shop-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="shop-detail__slider">
+                        <div class="shop-detail__main-slider">
+                            <label class="upload__image d-flex flex-column align-items-center justify-content-center">
+                                <img class="upload__image--icon" src="img/svg/upload-icon.svg" alt="">
+                                <div class="upload__image--text regular d-flex flex-column align-items-center">
+                                    <p>Drop Images to upload</p> 
+                                    <p>or</p>
+                                </div>
+                                <input 
+                                    type="file" 
+                                    class="upload__image--input h-roman"
+                                    onchange="fileUploadImage(this, value)">
+                                <img src="" alt="" class="upload__image--uploaded">
+                                <div class="upload__image--btn regular">Browse</div>
+                            </label>
+                        </div>
+                        <br />
+                        <div class="shop-detail__mini-slider d-flex align-items-center">
+                            <div class="shop-detail__mini-slider--cover d-flex align-items-center justify-content-center">
+                                <label class="upload__image d-flex flex-column align-items-center justify-content-center">
+                                    <img class="upload__image--icon" src="img/svg/upload-icon.svg" alt="">
+                                    <input 
+                                        type="file" 
+                                        class="upload__image--input h-roman"
+                                        onchange="fileUploadImage(this, value)">
+                                    <img src="" alt="" class="upload__image--uploaded">
+                                </label>
+                            </div>
+                            <div class="shop-detail__mini-slider--cover d-flex align-items-center justify-content-center">
+                                <label class="upload__image d-flex flex-column align-items-center justify-content-center">
+                                    <img class="upload__image--icon" src="img/svg/upload-icon.svg" alt="">
+                                    <input 
+                                        type="file" 
+                                        class="upload__image--input h-roman"
+                                        onchange="fileUploadImage(this, value)">
+                                    <img src="" alt="" class="upload__image--uploaded">
+                                </label>
+                            </div>
+                            <div class="shop-detail__mini-slider--cover d-flex align-items-center justify-content-center">
+                                <label class="upload__image d-flex flex-column align-items-center justify-content-center">
+                                    <img class="upload__image--icon" src="img/svg/upload-icon.svg" alt="">
+                                    <input 
+                                        type="file" 
+                                        class="upload__image--input h-roman"
+                                        onchange="fileUploadImage(this, value)">
+                                    <img src="" alt="" class="upload__image--uploaded">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="shop-detail__info">
+                        <ul class="page__navigation--links d-none d-lg-flex">
+                            <li class="page__navigation--link regular">
+                                <a href="">Home</a>
+                            </li>
+                            <li class="page__navigation--link regular">
+                                >
+                                <a href="">Home</a>
+                            </li>
+                        </ul>
+                        <h1 class="shop-detail__info--title bold d-none d-lg-block">Upload Social program</h1>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="upload">
+                                    <form class="upload__body">
+                                        <div class="upload__body--tab">
+                                            <div class="col-6">
+                                                <div class="cart-order__form--label">
+                                                    <span class="cart-order__form--title regular">
+                                                        <img src="img/svg/red-union.svg" alt="">
+                                                        title
+                                                    </span>
+                                                    <input type="text" class="cart-order__form--input regular" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="cart-order__form--label">
+                                                    <span class="cart-order__form--title regular">
+                                                        <img src="img/svg/red-union.svg" alt="">
+                                                        title
+                                                    </span>
+                                                    <textarea type="text" class="cart-order__form--input regular" placeholder="ქარ"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="cart-order__form--label">
+                                                    <span class="cart-order__form--title regular">
+                                                        <img src="img/svg/red-union.svg" alt="">
+                                                        title
+                                                    </span>
+                                                    <div class="select">
+                                                        <select name="" id="" class="select__list regular">
+                                                            <option value="" class="select__list--item">Tbilisi</option>
+                                                            <option value="" class="select__list--item">erti</option>
+                                                            <option value="" class="select__list--item">ori</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- end -->
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <button type="button" class="upload__body--next bold">List Project</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="d-flex justify-content-end">
+                                                    <button class="cart-order__body--btn cart-order__body--blue bold">Save as draft</button>
+                                                    <button class="cart-order__form--btn bold">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="row flex-wrap-reverse flex-wrap">
+                    <div class="col-lg-5">
+                        <div class="footer__content--left">
+                            <img src="img/svg/footer-logo.svg" alt="" class="footer__content--logo d-none d-lg-block">
+                            <p class="footer__content--status regular">Manage Your Property and Contribute to Sustainable Dvelopment </p>
+                            <div class="footer__content--app d-flex">
+                                <img src="img/applestore.png" alt="">
+                                <img src="img/googleplay.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <div class="col-6 col-lg-12">
+                                        <h2 class="footer__title d-none d-lg-block regular">TERMS</h2>
+                                        <ul class="footer__menu">
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">Home</a>
+                                            </li>
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">Market</a>
+                                            </li>
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">Shop</a>
+                                            </li>
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">Charity</a>
+                                            </li>
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">About us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 d-lg-none">
+                                        <ul class="footer__menu">
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">PRIVACY POLICY</a>
+                                            </li>
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">TERMS & CONDITIONS</a>
+                                            </li>
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">PAYMENT & DELIVERY</a>
+                                            </li>
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">HELP & CONTACT</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 d-lg-none">
+                                <div class="footer__payment d-flex align-items-center">
+                                    <h2 class="footer__payment--title regular">
+                                        Payment method
+                                    </h2>
+                                    <div class="d-flex">
+                                        <img src="img/svg/footer-icon/visa.svg" alt="" class="footer__payment--icon">
+                                        <img src="img/svg/footer-icon/master.svg" alt="" class="footer__payment--icon">
+                                        <img src="img/svg/footer-icon/cash.svg" alt="" class="footer__payment--icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <h2 class="footer__title d-none d-lg-block regular">CONTACT US</h2>
+                                <ul class="footer__menu">
+                                    <li class="footer__menu--item d-flex">
+                                        <a href="" class="footer__menu--link regular d-flex align-items-center">
+                                            <img src="img/svg/footer-icon/mobile.svg" alt="">
+                                            +995 599 88 32 53
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu--item d-flex">
+                                        <a href="" class="footer__menu--link regular d-flex align-items-center">
+                                            <img src="img/svg/footer-icon/mail.svg" alt="">
+                                            info@itemssphere.ge
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu--item d-flex">
+                                        <a href="" class="footer__menu--link regular d-flex align-items-center">
+                                            <img src="img/svg/footer-icon/location.svg" alt="">
+                                            Tbilisi, Georgia, Kipshidze str 12.
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <h2 class="footer__title d-none d-lg-block regular">FIND US</h2>
+                                <ul class="footer__menu d-flex">
+                                    <li class="footer__menu--item d-flex">
+                                        <a href="" class="footer__menu--link regular d-flex align-items-center">
+                                            <img src="img/svg/footer-icon/fb.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu--item d-flex">
+                                        <a href="" class="footer__menu--link regular d-flex align-items-center">
+                                            <img src="img/svg/footer-icon/instagram.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu--item d-flex">
+                                        <a href="" class="footer__menu--link regular d-flex align-items-center">
+                                            <img src="img/svg/footer-icon/in.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="footer__payment d-none d-lg-block">
+                                    <h2 class="footer__payment--title regular">
+                                        Payment method
+                                    </h2>
+                                    <div class="d-flex">
+                                        <img src="img/svg/footer-icon/visa.svg" alt="" class="footer__payment--icon">
+                                        <img src="img/svg/footer-icon/master.svg" alt="" class="footer__payment--icon">
+                                        <img src="img/svg/footer-icon/cash.svg" alt="" class="footer__payment--icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+    <script src="js/splide.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/pagination.js"></script>
+    <script src="js/function.js"></script>
+
+    <script>
+        var currentTab = 0; // Current tab is set to be the first tab (0)
+        showTab(currentTab); // Display the current tab
+        
+        function showTab(n) {
+            // This function will display the specified tab of the form...
+            var x = document.getElementsByClassName("upload__body--tab");
+            x[n].style.display = "block";
+            //... and fix the Previous/Next buttons:
+            if (n == 0) {
+                document.getElementById("prevBtn").style.display = "none";
+            } else {
+                document.getElementById("prevBtn").style.display = "flex";
+            }
+            //   if (n == (x.length - 1)) {
+            //     document.getElementById("nextBtnText").innerHTML = "Submit";
+            //   } else {
+            //     document.getElementById("nextBtnText").innerHTML = "Next";
+            //   }
+            //... and run a function that will display the correct step indicator:
+            fixStepIndicator(n)
+        }
+    
+        function nextPrev(n) {
+            // This function will figure out which tab to display
+            var x = document.getElementsByClassName("upload__body--tab");
+            // Exit the function if any field in the current tab is invalid:
+            if (n == 1 && !validateForm()) return false;
+            // Hide the current tab:
+            x[currentTab].style.display = "none";
+            // Increase or decrease the current tab by 1:
+            currentTab = currentTab + n;
+            // if you have reached the end of the form...
+            if (currentTab >= x.length) {
+                // ... the form gets submitted:
+                document.getElementsByClassName("upload__body").submit();
+                return false;
+            }
+            // Otherwise, display the correct tab:
+            showTab(currentTab);
+        }
+        
+        function validateForm() {
+            // This function deals with validation of the form fields
+            var x, y, i, valid = true;
+            x = document.getElementsByClassName("upload__body--tab");
+            y = x[currentTab].getElementsByTagName("input");
+            // A loop that checks every input field in the current tab:
+            for (i = 0; i < y.length; i++) {
+                // If a field is empty...
+                // ეს ქვედა კომენტარი გამოიყენება შემოწმებისას... 
+                // if (y[i].value == "") 
+                if (y[i].value == true) {
+                // add an "invalid" class to the field:
+                y[i].className += " invalid";
+                // and set the current valid status to false
+                valid = false;
+                }
+            }
+        // If the valid status is true, mark the step as finished and valid:
+            if (valid) {
+                document.getElementsByClassName("upload__head--menu")[currentTab].classList.add("finish");
+            }
+        return valid; // return the valid status
+        }
+        
+        function fixStepIndicator(n) {
+            // This function removes the "active" class of all steps...
+            var i, x = document.getElementsByClassName("upload__head--menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].className = x[i].className.replace(" active", "");
+            }
+            //... and adds the "active" class on the current step:
+            x[n].classList.add("active");
+        }
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+.delivered {
+    margin-top: 54px;
+    
+    &__item {
+        // width: 100%;
+
+        &--img {
+            width: 100%;
+            max-height: 400px;
+            height: 100vw;
+            border-radius: 20px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &--title {
+            margin-top: 24px;
+            color: #000;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+        }
+
+        &--desc {
+            margin-top: 7px;
+            color: #5A5A5A;
+            font-size: 13px;
+            line-height: 17px;
+            text-align: center;
+        }
+
+        @media (max-width: 1024px) {
+            margin-right: 18px;    
+        }
+    }
+
+    &__list {
+
+        &--item {
+            padding: 18px 28px;
+            margin-bottom: 23px;
+            border-radius: 20px;
+            border: 1px solid #E6E6E6;
+
+            &:hover {
+                border: 1px solid #2ADF00;
+            }
+        }
+
+        &--content {
+            margin-bottom: 19px;
+        }
+
+        &--title {
+            color: #535353;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        &--desc {
+            color: #000;
+            font-size: 18px;
+        }
+
+        &--buttons {
+            height: 100%;
+        }
+
+        &--main-addres {
+            color: #2ADF00;
+            font-size: 15px;
+
+            img {
+                margin-right: 11px;
+            }
+        }
+
+        &--add {
+            color: #2ADF00;
+            border: 1px solid #2ADF00;
+            padding: 14px 60px;
+            border-radius: 100px;
+            background-color: transparent;
+            cursor: pointer;
+            outline: none;
+            font-size: 15px;
+        }
+
+        &--input-checked {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #E6E6E6;
+            border-radius: 50%;
+
+            img {
+                display: none;
+            }
+        }
+        &--input {
+            position: absolute;
+            z-index: -2;
+            opacity: 0;
+
+            &:checked ~ .delivered__list--input-checked {
+                img {
+                    display: block;
+                }
+            }   
+        }
+    }
+
+    &__popup {
+        &--container {
+            max-width: 1002px !important;
+        }
+    }
+}

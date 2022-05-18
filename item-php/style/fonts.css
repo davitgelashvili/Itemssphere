@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Bold-Italic';
+    src: url('../fonts/Bold-Italic.ttf');
+}
+@font-face {
+    font-family: 'Bold';
+    src: url('../fonts/Bold.ttf');
+}
+@font-face {
+    font-family: 'Italic';
+    src: url('../fonts/Italic.ttf');
+}
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/regular.ttf');
+}
+  
+.regular{
+    font-family: 'regular';
+}
+.bold{
+    font-family: 'Bold';
+}
+.italic {
+    font-family: 'Italic';
+}
+.bold-italic {
+    font-family: 'Bold-Italic';
+}

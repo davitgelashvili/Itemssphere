@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/grid.css">
+    <link rel="stylesheet" href="style/splide.min.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>ItemsSphere</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 d-none d-lg-block">
+                    <div class="header__logo d-flex align-items-center">
+                        <img src="img/svg/header-logo.svg" alt="" class="header__logo--img">
+                    </div>
+                </div>
+                <div class="col-10 d-none d-lg-flex justify-content-between">
+                    <form class="header__search d-flex align-items-center justify-content-between">
+                        <input type="text" placeholder="search" class="header__search--input regular">
+                        <button class="header__search--btn">
+                            <img src="img/svg/loop.svg" alt="">
+                        </button>
+                    </form>
+                    <ul class="header__btns d-flex align-items-center justify-content-end">
+                        
+                        <!-- is not log in -->
+                        <div class="header__account click-open d-flex align-items-center justify-content-between" data-active="login-popup">
+                            <div class="d-flex">
+                                <div class="header__account--avatar d-flex align-items-center justify-content-center">
+                                    <img src="img/svg/header-btn/avatar.svg" alt="">
+                                </div>
+                                <div class="header__account--text regular">
+                                    <p>Hello</p>
+                                    <p class="header__account--text--green">Davit</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center" style="position: relative;">
+                                <img src="img/svg/header-btn/arrow.svg" alt="" class="header__account--icon">
+                            </div>
+                        </div> 
+                        
+                        <!-- is loged in / profile window -->
+                        <!-- <div class="header__account click-open d-flex align-items-center justify-content-between" data-active="profile-window">
+                                <div class="d-flex">
+                                    <div class="header__account--avatar d-flex align-items-center justify-content-center">
+                                        <img src="img/svg/header-btn/avatar.svg" alt="">
+                                    </div>
+                                    <div class="header__account--text regular">
+                                        <p>Hello</p>
+                                        <p class="header__account--text--green">Davit</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center" style="position: relative;">
+                                    <img src="img/svg/header-btn/arrow.svg" alt="" class="header__account--icon">
+                                    <div class="profile open-active" data-active="profile-window">
+                                        <div class="profile__head">
+                                            <h1 class="profile__head--title bold">Davit Gelashvili</h1>
+                                            <p class="profile__head--mail regular">datoogelashvili@gmail.com</p>
+                                        </div>
+                                        <ul class="profile__menu regular">
+                                            <li class="profile__menu--li">
+                                                <a href="" class="profile__menu--link">Profile</a>
+                                            </li>
+                                            <li class="profile__menu--li">
+                                                <a href="" class="profile__menu--link">Account Information</a>
+                                            </li>
+                                            <li class="profile__menu--li">
+                                                <a href="" class="profile__menu--link">My Products</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="profile__menu regular">
+                                            <li class="profile__menu--li">
+                                                <a href="" class="profile__menu--link">Message</a>
+                                            </li>
+                                            <li class="profile__menu--li">
+                                                <a href="" class="profile__menu--link">Change Password</a>
+                                            </li>
+                                        </ul>
+                                        <div class="profile__logout">
+                                            <button class="profile__logout--btn regular">Log Out</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+                        <li class="header__btns--item">
+                            <a href="" class="header__btns--link header__btns--link--green d-flex align-items-center justify-content-center">
+                                <img src="img/svg/header-btn/add.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="header__btns--item">
+                            <a href="" class="header__btns--link d-flex align-items-center justify-content-center">
+                                <img src="img/svg/header-btn/mail.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="header__btns--item">
+                            <a href="" class="header__btns--link d-flex align-items-center justify-content-center">
+                                <img src="img/svg/header-btn/zari.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="header__btns--item">
+                            <a href="" class="header__btns--link d-flex align-items-center justify-content-center">
+                                <img src="img/svg/header-btn/heart.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="header__btns--item">
+                            <div class="header__btns--item--count d-flex justify-content-center align-items-center regular">
+                                1
+                            </div>
+                            <a href="" class="header__btns--link d-flex align-items-center justify-content-center">
+                                <img src="img/svg/header-btn/shop.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- mobile logo -->
+                <div class="col-12 d-block d-lg-none">
+                    <div class="header__mobile d-flex align-items-center justify-content-center">
+                        <button class="burger">
+                            <img src="img/svg/burger.svg" alt="">
+                        </button>
+                        <img src="img/svg/m-logo.svg" alt="">
+                        <div class="header__mobile__btns d-flex justify-content-end">
+                            <button class="header__mobile__btns--search"><img src="img/svg/header-btn/m-loop.svg" alt=""></button>
+                            <button class="header__mobile__btns--btn"><img src="img/svg/header-btn/m-sms.svg" alt=""></button>
+                            <button class="header__mobile__btns--btn"><img src="img/svg/header-btn/m-notification.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- search popup -->
+        <div class="header__search__bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-lg-none">
+                        <form class="m-header__search d-flex align-items-center justify-content-end">
+                            <input type="text" placeholder="I want to buy…" class="m-header__search--input regular">
+                            <div class="m-search-cancel"><img src="img/svg/header-btn/m-search-cancel.svg" alt=""></div>
+                        </form>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="header__search__bar--left d-flex flex-column align-items-end regular">
+                                    Products (234)
+                                    <a href="">View all</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-10">
+                                <ul class="header__search__bar__list">
+                                    <li class="header__search__bar__list--li">
+                                        <a href="" class="header__search__bar__list--link d-flex align-items-center">
+                                            <figure class="header__search__bar__list--img">
+                                                <img src="img/headphone.png" alt="">
+                                            </figure>
+                                            <h1 class="header__search__bar__list--title regular">iPhone5 40 Inch 1080p  Smart LED Roku TV</h1>
+                                        </a>
+                                    </li>
+                                    <li class="header__search__bar__list--li">
+                                        <a href="" class="header__search__bar__list--link d-flex align-items-center">
+                                            <figure class="header__search__bar__list--img">
+                                                <img src="img/headphone.png" alt="">
+                                            </figure>
+                                            <h1 class="header__search__bar__list--title regular">iPhone5 40 Inch 1080p  Smart LED Roku TV</h1>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- end -->
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="header__search__bar--left d-flex flex-column align-items-end regular">
+                                    Charities (56)
+                                    <a href="">View all</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-10">
+                                <ul class="header__search__bar__list">
+                                    <li class="header__search__bar__list--li">
+                                        <a href="" class="header__search__bar__list--link d-flex align-items-center">
+                                            <figure class="header__search__bar__list--img">
+                                                <img src="img/headphone.png" alt="">
+                                            </figure>
+                                            <h1 class="header__search__bar__list--title regular">iPhone5 40 Inch 1080p  Smart LED Roku TV</h1>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- end -->
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="header__search__bar--left d-flex flex-column align-items-end regular">
+                                    News (2)
+                                    <a href="">View all</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-10">
+                                <ul class="header__search__bar__list">
+                                    <li class="header__search__bar__list--li">
+                                        <a href="" class="header__search__bar__list--link d-flex align-items-center">
+                                            <h1 class="header__search__bar__list--title regular">iPhone5 40 Inch 1080p  Smart LED Roku TV</h1>
+                                        </a>
+                                    </li>
+                                    <li class="header__search__bar__list--li">
+                                        <a href="" class="header__search__bar__list--link d-flex align-items-center">
+                                            <h1 class="header__search__bar__list--title regular">iPhone5 40 Inch 1080p  Smart LED Roku TV</h1>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- end -->
+                </div>
+            </div>
+        </div><!-- search popup end -->
+    </header>
+
+    <!-- head menu -->   
+    <div class="container d-none d-lg-block ">
+        <div class="head-menu d-flex justify-content-between align-items-center">
+            <ul class="head-menu__categories d-flex">
+                <li class="head-menu__categories--item">
+                    <a href="" class="head-menu__categories--link regular">Market</a>
+                </li>
+                <li class="head-menu__categories--item">
+                    <a href="" class="head-menu__categories--link regular">Shop</a>
+                </li>
+                <li class="head-menu__categories--item">
+                    <a href="" class="head-menu__categories--link regular">Charitys And Other NPOs</a>
+                </li>
+                <li class="head-menu__categories--item">
+                    <a href="" class="head-menu__categories--link regular">Social Programs</a>
+                </li>
+                <li class="head-menu__categories--item">
+                    <a href="" class="head-menu__categories--link regular">News</a>
+                </li>
+            </ul>
+            <ul class="head-menu__categories d-flex">
+                <li class="head-menu__categories--item">
+                    <a href="" class="head-menu__categories--link regular">About us</a>
+                </li>
+                <li class="head-menu__categories--item">
+                    <a href="" class="head-menu__categories--link regular">Help&Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- mobile menu bar -->
+    <div class="m-header d-block d-lg-none">
+        <div class="container">
+            <ul class="m-header__menu d-flex justify-content-between">
+                <li class="m-header__menu--li">
+                    <a href="" class="m-header__menu--a regular d-flex flex-column align-items-center">
+                        <figure class="m-header__menu--figure d-flex justify-content-center">
+                            <div class="m-header__menu--icon">
+                                <img src="img/svg/header-btn/market-menu.svg" class="convert-svg" alt="">
+                            </div>
+                        </figure>
+                        Market
+                    </a>
+                </li>
+                <li class="m-header__menu--li">
+                    <a href="" class="m-header__menu--a active regular d-flex flex-column align-items-center">
+                        <figure class="m-header__menu--figure d-flex justify-content-center">
+                            <div class="m-header__menu--icon">
+                                <img src="img/svg/header-btn/shop-menu.svg" class="convert-svg" alt="">
+                            </div>
+                        </figure>
+                        Shop
+                    </a>
+                </li>
+                <li class="m-header__menu--li">
+                    <a href="" class="m-header__menu--a regular d-flex flex-column align-items-center">
+                        <figure class="m-header__menu--figure d-flex justify-content-center">
+                            <div class="m-header__menu--icon">
+                                <img src="img/svg/header-btn/social-program-menu.svg" class="convert-svg" alt="">
+                            </div>
+                        </figure>
+                        Social Programs
+                    </a>
+                </li>
+                <li class="m-header__menu--li">
+                    <a href="" class="m-header__menu--a regular d-flex flex-column align-items-center">
+                        <figure class="m-header__menu--figure d-flex justify-content-center">
+                            <div class="m-header__menu--icon">
+                                <img src="img/svg/header-btn/charities-menu.svg" class="convert-svg" alt="">
+                            </div>
+                        </figure>
+                        Charities 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- fix menu bar mobile -->
+    <div class="fix-bar d-block d-lg-none">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <button class="cart-file__btn bold cart-file--blue d-block d-lg-none">
+                    export
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- organization -->
+    <div class="container">
+        <ul class="page__navigation--links d-flex">
+            <li class="page__navigation--link regular">
+                <a href="">Home</a>
+            </li>
+            <li class="page__navigation--link regular">
+                >
+                <a href="">Home</a>
+            </li>
+        </ul>
+        <div class="page__title regular">
+            News
+        </div>
+        <div class="organization">
+            <div class="organization__header">
+                <div class="organization__header--cover">
+                    <img src="img/organization-cover.png" alt="">
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="organization__header--logo d-flex align-items-center justify-content-center">
+                            <img src="img/zoomer.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <h1 class="organization__header--title bold">
+                            Organization Name
+                        </h1>
+                        <div class="d-flex">
+                            <div class="organization__header--follow regular">
+                                <p>20</p>
+                                <span>Followers</span>
+                            </div>
+                            <div class="organization__header--follow regular">
+                                <p>15</p>
+                                <span>Following</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-none d-lg-block col-lg-3">
+                    <ul class="organization__menu">
+                        <li class="organization__menu--item">
+                            <a href="organization-account.html" class="organization__menu--link regular">Account Informaton</a>
+                        </li>
+                        <li class="organization__menu--item">
+                            <a href="organization-social.html" class="organization__menu--link regular">Social Projects</a>
+                        </li>
+                        <li class="organization__menu--item">
+                            <a href="organization-products.html" class="organization__menu--link regular">My Products</a>
+                        </li>
+                        <li class="organization__menu--item">
+                            <a href="organization-sold.html" class="organization__menu--link regular active">Sold</a>
+                        </li>
+                        <li class="organization__menu--item">
+                            <a href="organization-order.html" class="organization__menu--link regular">My Orders</a>
+                        </li>
+                        <li class="organization__menu--item">
+                            <a href="organization-delivery.html" class="organization__menu--link regular">Delivery Addresses</a>
+                        </li>
+                        <li class="organization__menu--item">
+                            <a href="organization-messages.html" class="organization__menu--link regular">Messages</a>
+                        </li>
+                        <li class="organization__menu--item">
+                            <a href="organization-password.html" class="organization__menu--link regular">Change Password</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-9">
+                    <div class="organization__content">
+                        <div class="d-flex justify-content-between flex-column flex-lg-row">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h1 class="organization__content--title d-flex align-items-center organization__content--padding bold">
+                                    Sold
+                                </h1>
+                                <div class="cart-diagram d-flex d-lg-none align-items-end regular">
+                                    <div class="cart-diagram__list d-flex align-items-end">
+                                        <div class="cart-diagram__list--item" style="height: 20%"></div>
+                                        <div class="cart-diagram__list--item" style="height: 30%"></div>
+                                        <div class="cart-diagram__list--item" style="height: 40%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="" class="cart-head d-block d-lg-flex align-items-lg-center organization__content--padding">
+                                <div class="d-flex">
+                                    <p class="cart-head__title regular">Filtr from</p>
+                                    <div class="cart-statistic d-flex d-lg-none align-items-center regular">
+                                        <p>
+                                            <img src="img/svg/eye-cart.svg" alt="">
+                                            Products View 124
+                                        </p>
+                                        <p>
+                                            <img src="img/svg/trolley-cart.svg" alt="">
+                                            Sold products 456
+                                        </p>
+                                        <p class="d-none d-lg-block bold">
+                                            Your earn ₾3,678.78
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <label class="sign-in__form--label  cart-head--label d-flex align-items-center">
+                                            <input type="date" class="sign-in__form--input cart-head--input regular" placeholder="სახელი">
+                                        </label>
+                                    </div>
+                                    <p class="cart-head__title regular">To</p>
+                                    <div class="d-flex align-items-center">
+                                        <label class="sign-in__form--label  cart-head--label d-flex align-items-center">
+                                            <input type="date" class="sign-in__form--input cart-head--input regular" placeholder="სახელი">
+                                        </label>
+                                    </div>
+                                    <button class="cart-item__compare cart-head--btn bold">Ok</button>
+                                    <button class="d-none d-lg-block cart-item__cancel cart-head--btn bold">cancel</button>
+                                </div>
+                                <div class="d-flex d-lg-none justify-content-center">
+                                    <p class="bold">
+                                        Your earn ₾3,678.78
+                                    </p>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="cart-file d-flex align-items-end">
+                                <button class="cart-file__btn bold cart-file--blue d-none d-lg-block">
+                                    export
+                                </button>
+                                <div class="cart-diagram d-none d-lg-flex align-items-end regular">
+                                    Last 6 month sold
+                                    <div class="cart-diagram__list d-flex align-items-end">
+                                        <div class="cart-diagram__list--item" style="height: 20%"></div>
+                                        <div class="cart-diagram__list--item" style="height: 60%"></div>
+                                        <div class="cart-diagram__list--item" style="height: 20%"></div>
+                                        <div class="cart-diagram__list--item" style="height: 100%"></div>
+                                        <div class="cart-diagram__list--item" style="height: 20%"></div>
+                                        <div class="cart-diagram__list--item" style="height: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none cart-statistic d-lg-flex align-items-center regular">
+                                <p>
+                                    <img src="img/svg/eye-cart.svg" alt="">
+                                    Products View 124
+                                </p>
+                                <p>
+                                    <img src="img/svg/trolley-cart.svg" alt="">
+                                    Sold products 456
+                                </p>
+                                <p class="bold">
+                                    Your earn ₾3,678.78
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cart-item organization__content--padding">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-9">
+                                            <figure class="cart-item__img d-flex align-items-center justify-content-center">
+                                                <img src="img/iphone-white.jpg" alt="">
+                                            </figure>
+                                            <div class="cart-item__content--text d-flex flex-column align-items-start">
+                                                <div class="products-slider__item--status regular">
+                                                    NEW
+                                                </div>
+                                                <a href="" class="products-slider__item--name regular">
+                                                    TCL 40S325 40 Inch 1080p Smart LED Roku TV
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <form class="d-flex d-lg-block justify-content-between">
+                                                <div class="shop-detail__info--color">
+                                                    <p class="bold">Quantity:</p>
+                                                </div>
+                                                <br />
+                                                <div class="quantity d-flex align-items-center justify-content-between">
+                                                    <div class="dec quantity__btn regular">-</div>
+                                                        <input type="text" name="turtle-doves" value="0" class="quantity__input regular">
+                                                    <div class="inc quantity__btn regular">+</div>
+                                                </div>
+                                                <p class="shop-detail__info--create-data regular">On stock: 249</p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="d-flex flex-wrap flex-lg-column justify-content-between">
+                                                <div class="shop-detail__info--color">
+                                                    <p class="bold d-flex justify-content-end">Delivery: </p>
+                                                </div>
+                                                <br />
+                                                <div class="products-slider__item--price bold d-flex justify-content-end">
+                                                    ₾9.39
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="d-flex flex-wrap flex-lg-column justify-content-between">
+                                                <div class="shop-detail__info--color">
+                                                    <p class="bold d-flex justify-content-end">Sum: </p>
+                                                </div>
+                                                <br />
+                                                <div class="products-slider__item--price bold d-flex justify-content-end">
+                                                    ₾1,239.39
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 d-flex flex-column">
+                                            <div class="d-flex flex-wrap flex-lg-column justify-content-between align-items-lg-end">
+                                                <div class="shop-detail__info--color">
+                                                    <p class="bold d-flex justify-content-end">Status: </p>
+                                                </div>
+                                                <br />
+                                                <div class="cart-item__date-status regular">
+                                                    <div class="d-flex justify-content-between">
+                                                        <p>create</p>
+                                                        <p>12.01.22</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <p>update</p>
+                                                        <p>12.01.22</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="cart-order">
+                                        <div class="cart-order__head d-flex justify-content-between">
+                                            <h1 class="cart-order__head--title bold">Order_25</h1>
+                                            <div class="cart-order__head--btn regular">
+                                                Collapse
+                                            </div>
+                                        </div>
+                                        <div class="cart-order__body d-flex justify-content-lg-between align-items-lg-center flex-column flex-lg-row">
+                                            <div class="d-flex align-items-center">
+                                                <figure class="cart-order__body--avatar">
+                                                    <img src="img/zoomer.png" alt="">
+                                                </figure>
+                                                <div>
+                                                    <h1 class="cart-order__body--name regular">Zoomer</h1>
+                                                    <p class="cart-order__body--desc regular">bought from you 3 times</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <button class="cart-order__body--btn cart-order__body--green d-flex align-items-center bold">
+                                                    <img src="img/svg/sms-green.svg" alt="">
+                                                    Send Massage
+                                                </button>
+                                                <button class="cart-order__body--btn cart-order__body--blue bold">Invoice</button>
+                                            </div>
+                                        </div>
+                                        <form class="cart-order__form">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <label class="cart-order__form--label">
+                                                        <p class="cart-order__form--title regular">Address</p>
+                                                        <input type="text" class="cart-order__form--input regular" placeholder="">
+                                                    </label>
+                                                    <label class="cart-order__form--label">
+                                                        <p class="cart-order__form--title regular">Address</p>
+                                                        <input type="text" class="cart-order__form--input regular" placeholder="">
+                                                    </label>
+                                                    <label class="cart-order__form--label">
+                                                        <p class="cart-order__form--title regular">Address</p>
+                                                        <input type="text" class="cart-order__form--input regular" placeholder="">
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label class="cart-order__form--label">
+                                                        <p class="cart-order__form--title regular">Address</p>
+                                                        <input type="text" class="cart-order__form--input regular" placeholder="">
+                                                    </label>
+                                                    <label class="cart-order__form--label">
+                                                        <p class="cart-order__form--title regular">Address</p>
+                                                        <input type="text" class="cart-order__form--input regular" placeholder="">
+                                                    </label>
+                                                    <label class="cart-order__form--label">
+                                                        <p class="cart-order__form--title regular">Address</p>
+                                                        <input type="text" class="cart-order__form--input regular" placeholder="">
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <p class="cart-order__form--title regular">Comment</p>
+                                                    <textarea type="text" class="cart-order__form--textarea regular"></textarea>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="row flex-wrap-reverse flex-wrap">
+                    <div class="col-lg-5">
+                        <div class="footer__content--left">
+                            <img src="img/svg/footer-logo.svg" alt="" class="footer__content--logo d-none d-lg-block">
+                            <p class="footer__content--status regular">Manage Your Property and Contribute to Sustainable Dvelopment </p>
+                            <div class="footer__content--app d-flex">
+                                <img src="img/applestore.png" alt="">
+                                <img src="img/googleplay.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <div class="col-6 col-lg-12">
+                                        <h2 class="footer__title d-none d-lg-block regular">TERMS</h2>
+                                        <ul class="footer__menu">
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">Home</a>
+                                            </li>
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">Market</a>
+                                            </li>
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">Shop</a>
+                                            </li>
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">Charity</a>
+                                            </li>
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">About us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 d-lg-none">
+                                        <ul class="footer__menu">
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">PRIVACY POLICY</a>
+                                            </li>
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">TERMS & CONDITIONS</a>
+                                            </li>
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">PAYMENT & DELIVERY</a>
+                                            </li>
+                                            <li class="footer__menu--item d-flex">
+                                                <a href="" class="footer__menu--link regular">HELP & CONTACT</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 d-lg-none">
+                                <div class="footer__payment d-flex align-items-center">
+                                    <h2 class="footer__payment--title regular">
+                                        Payment method
+                                    </h2>
+                                    <div class="d-flex">
+                                        <img src="img/svg/footer-icon/visa.svg" alt="" class="footer__payment--icon">
+                                        <img src="img/svg/footer-icon/master.svg" alt="" class="footer__payment--icon">
+                                        <img src="img/svg/footer-icon/cash.svg" alt="" class="footer__payment--icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <h2 class="footer__title d-none d-lg-block regular">CONTACT US</h2>
+                                <ul class="footer__menu">
+                                    <li class="footer__menu--item d-flex">
+                                        <a href="" class="footer__menu--link regular d-flex align-items-center">
+                                            <img src="img/svg/footer-icon/mobile.svg" alt="">
+                                            +995 599 88 32 53
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu--item d-flex">
+                                        <a href="" class="footer__menu--link regular d-flex align-items-center">
+                                            <img src="img/svg/footer-icon/mail.svg" alt="">
+                                            info@itemssphere.ge
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu--item d-flex">
+                                        <a href="" class="footer__menu--link regular d-flex align-items-center">
+                                            <img src="img/svg/footer-icon/location.svg" alt="">
+                                            Tbilisi, Georgia, Kipshidze str 12.
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <h2 class="footer__title d-none d-lg-block regular">FIND US</h2>
+                                <ul class="footer__menu d-flex">
+                                    <li class="footer__menu--item d-flex">
+                                        <a href="" class="footer__menu--link regular d-flex align-items-center">
+                                            <img src="img/svg/footer-icon/fb.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu--item d-flex">
+                                        <a href="" class="footer__menu--link regular d-flex align-items-center">
+                                            <img src="img/svg/footer-icon/instagram.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="footer__menu--item d-flex">
+                                        <a href="" class="footer__menu--link regular d-flex align-items-center">
+                                            <img src="img/svg/footer-icon/in.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="footer__payment d-none d-lg-block">
+                                    <h2 class="footer__payment--title regular">
+                                        Payment method
+                                    </h2>
+                                    <div class="d-flex">
+                                        <img src="img/svg/footer-icon/visa.svg" alt="" class="footer__payment--icon">
+                                        <img src="img/svg/footer-icon/master.svg" alt="" class="footer__payment--icon">
+                                        <img src="img/svg/footer-icon/cash.svg" alt="" class="footer__payment--icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- profile popup mobile -->
+    <div class="popup open-active d-lg-none align-items-center justify-content-center" data-active="mobile-popup-menu">
+        <div class="popup__container">
+            <button class="popup__close close-click" data-active="mobile-popup-menu">
+                <img src="img/svg/popup-close.svg" alt="" class="d-none d-lg-block">
+                <img src="img/svg/popup-back-btn.svg" alt="" class="d-block d-lg-none">
+            </button>
+            <div class="mobile-profile">
+                <h1 class="sign-in__title bold">Profile</h1>
+                <div class="profile__head">
+                    <h1 class="profile__head--title bold">Davit Gelashvili</h1>
+                    <p class="profile__head--mail regular">datoogelashvili@gmail.com</p>
+                </div>
+                <ul class="profile__menu regular">
+                    <li class="profile__menu--li">
+                        <a href="" class="profile__menu--link">Profile</a>
+                    </li>
+                    <li class="profile__menu--li">
+                        <a href="" class="profile__menu--link">Account Information</a>
+                    </li>
+                    <li class="profile__menu--li">
+                        <a href="" class="profile__menu--link">My Products</a>
+                    </li>
+                </ul>
+                <ul class="profile__menu regular">
+                    <li class="profile__menu--li">
+                        <a href="" class="profile__menu--link">Message</a>
+                    </li>
+                    <li class="profile__menu--li">
+                        <a href="" class="profile__menu--link">Change Password</a>
+                    </li>
+                </ul>
+                <div class="profile__logout">
+                    <button class="profile__logout--btn regular">Log Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- login popup -->
+    <div class="popup open-active align-items-center justify-content-center" data-active="login-popup">
+        <div class="popup__container">
+            <button class="popup__close close-click" data-active="login-popup">
+                <img src="img/svg/popup-close.svg" alt="" class="d-none d-lg-block">
+                <img src="img/svg/popup-back-btn.svg" alt="" class="d-block d-lg-none">
+            </button>
+            <div class="sign-in login">
+                <h1 class="sign-in__title bold">Sign in</h1>
+                <form class="sign-in__form">
+                    <label class="sign-in__form--label d-flex align-items-center">
+                        <input type="text" class="sign-in__form--input regular" placeholder="Email">
+                        <img src="img/svg/username.svg" alt="" class="sign-in__form--icon">
+                    </label>
+                    <label class="sign-in__form--label d-flex align-items-center">
+                        <input type="password" class="sign-in__form--input regular" placeholder="Password">
+                        <img src="img/svg/key.svg" alt="" class="sign-in__form--icon">
+                    </label>
+                    <li class="sign-in__forgot d-flex justify-content-end">
+                        <a href="" class="regular">Forgot Password?</a>
+                    </li>
+                    <button class="sign-in__form--btn bold">Sign in</button>
+                </form>
+                <div class="sign-in__or d-flex align-items-center justify-content-center">
+                    <span class="sign-in__or--text regular">Or</span>
+                    <button class="sign-in__or--btn"><img src="img/svg/login-google-btn.svg" alt=""></button>
+                    <button class="sign-in__or--btn"><img src="img/svg/login-fb-btn.svg" alt=""></button>
+                </div>
+                <div class="sign-in__register d-flex align-items-center justify-content-between">
+                    <span class="sign-in__register--text regular">New customer?</span>
+                    <button class="sign-in__register--btn register-open bold">Register</button>
+                </div>
+            </div>
+            <div class="sign-in register">
+                <h1 class="sign-in__title bold">Registration as:</h1>
+                <div class="register__btns d-flex justify-content-between">
+                    <button data-step="1" class="register__btns--btn active regular d-flex justify-content-center align-items-center">
+                        Individual
+                    </button>
+                    <button data-step="2" class="register__btns--btn regular d-flex justify-content-center align-items-center">
+                        Shop
+                    </button>
+                    <button data-step="3" class="register__btns--btn regular d-flex justify-content-center align-items-center">
+                        Charity
+                    </button>
+                </div><!-- tep nav end -->
+                <form data-step="1" class="sign-in__form register__step active">
+                    <label class="sign-in__form--label d-flex align-items-center">
+                        <input type="text" class="sign-in__form--input regular" placeholder="Full name">
+                        <img src="img/svg/username.svg" alt="" class="sign-in__form--icon">
+                    </label>
+                    <label class="sign-in__form--label d-flex align-items-center">
+                        <input type="text" class="sign-in__form--input regular" placeholder="Email">
+                        <img src="img/svg/input-mail.svg" alt="" class="sign-in__form--icon">
+                    </label>
+                    <label class="sign-in__form--label d-flex align-items-center">
+                        <input type="password" class="sign-in__form--input regular" placeholder="Password">
+                        <img src="img/svg/key.svg" alt="" class="sign-in__form--icon">
+                    </label>
+                    <label class="sign-in__form--label d-flex align-items-center">
+                        <input type="password" class="sign-in__form--input regular" placeholder="Password">
+                        <img src="img/svg/key.svg" alt="" class="sign-in__form--icon">
+                    </label>
+                    <button class="sign-in__form--btn bold">Create Account</button>
+                </form><!-- step end -->
+                <form data-step="2" class="sign-in__form register__step">
+                    <label class="sign-in__form--label d-flex align-items-center">
+                        <input type="text" class="sign-in__form--input regular" placeholder="Company name">
+                        <img src="img/svg/username.svg" alt="" class="sign-in__form--icon">
+                    </label>
+                    <label class="sign-in__form--label d-flex align-items-center">
+                        <input type="text" class="sign-in__form--input regular" placeholder="Email">
+                        <img src="img/svg/input-mail.svg" alt="" class="sign-in__form--icon">
+                    </label>
+                    <label class="sign-in__form--label d-flex align-items-center">
+                        <input type="password" class="sign-in__form--input regular" placeholder="Password">
+                        <img src="img/svg/key.svg" alt="" class="sign-in__form--icon">
+                    </label>
+                    <label class="sign-in__form--label d-flex align-items-center">
+                        <input type="password" class="sign-in__form--input regular" placeholder="Password">
+                        <img src="img/svg/key.svg" alt="" class="sign-in__form--icon">
+                    </label>
+                    <button class="sign-in__form--btn bold">Create Account</button>
+                </form><!-- step end -->
+                <form data-step="3" class="sign-in__form register__step">
+                    <label class="sign-in__form--label d-flex align-items-center">
+                        <input type="text" class="sign-in__form--input regular" placeholder="Name">
+                        <img src="img/svg/username.svg" alt="" class="sign-in__form--icon">
+                    </label>
+                    <label class="sign-in__form--label d-flex align-items-center">
+                        <input type="text" class="sign-in__form--input regular" placeholder="Email">
+                        <img src="img/svg/input-mail.svg" alt="" class="sign-in__form--icon">
+                    </label>
+                    <label class="sign-in__form--label d-flex align-items-center">
+                        <input type="password" class="sign-in__form--input regular" placeholder="Password">
+                        <img src="img/svg/key.svg" alt="" class="sign-in__form--icon">
+                    </label>
+                    <label class="sign-in__form--label d-flex align-items-center">
+                        <input type="password" class="sign-in__form--input regular" placeholder="Password">
+                        <img src="img/svg/key.svg" alt="" class="sign-in__form--icon">
+                    </label>
+                    <button class="sign-in__form--btn bold">Create Account</button>
+                </form><!-- step end -->
+                <div class="register__text regular">
+                    <p class="sign-in__register--text">By creating account, you agree to the</p>
+                    <a href="">ItemsSphere's Free Membership Agreement</a>
+                    <p class="sign-in__register--text">and <a href="">Privacy Policy</a></p>
+                </div>
+                <div class="register__link">
+                    <span class="sign-in__register--text regular">Have account?</span>
+                    <button class="register__link--btn register-open bold">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+    <script src="js/splide.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/pagination.js"></script>
+    <script src="js/function.js"></script>
+
+</body>
+</html>
